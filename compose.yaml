@@ -1,0 +1,30 @@
+services:
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:latest
+    restart: unless-stopped
+    ports:
+      - 28428:28428
+    volumes:
+      - vm-data:/data
+    command:
+      - -retentionPeriod=30d
+      - -httpListenAddr=:28428
+      - -storageDataPath=/data
+  grafana:
+    image: grafana/grafana-oss
+    depends_on:
+      - victoriametrics
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+      - GF_INSTALL_PLUGINS=victoriametrics-metrics-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana-provisioning:/etc/grafana/provisioning
+volumes:
+  vm-data:
+  grafana-data:
