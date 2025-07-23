@@ -1,33 +1,67 @@
 extends Node3D
+class_name AdvancedBallistics
 
+# Константы
+const MIN_VELOCITY := 0.01  # Минимальная значимая скорость [м/с]
+const G7_DRAG_BASE := 0.371  # Базовый коэффициент сопротивления модели G7
+const STABILITY_THRESHOLD := 1.5  # Порог устойчивости снаряда
+const LIFT_COEFFICIENT := 0.0025  # Коэффициент подъемной силы
+const GYROSCOPIC_PRECESSION_FACTOR := 0.0001  # Фактор гироскопической прецессии
+const SPIN_DECAY_AIR := 0.998  # Коэффициент затухания вращения в воздухе
+const SPIN_DECAY_WATER := 0.8  # Коэффициент затухания вращения в воде
+const BULLET_TUMBLE_THRESHOLD := 0.5  # Порог начала кувыркания
+
+#=== Основной метод обновления ===#
+func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
+  var new_proj = proj.duplicate(true)
+  var medium = GameState.env_conditions["medium"]
+  var medium_props = Physics.get_medium_properties(medium)
+  print(medium_props)
+  if medium_props.is_empty():
+    push_warning("Unknown medium type")
+    return new_proj
+  
+  # 1. Предварительные расчеты
+  _update_pre_physics(new_proj, delta)
+  
+  # 2. Физика в зависимости от типа среды
+  match medium_props["type"]:
+    "gas":
+      _update_gas_dynamics(new_proj, medium_props, delta)
+    "liquid":
+      _update_hydrodynamics(new_proj, medium_props, delta)
+    "vacuum":
+      _update_vacuum_dynamics(new_proj, delta)
+    "solid":
+      _update_solid_interaction(new_proj, delta)
+  
+  # 3. Обновление положения и ориентации
+  _update_position_orientation(new_proj, delta)
+  
+  # 4. Проверка состояния после физики
+  _update_post_physics(new_proj, delta)
+  
+  return new_proj
+
+#=== Создание снаряда с улучшенными параметрами ===#
 func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis) -> Dictionary:
   var direction = -muzzle_rot.z.normalized()
+  var length_diameter_ratio = ammo.get_property("length_diameter_ratio", ammo.length / ammo.caliber if ammo.caliber > 0 else 3.0)
   
-  var length_diameter_ratio = 3.0
-  if ammo.get("length") != null and ammo.caliber > 0:
-    length_diameter_ratio = ammo.length / ammo.caliber
-  elif ammo.get("length_diameter_ratio") != null:
-    length_diameter_ratio = ammo.length_diameter_ratio
-  
+  # Расчет начального вращения в зависимости от типа стабилизации
   var angular_velocity = Vector3.ZERO
-  #if ammo.stab_type == 1:
-    #var twist_rate_m = weapon.twist_rate * 0.001
-    #var spin_magnitude = (2.0 * PI * ammo.speed) / twist_rate_m
-    #angular_velocity = Vector3(0, 0, spin_magnitude) * (-1.0 if weapon.rifling_clockwise else 1.0)
-  if ammo.stab_type == 1:
-    var twist_rate_m = weapon.twist_rate * 0.001
+  if ammo.stab_type == AmmoData.StabilizationType.SPIN:
+    var twist_rate_m = weapon.twist_rate * 0.001  # Переводим мм/оборот в м/оборот
     var spin_magnitude = (2.0 * PI * ammo.speed) / twist_rate_m
-
-    var spin_axis_local = Vector3(0, 0, 1)  # Вращение вдоль оси пули (Z локальная)
-    var spin_axis_world = (muzzle_rot * Vector3(0, 0, 1)).normalized()
-
-    angular_velocity = spin_axis_world * spin_magnitude * (-1.0 if weapon.rifling_clockwise else 1.0)
-
+    angular_velocity = (muzzle_rot * Vector3.FORWARD) * spin_magnitude * (-1.0 if weapon.rifling_clockwise else 1.0)
+  
+  # Расчет коэффициента эффекта Магнуса с учетом глубины нарезов
+  var magnus_factor = 0.00025 * weapon.rifling_depth_mm * length_diameter_ratio
+  
+  # Формирование снаряда
   return {
     "weapon": weapon,
     "ammo": ammo,
-    "weapon.name": weapon.name,
-    "ammo.name": ammo.name,
     "uid": Globals.gen_uid(8, "proj_"),
     "position": muzzle_pos,
     "velocity": direction * ammo.speed,
@@ -35,10 +69,10 @@ func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, 
     "flight_time": 0.0,
     "mass": ammo.mass,
     "caliber": ammo.caliber,
-    "drag_coef": ammo.drag_coef,
-    "cross_section": PI * pow(ammo.caliber * 0.0005, 2),
     "length": ammo.length,
     "length_diameter_ratio": length_diameter_ratio,
+    "drag_coef": ammo.drag_coef,
+    "cross_section": PI * pow(ammo.caliber * 0.0005, 2),
     "core_mass": ammo.core_mass,
     "core_hardness": ammo.core_hardness,
     "core_caliber": ammo.core_caliber,
@@ -46,172 +80,283 @@ func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, 
     "state": "normal",
     "ricochet_min_angle": ammo.ricochet_min_angle,
     "ricochet_max_angle": ammo.ricochet_max_angle,
-    "fragmentation_chance": ammo.get_property("fragmentation_chance", 0.0),
-    "fragments_min": ammo.get_property("fragments_min", 0),
-    "fragments_max": ammo.get_property("fragments_max", 0),
+    "fragmentation_chance": ammo.fragmentation_chance,
+    "fragments_min": ammo.fragments_min,
+    "fragments_max": ammo.fragments_max,
     "impact_count": 0,
     "ricochet_count": 0,
     "penetration_count": 0,
     "fragmentation_count": 0,
     "ttl": Time.get_ticks_msec() / 1000.0 + Config.projectile_ttl,
-    "spin_decay_rate": 0.998,
+    "spin_decay_rate": SPIN_DECAY_AIR,
     "angular_velocity": angular_velocity,
-    "magnus_effect_factor": 0.00025 * weapon.rifling_depth_mm * length_diameter_ratio
+    "magnus_effect_factor": magnus_factor,
+    "stability_factor": 1.0,  # 1.0 = полностью стабилен
+    "tumble_time": 0.0,  # Время кувыркания
+    "effective_cross_section": 0.0,  # Будет рассчитано
+    "current_drag_coef": 0.0,  # Будет рассчитано
+    "mach_number": 0.0  # Будет рассчитано
   }
 
-func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
-  var new_proj = proj.duplicate(true)
-  var medium = GameState.env_conditions["medium"]
+#=== Детализированные физические модели ===#
+func _update_pre_physics(proj: Dictionary, delta: float) -> void:
+  """Расчет динамических параметров перед физикой"""
+  # Обновление динамического сечения (G7 модель)
+  proj["effective_cross_section"] = _calculate_effective_cross_section(proj)
   
-  match medium:
-    Physics.Medium.WATER_FRESH:
-      _apply_underwater_physics(new_proj, delta)
-    Physics.Medium.VACUUM:
-      _apply_vacuum_physics(new_proj, delta)
-    _:
-      _apply_air_physics(new_proj, delta)
+  # Расчет текущего коэффициента сопротивления
+  proj["current_drag_coef"] = _calculate_dynamic_drag_coef(proj)
   
-  if not new_proj["velocity"].is_finite():
-    new_proj["velocity"] = Vector3.ZERO
-  if not new_proj["position"].is_finite():
-    new_proj["position"] = Vector3.ZERO
-  new_proj["position"] += new_proj["velocity"] * delta
-  return new_proj
+  # Расчет числа Маха
+  var speed_of_sound = Physics.get_speed_of_sound(GameState.env_conditions["medium"])
+  proj["mach_number"] = proj["velocity"].length() / speed_of_sound if speed_of_sound > 0 else 0
+  
+  # Обновление фактора стабильности
+  _update_stability_factor(proj, delta)
 
-func _apply_air_physics(proj: Dictionary, delta: float) -> void:
+func _update_stability_factor(proj: Dictionary, delta: float) -> void:
+  """Расчет фактора стабильности снаряда"""
+  if proj["ammo"].stab_type != AmmoData.StabilizationType.SPIN:
+    proj["stability_factor"] = 0.0
+    return
+  
+  # Расчет гироскопической стабильности (Sg)
+  var twist_rate = proj["weapon"].twist_rate * 0.001
+  var sg = (30.0 * proj["mass"] * pow(proj["ammo"].speed, 2)) / \
+       (PI * pow(twist_rate, 2) * pow(proj["caliber"] * 0.001, 3) * proj["length_diameter_ratio"])
+  
+  # Расчет аэродинамической стабильности
+  var stability = sg / (1.0 + 0.5 * (1.0 - proj["stability_factor"]))
+  proj["stability_factor"] = clamp(stability / STABILITY_THRESHOLD, 0.0, 1.0)
+  
+  # Обновление времени кувыркания для нестабильных снарядов
+  if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
+    proj["tumble_time"] += delta * (1.0 - proj["stability_factor"])
+
+#=== Физика для разных сред ===#
+func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  """Полная аэродинамика в газовых средах"""
+  _apply_aerodynamic_drag(proj, medium_props, delta)
   _apply_gravity(proj, delta)
-  _apply_drag_linear(proj, delta)
-  _apply_drag_angular(proj, delta)
+  _apply_lift_force(proj, medium_props, delta)
+  _apply_angular_drag(proj, medium_props, delta)
+  
+  if proj["ammo"].stab_type == AmmoData.StabilizationType.SPIN:
+    _apply_gyroscopic_precession(proj, delta)
+    _apply_magnus_effect(proj, medium_props, delta)
+  
   _apply_wind(proj, delta)
-  _apply_spin(proj, delta)
+  _apply_turbulence(proj, medium_props, delta)
 
-func _apply_underwater_physics(proj: Dictionary, delta: float) -> void:
-  # Получаем параметры воды из Globals
-  var medium_profile = Physics.get_medium_properties(Physics.Medium.WATER_FRESH)
-  var density = Physics.get_density(Physics.Medium.WATER_FRESH)
-  var viscosity = Physics.get_viscosity(Physics.Medium.WATER_FRESH)
+func _update_hydrodynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  """Гидродинамика в жидких средах"""
+  _apply_hydrodynamic_drag(proj, medium_props, delta)
+  _apply_gravity(proj, delta)
+  _apply_buoyancy(proj, medium_props, delta)
+  _apply_angular_drag(proj, medium_props, delta, 5.0)  # Усиленное демпфирование
   
-  # 1. Гидродинамическое сопротивление (комбинация квадратичного и вязкого)
+  if proj["flight_time"] < 0.1:  # Эффект кавитации
+    proj["velocity"] *= 0.95
+
+#=== Реализация физических эффектов ===#
+func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  var density = medium_props["base_density"]  # кг/м³
   var speed = proj["velocity"].length()
-  var radius = proj["caliber"] * 0.0005
+  if speed < MIN_VELOCITY: return
   
-  # Квадратичное сопротивление (доминирует на высоких скоростях)
-  var quadratic_drag = 0.5 * density * speed * speed * proj["drag_coef"] * proj["cross_section"]
+  # Получаем баллистический коэффициент из данных пули (по умолчанию 0.15 для G7)
+  var ballistic_coef = proj["ammo"].get("ballistic_coefficient_g7")
   
-  # Вязкое сопротивление (по Стоксу, доминирует на низких скоростях)
-  var stokes_drag = 6 * PI * viscosity * radius * speed
+  # Динамический коэффициент сопротивления с учётом числа Маха
+  var drag_coef = _calculate_dynamic_drag_coef(proj)
   
-  # Комбинированная модель (переход между режимами)
-  var total_drag = quadratic_drag + stokes_drag
-  proj["velocity"] -= total_drag * delta / (proj["mass"] * 0.001) * proj["velocity"].normalized()
+  # Формула сопротивления с разделением BC и Cᴅ
+  var drag_force = (0.5 * density * speed * speed * drag_coef * proj["effective_cross_section"]) / ballistic_coef
   
-  # 2. Динамическая плавучесть (зависит от глубины)
-  var depth_factor = clamp(abs(proj["position"].y) / 10.0, 0.0, 1.0)
-  var buoyancy = (0.5 + 0.3 * depth_factor) * GameState.env_conditions["gravity"] * delta
-  proj["velocity"].y += buoyancy
-  
-  # 3. Быстрая потеря вращения (в 5 раз быстрее чем в воздухе)
-  proj["angular_velocity"] *= pow(0.8, delta) 
-  
-  # 4. Дополнительные эффекты для пуль в воде
-  if proj["flight_time"] < 0.1:  # Первые 100мс - кавитация
-    proj["velocity"] *= 0.95  # Дополнительные потери энергии
-
-func _apply_vacuum_physics(proj: Dictionary, delta: float) -> void:
-  proj["velocity"].y -= GameState.env_conditions["gravity"] * delta
-  proj["angular_velocity"] *= 0.999 ** delta
-
-func _apply_gravity(proj: Dictionary, delta: float) -> void:
-  proj["velocity"].y -= GameState.env_conditions["gravity"] * delta
-
-func _apply_drag_linear(proj: Dictionary, delta: float) -> void:
-  var env = GameState.env_conditions
-  var density = Physics.get_density(env["medium"], env["temperature"], env.get("pressure", -1.0))
-  
+  # Применяем силу (массу переводим граммы → кг)
   var mass_kg = proj["mass"] * 0.001
-  var speed = proj["velocity"].length()
-  var drag_force = 0.5 * density * speed * speed * proj["drag_coef"] * proj["cross_section"]
   proj["velocity"] -= drag_force * delta / mass_kg * proj["velocity"].normalized()
 
-func _apply_viscous_drag(proj: Dictionary, density: float, viscosity: float, delta: float) -> void:
-  var radius = proj["caliber"] * 0.0005
-  var drag_force = 6 * PI * viscosity * radius * proj["velocity"]
-  proj["velocity"] -= drag_force * delta / (proj["mass"] * 0.001)
+func _calculate_dynamic_drag_coef(proj: Dictionary) -> float:
+  # Базовый коэффициент из данных пули (для 5.56x45 M855 = 0.28)
+  var base_coef = proj["drag_coef"]
+  
+  # Коррекция для сверхзвукового режима (M855)
+  if proj["mach_number"] > 1.0:
+    return base_coef * (1.0 + 0.2 * (proj["mach_number"] - 1.0))
+  
+  # Коррекция для дозвукового режима
+  elif proj["mach_number"] < 0.9:
+    return base_coef * 0.9
+  
+  return base_coef
 
-func _apply_drag_angular(proj: Dictionary, delta: float) -> void:
-  if proj["angular_velocity"].length_squared() > 0:
-    var angular_drag = 0.1 * proj["drag_coef"] * delta
-    proj["angular_velocity"] *= 1.0 - angular_drag
+func _calculate_effective_cross_section(proj: Dictionary) -> float:
+  var base_area = PI * pow(proj["caliber"] * 0.0005, 2)  # мм → м
+  var forward = Basis(proj["rotation"]).z.normalized()
+  var velocity_dir = proj["velocity"].normalized() if proj["velocity"].length_squared() > MIN_VELOCITY else forward
+  
+  # Угол атаки и коррекция площади
+  var angle_of_attack = forward.angle_to(velocity_dir)
+  return base_area * (1.0 + 0.3 * abs(sin(angle_of_attack)))
+
+func _apply_lift_force(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  var density = Physics.get_density(
+    GameState.env_conditions["medium"],
+    GameState.env_conditions["temperature"],
+    GameState.env_conditions.get("pressure", 101325.0)
+  )
+  
+  var velocity = proj["velocity"]
+  var speed = velocity.length()
+  if speed < MIN_VELOCITY: return
+  
+  var velocity_dir = velocity.normalized()
+  var forward = Basis(proj["rotation"]).z.normalized()
+  var right = Basis(proj["rotation"]).x.normalized()
+  var angle_of_attack = forward.angle_to(velocity_dir)
+  
+  var lift_dir = velocity_dir.cross(right).normalized()
+  var lift_coef = LIFT_COEFFICIENT * angle_of_attack * proj["length_diameter_ratio"]
+  var lift_force = 0.5 * density * speed * speed * lift_coef * proj["effective_cross_section"]
+  
+  proj["velocity"] += lift_force * delta / (proj["mass"] * 0.001) * lift_dir
+
+func _apply_gyroscopic_precession(proj: Dictionary, delta: float) -> void:
+  if proj["angular_velocity"].length_squared() < 1.0: return
+  
+  var forward = Basis(proj["rotation"]).z.normalized()
+  var velocity_dir = proj["velocity"].normalized() if proj["velocity"].length_squared() > 0 else forward
+  
+  var torque = forward.cross(velocity_dir) * GYROSCOPIC_PRECESSION_FACTOR * \
+        (1.0 - proj["stability_factor"])  # Усиление при потере стабильности
+  proj["angular_velocity"] += torque * delta
+
+func _apply_magnus_effect(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  if proj["state"] != "normal" or proj["angular_velocity"].length() < 10.0: return
+  
+  var magnus_dir = proj["angular_velocity"].cross(proj["velocity"].normalized())
+  if magnus_dir.length_squared() > 0:
+    var magnus_force = magnus_dir * proj["magnus_effect_factor"] * \
+              proj["stability_factor"]  # Ослабление при кувыркании
+    proj["velocity"] += magnus_force * delta
+
+#=== Физика в вакууме ===#
+func _update_vacuum_dynamics(proj: Dictionary, delta: float) -> void:
+  """Физика снаряда в вакууме - только гравитация"""
+  _apply_gravity(proj, delta)
+  # В вакууме нет сопротивления, только гравитация
+  proj["spin_decay_rate"] = 0.999  # Очень медленное затухание вращения
+
+#=== Взаимодействие с твердыми средами ===#
+func _update_solid_interaction(proj: Dictionary, delta: float) -> void:
+  """Обработка снаряда, застрявшего в твердой среде"""
+  # Сильное замедление
+  proj["velocity"] *= pow(0.1, delta)
+  # Быстрая потеря вращения
+  proj["angular_velocity"] *= pow(0.5, delta)
+  # Увеличение времени жизни перед удалением
+  proj["ttl"] = Time.get_ticks_msec() / 1000.0 + 1.0
+
+#=== Базовые физические силы ===#
+func _apply_gravity(proj: Dictionary, delta: float) -> void:
+  """Применение гравитации к снаряду"""
+  proj["velocity"].y -= GameState.env_conditions["gravity"] * delta
+
+func _apply_angular_drag(proj: Dictionary, medium_props: Dictionary, delta: float, factor: float = 1.0) -> void:
+  """Сопротивление вращению в среде"""
+  if proj["angular_velocity"].length_squared() < 0.01:
+    return
+  
+  var viscosity = medium_props.get("viscosity", 0.0)
+  var density = Physics.get_density(
+    GameState.env_conditions["medium"],
+    GameState.env_conditions["temperature"],
+    GameState.env_conditions.get("pressure", 101325.0)
+  )
+  
+  # Момент сопротивления зависит от вязкости и плотности среды
+  var drag_torque = 0.1 * density * viscosity * factor * delta
+  proj["angular_velocity"] *= 1.0 - drag_torque
 
 func _apply_wind(proj: Dictionary, delta: float) -> void:
-  var wind = GameState.env_conditions["wind_direction"].normalized() * GameState.env_conditions["wind_strength"]
-  proj["velocity"] += (wind - proj["velocity"]) * 0.05 * delta
+  """Влияние ветра на снаряд"""
+  var wind_vec = GameState.env_conditions["wind_direction"].normalized() * \
+          GameState.env_conditions["wind_strength"]
+  var relative_wind = wind_vec - proj["velocity"]
+  var wind_force = relative_wind * 0.05 * delta / (proj["mass"] * 0.001)
+  proj["velocity"] += wind_force
 
-func _apply_spin(proj: Dictionary, delta: float) -> void:
-  if proj["ammo"].stab_type != 1:
+func _apply_turbulence(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  """Турбулентные возмущения для атмосферы"""
+  if medium_props["type"] != "gas" or proj["velocity"].length() < 50.0:
     return
-
-  # 1. Получаем текущее вращение
-  var rot = Basis(proj["rotation"])
-  if not _is_basis_valid(rot):
-    rot = Basis.IDENTITY
-
-  # 2. Применяем потери вращения
-  var spin_decay = 0.998  # Воздух
-  if GameState.env_conditions["medium"] == Physics.Medium.WATER_FRESH:
-    spin_decay = 0.8  # Вода
   
-  proj["angular_velocity"] *= pow(spin_decay, delta)
+  # Случайные колебания для имитации турбулентности
+  var turbulence = Vector3(
+    randf_range(-0.5, 0.5),
+    randf_range(-0.2, 0.2),
+    randf_range(-0.3, 0.3)
+    )
+  
+  # Интенсивность зависит от скорости и стабильности
+  var intensity = 0.01 * (1.0 - proj["stability_factor"]) * delta
+  proj["velocity"] += turbulence * intensity
 
-  # 3. Вращаем снаряд
+func _apply_hydrodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  """Гидродинамическое сопротивление в жидкостях"""
+  var density = medium_props["base_density"]
+  var viscosity = medium_props.get("viscosity", 0.001)
+  var speed = proj["velocity"].length()
+  
+  if speed < MIN_VELOCITY:
+    return
+  
+  # Квадратичное сопротивление
+  var quadratic_drag = 0.5 * density * speed * speed * proj["current_drag_coef"] * proj["cross_section"]
+  
+  # Вязкое сопротивление (Стокс)
+  var radius = proj["caliber"] * 0.0005
+  var stokes_drag = 6 * PI * viscosity * radius * speed
+  
+  # Комбинированная модель
+  var total_drag = quadratic_drag + stokes_drag
+  proj["velocity"] -= total_drag * delta / (proj["mass"] * 0.001) * proj["velocity"].normalized()
+
+func _apply_buoyancy(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  """Плавучесть в жидких средах"""
+  var medium_density = medium_props["base_density"]
+  var bullet_volume = (proj["mass"] * 0.001) / medium_density  # Приблизительный объем
+  
+  # Сила плавучести (Архимедова сила)
+  var buoyancy_force = medium_density * bullet_volume * GameState.env_conditions["gravity"]
+  proj["velocity"].y += buoyancy_force * delta / (proj["mass"] * 0.001)
+  
+  # Демпфирование вертикальной скорости при всплытии/погружении
+  if abs(proj["velocity"].y) > 2.0:
+    proj["velocity"].y *= pow(0.9, delta)
+
+
+#=== Обновление положения и состояния ===#
+func _update_position_orientation(proj: Dictionary, delta: float) -> void:
+  if proj["velocity"].is_finite():
+    proj["position"] += proj["velocity"] * delta
+  else:
+    proj["velocity"] = Vector3.ZERO
+  
   if proj["angular_velocity"].length_squared() > 0.01:
     var axis = proj["angular_velocity"].normalized()
     var angle = proj["angular_velocity"].length() * delta
-    rot = rot.rotated(axis, angle)
-    proj["rotation"] = rot
+    var rotation = Basis(proj["rotation"]).rotated(axis, angle)
+    proj["rotation"] = rotation
 
-  # 4. Эффект Магнуса (только для нормальных снарядов)
-  if proj["state"] == "normal" and proj["angular_velocity"].length() > 10.0:
-    var vel_dir = proj["velocity"].normalized()
-    if _is_vector_valid(vel_dir):
-      var magnus_dir = proj["angular_velocity"].cross(vel_dir)
-      if magnus_dir.length_squared() > 0:
-        var magnus_force = magnus_dir * proj["magnus_effect_factor"]
-        proj["velocity"] += magnus_force * delta
-        #print("magnus_force:", magnus_force)
-        #print("angular_velocity:", proj["angular_velocity"])
-        #print("velocity:", proj["velocity"])
-        #print("cross:", proj["angular_velocity"].cross(proj["velocity"]))
-
-
-
-func _is_vector_valid(v: Vector3) -> bool:
-  return v.x != NAN and v.y != NAN and v.z != NAN and v.is_finite()
-
-func _is_basis_valid(b: Basis) -> bool:
-  return _is_vector_valid(b.x) and _is_vector_valid(b.y) and _is_vector_valid(b.z)
-
-func get_medium_density(medium: Physics.Medium, temp: float, pressure: float = -1.0) -> float:
-  return Physics.get_medium_density(medium, temp, pressure)
-
-func get_aim_direction(from: Vector3, to: Vector3, ammo: AmmoData) -> Vector3:
-  var g: float = GameState.env_conditions.get("gravity", 9.81)
-  var v0: float = ammo.speed
-  if v0 <= 0.0:
-    push_warning("Ammo speed is zero or negative.")
-    return (to - from).normalized()
-
-  var flat_distance: float = (to - from).length()
-  var flight_time: float = flat_distance / v0
-  var drop: float = 0.5 * g * flight_time * flight_time
-
-  var corrected_to: Vector3 = to + Vector3.UP * drop
-  return (corrected_to - from).normalized()
-
-func get_targets_in_radius(position: Vector3, radius: float) -> Array:
-  var space_state = get_world_3d().direct_space_state
-  var query = PhysicsShapeQueryParameters3D.new()
-  query.shape = SphereShape3D.new()
-  query.shape.radius = radius
-  query.transform = Transform3D.IDENTITY.translated(position)
-  return space_state.intersect_shape(query)
+func _update_post_physics(proj: Dictionary, delta: float) -> void:
+  proj["flight_time"] += delta
+  if Time.get_ticks_msec() / 1000.0 > proj["ttl"]:
+    proj["state"] = "expired"
+  
+  # Проверка на NaN/Infinity
+  if not proj["velocity"].is_finite():
+    proj["velocity"] = Vector3.ZERO
+  if not proj["position"].is_finite():
+    proj["position"] = Vector3.ZERO

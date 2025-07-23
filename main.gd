@@ -6,11 +6,12 @@ var ammo: AmmoData
 var muzzle_pos := Vector3.ZERO
 var muzzle_rot := Basis.IDENTITY
 var projectile: Dictionary = {}
-var dt: float = 0.0166666667
+var dt: float = (1.0/60.0)
 #var dt: float = 0.1
 var t: float = 0.0
 var ax_scale = 0.5
 var exec_time: float = 0.0
+
 
 func _ready() -> void:
   muzzle_pos = Vector3(0, 0, 0)
@@ -30,6 +31,7 @@ func _ready() -> void:
 
 func _print_text() -> void:
   %Output.clear()
+  %Output.append_text("%s %s\n" % [weapon.name, ammo.name])
   %Output.append_text("[b]%s[/b] frames  T [b]%.4f[/b] s  Δt [b]%.4f[/b] s\n" % [
     c, t, dt
   ])
@@ -38,7 +40,11 @@ func _print_text() -> void:
   %Output.append_text("Exec time [b]%.0f[/b] µs ([b]%.2f[/b]%% of frame)\n" % [
     exec_time, exec_ratio*100
   ])
-  %Output.add_text(JSON.stringify(projectile, "  "))
+  var output = {
+    "projectile": projectile,
+    "medium": Physics.get_medium_properties(GameState.env_conditions["medium"])
+  }
+  %Output.add_text(JSON.stringify(output, "  "))
 
 func _draw_axes() -> void:
   var vel = projectile.velocity * -1
@@ -78,10 +84,10 @@ func _do_ballistics() -> void:
   var new_proj = Ballistics.update_projectile(projectile, dt)
   exec_time = Time.get_ticks_usec() - t0
   projectile = new_proj
-  _print_text()
-  _draw_axes()
   c += 1
   t += dt
+  _print_text()
+  _draw_axes()
 
 func _on_step_button_up() -> void:
   _do_ballistics()
@@ -95,3 +101,8 @@ func _on_toggle_toggled(toggled_on: bool) -> void:
 
 func _on_timer_timeout() -> void:
   _do_ballistics()
+
+
+func _on_copy_button_up() -> void:
+  var text = "%s" % %Output.get_parsed_text()
+  DisplayServer.clipboard_set(text)

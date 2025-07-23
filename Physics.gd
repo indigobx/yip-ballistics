@@ -36,7 +36,7 @@ func _ready():
 
 func _initialize_medium_profiles():
   """Инициализация физических параметров сред"""
-  var _medium_profiles = {
+  _medium_profiles = {
       #------------------------------
       # Газы
       #------------------------------

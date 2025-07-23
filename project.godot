@@ -29,3 +29,4 @@ WeaponRegistry="*res://WeaponRegistry.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=800
+window/dpi/allow_hidpi=false

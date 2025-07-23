@@ -12,6 +12,7 @@ enum FuseRule { NONE, HIT, SPEED, ACCEL, TIME, DIST }
 @export var length_diameter_ratio: float
 @export var spread_moa: float
 @export var drag_coef: float
+@export var ballistic_coefficient_g7: float
 @export var stab_type: StabilizationType = StabilizationType.NONE
 @export var has_thruster: bool = false
 @export var thrust_force: float = 0.0

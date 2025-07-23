@@ -12,7 +12,7 @@ var debug_text := ""
 var env_conditions: Dictionary = {
   "gravity": 9.78863,  # Miami
   "temperature": 22.0,  # Celsius
-  "medium": Physics.Medium.WATER_FRESH,
+  "medium": Physics.Medium.AIR_CLEAN,
   "wind_strength": 0.0,  # m/s
   "wind_direction": Vector3(1.0, 0.0, 0.0)
 }
