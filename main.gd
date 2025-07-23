@@ -11,6 +11,7 @@ var dt: float = (1.0/60.0)
 var t: float = 0.0
 var ax_scale = 0.5
 var exec_time: float = 0.0
+var metrics: Dictionary = {}
 
 
 func _ready() -> void:
@@ -37,14 +38,26 @@ func _print_text() -> void:
   ])
   var dt_us := float(1.0/60.0) * 1_000_000.0  # перевести секунды в микросекунды
   var exec_ratio := float(exec_time) / dt_us
-  %Output.append_text("Exec time [b]%.0f[/b] µs ([b]%.2f[/b]%% of frame)\n" % [
+  %Output.append_text("Exec time [b]%.0f[/b] µs ([b]%.2f[/b]%% of frame)\n\n" % [
     exec_time, exec_ratio*100
   ])
-  var output = {
+  metrics = {
+    "timing": {
+      "frame": c,
+      "time": t,
+      "delta": dt,
+      "exec_time": exec_time,
+      "exec_ratio": exec_ratio
+    },
+    "naming": {
+      "weapon_name": weapon.name,
+      "ammo_name": ammo.name,
+      "projectile_uid": projectile.uid
+    },
     "projectile": projectile,
     "medium": Physics.get_medium_properties(GameState.env_conditions["medium"])
   }
-  %Output.add_text(JSON.stringify(output, "  "))
+  %Output.add_text(JSON.stringify(metrics, "  "))
 
 func _draw_axes() -> void:
   var vel = projectile.velocity * -1
@@ -88,6 +101,7 @@ func _do_ballistics() -> void:
   t += dt
   _print_text()
   _draw_axes()
+  Metrics.send_metrics(metrics)
 
 func _on_step_button_up() -> void:
   _do_ballistics()
@@ -104,5 +118,6 @@ func _on_timer_timeout() -> void:
 
 
 func _on_copy_button_up() -> void:
-  var text = "%s" % %Output.get_parsed_text()
-  DisplayServer.clipboard_set(text)
+  #var text = "%s" % %Output.get_parsed_text()
+  #text = text.split("\n\n")[-1]  # copy metrics JSON only
+  DisplayServer.clipboard_set(JSON.stringify(metrics, "  "))

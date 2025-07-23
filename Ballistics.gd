@@ -306,11 +306,19 @@ func _apply_angular_drag(proj: Dictionary, medium_props: Dictionary, delta: floa
   proj["angular_velocity"] *= 1.0 - drag_torque
 
 func _apply_wind(proj: Dictionary, delta: float) -> void:
-  """Влияние ветра на снаряд"""
-  var wind_vec = GameState.env_conditions["wind_direction"].normalized() * \
-          GameState.env_conditions["wind_strength"]
-  var relative_wind = wind_vec - proj["velocity"]
-  var wind_force = relative_wind * 0.05 * delta / (proj["mass"] * 0.001)
+  var wind_strength = GameState.env_conditions.get("wind_strength", 0.0)
+  if wind_strength <= 0.0:
+    return  # Нулевой ветер - сразу выходим
+  
+  var wind_dir = GameState.env_conditions["wind_direction"].normalized()
+  var wind_vec = wind_dir * wind_strength
+  
+  # Правильная относительная скорость (только проекция ветра)
+  var relative_wind = wind_vec - wind_dir.dot(proj["velocity"]) * wind_dir
+  
+  # Реалистичное влияние (0.002 - коэффициент влияния ветра)
+  var wind_force = relative_wind * 0.002 * delta / (proj["mass"] * 0.001)
+  
   proj["velocity"] += wind_force
 
 func _apply_turbulence(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:

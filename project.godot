@@ -24,6 +24,7 @@ Config="*res://Config.gd"
 GameState="*res://GameState.gd"
 AmmoRegistry="*res://AmmoRegistry.gd"
 WeaponRegistry="*res://WeaponRegistry.gd"
+Metrics="*res://Metrics.gd"
 
 [display]
 

@@ -12,3 +12,5 @@ func gen_uid(length: int = 8, prefix: String = "", suffix: String = "") -> Strin
   for i in range(length):
     result[i] = _safe_chars.unicode_at(randi() % _safe_chars_len)
   return prefix + result.get_string_from_ascii() + suffix
+
+  
