@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://djm2xn3q1dpls"]
+
+[ext_resource type="Script" uid="uid://2s2kjaa0vxeq" path="res://bullet_rear.gd" id="1_efp3a"]
+[ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_eu7o0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7pwyj"]
+font = ExtResource("2_eu7o0")
+font_size = 14
+
+[node name="BulletRear" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_efp3a")
+
+[node name="Circle" type="Line2D" parent="."]
+closed = true
+width = 1.0
+
+[node name="Circle2" type="Line2D" parent="."]
+closed = true
+width = 1.0
+
+[node name="LineUp" type="Line2D" parent="."]
+width = 4.0
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_7pwyj")

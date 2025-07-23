@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb1wb0k25ppvm"]
+
+[ext_resource type="Script" uid="uid://dt52bcfe5gme7" path="res://bullet.gd" id="1_v7oki"]
+
+[node name="Bullet" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7oki")
+
+[node name="BulletShape" type="Line2D" parent="."]
+closed = true
+width = 1.0
+
+[node name="BulletShape2" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 1)
+closed = true
+width = 4.0
+default_color = Color(1, 0, 1, 1)

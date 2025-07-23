@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwh5cpvi8dams"]
+
+[ext_resource type="Script" uid="uid://sq1anr3wm77g" path="res://arrow.gd" id="1_l5ahi"]
+[ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_2ndhl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_acd0x"]
+font = ExtResource("2_2ndhl")
+
+[node name="Arrow" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l5ahi")
+
+[node name="Line" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 20, 30)
+default_color = Color(0, 1, 1, 1)
+
+[node name="Arrow" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 20, 30)
+default_color = Color(0, 1, 1, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_acd0x")
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_acd0x")
+horizontal_alignment = 1

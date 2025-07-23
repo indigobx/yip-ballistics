@@ -1,0 +1,326 @@
+[gd_scene load_steps=9 format=3 uid="uid://bp8ohrghu7y6b"]
+
+[ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
+[ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://cwh5cpvi8dams" path="res://arrow.tscn" id="3_r0du0"]
+[ext_resource type="PackedScene" uid="uid://cb1wb0k25ppvm" path="res://bullet.tscn" id="4_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://djm2xn3q1dpls" path="res://bullet_rear.tscn" id="5_fos0i"]
+[ext_resource type="PackedScene" uid="uid://brkyfxo7vih3l" path="res://graph.tscn" id="6_3dxm6"]
+
+[sub_resource type="FontVariation" id="FontVariation_uu6xs"]
+base_font = ExtResource("2_uu6xs")
+variation_transform = Transform2D(1, 0.33, 0, 1, 0, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_r0du0"]
+base_font = ExtResource("2_uu6xs")
+variation_embolden = 1.0
+
+[node name="Main" type="Node"]
+script = ExtResource("1_glv2v")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1280.0
+offset_bottom = -800.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Step" type="Button" parent="UI"]
+layout_mode = 2
+offset_left = 570.0
+offset_top = 32.0
+offset_right = 690.0
+offset_bottom = 152.0
+text = "Step"
+
+[node name="Toggle" type="Button" parent="UI"]
+layout_mode = 2
+offset_left = 730.0
+offset_top = 32.0
+offset_right = 850.0
+offset_bottom = 152.0
+toggle_mode = true
+text = "Toggle"
+
+[node name="PanelContainer" type="PanelContainer" parent="UI"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 180.0
+offset_right = 1270.0
+offset_bottom = 780.0
+
+[node name="CenterContainer" type="CenterContainer" parent="UI/PanelContainer"]
+layout_mode = 2
+
+[node name="Vis" type="Control" parent="UI/PanelContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="VelZ" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("3_r0du0")]
+unique_name_in_owner = true
+layout_mode = 1
+to = Vector2(50, 0)
+color = Color(0, 0.666667, 1, 1)
+clamp_length = Vector2(40, 220)
+show_value = true
+label_text = "Z"
+
+[node name="VelY" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("3_r0du0")]
+unique_name_in_owner = true
+layout_mode = 1
+to = Vector2(0, 50)
+color = Color(0.2, 0.866667, 0.2, 1)
+clamp_length = Vector2(40, 220)
+show_value = true
+label_text = "Y"
+label_offset = Vector2(10, -10)
+
+[node name="AngX" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("3_r0du0")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 280.0
+offset_right = 280.0
+to = Vector2(0, 50)
+color = Color(0.666667, 0.2, 0.2, 1)
+show_value = true
+label_text = "ω.X"
+label_offset = Vector2(10, -10)
+
+[node name="Bullet" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("4_cm0pq")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="GraphVelX" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -340.0
+offset_top = -290.0
+offset_right = -240.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 120
+color = Color(1, 0.4, 0.333333, 1)
+thickness = 1.0
+max = 2.0
+hard_limits = true
+label = "v.x"
+
+[node name="GraphVelY" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -230.0
+offset_top = -290.0
+offset_right = -130.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 120
+color = Color(0.2, 0.866667, 0.2, 1)
+thickness = 1.0
+hard_limits = true
+label = "v.y"
+
+[node name="GraphVelZ" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -120.0
+offset_top = -290.0
+offset_right = -20.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 120
+color = Color(0, 0.666667, 1, 1)
+thickness = 1.0
+max = 1000.0
+hard_limits = true
+label = "v.z"
+
+[node name="GraphRotX" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -10.0
+offset_top = -290.0
+offset_right = 90.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 60
+color = Color(0.666667, 0.2, 0.2, 1)
+thickness = 1.5
+min = -3.2
+max = 3.2
+hard_limits = true
+label = "θ"
+
+[node name="GraphRotY" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 100.0
+offset_top = -290.0
+offset_right = 200.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 60
+color = Color(0.133333, 0.666667, 0.133333, 1)
+thickness = 1.5
+min = -3.2
+max = 3.2
+hard_limits = true
+label = "ψ"
+
+[node name="GraphRotZ" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 220.0
+offset_top = -290.0
+offset_right = 320.0
+offset_bottom = -240.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 60
+color = Color(0, 0.466667, 0.8, 1)
+thickness = 1.5
+min = -3.2
+max = 3.2
+hard_limits = true
+label = "φ"
+
+[node name="GraphKE" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -340.0
+offset_top = 190.0
+offset_right = -40.0
+offset_bottom = 290.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 120
+color = Color(0.8, 0.466667, 0.133333, 1)
+thickness = 1.0
+max = 2e+06
+hard_limits = true
+label = "Energy"
+
+[node name="GraphDist" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -30.0
+offset_top = 190.0
+offset_right = 270.0
+offset_bottom = 290.0
+grow_horizontal = 1
+grow_vertical = 1
+graph_width = 120
+color = Color(0.5712, 0.272, 0.8, 1)
+thickness = 1.0
+max = 2000.0
+hard_limits = true
+label = "Dist"
+
+[node name="PanelContainer2" type="PanelContainer" parent="UI"]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 32.0
+offset_right = 1270.0
+offset_bottom = 152.0
+
+[node name="CenterContainer" type="CenterContainer" parent="UI/PanelContainer2"]
+layout_mode = 2
+
+[node name="Vis" type="Control" parent="UI/PanelContainer2/CenterContainer"]
+layout_mode = 2
+
+[node name="VelX" parent="UI/PanelContainer2/CenterContainer/Vis" instance=ExtResource("3_r0du0")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_top = 10.0
+offset_bottom = 10.0
+to = Vector2(50, 0)
+color = Color(1, 0.4, 0.333333, 1)
+clamp_length = Vector2(15, 100)
+show_value = true
+label_text = "Y"
+label_offset = Vector2(10, -10)
+
+[node name="BulletRear" parent="UI/PanelContainer2/CenterContainer/Vis/VelX" instance=ExtResource("5_fos0i")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="AngZ" parent="UI/PanelContainer2/CenterContainer/Vis" instance=ExtResource("3_r0du0")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_top = -30.0
+offset_bottom = -30.0
+to = Vector2(50, 0)
+color = Color(0, 0.466667, 0.8, 1)
+clamp_length = Vector2(10, 100)
+show_value = true
+label_text = "ω.Z"
+label_offset = Vector2(10, -10)
+
+[node name="PanelContainer3" type="PanelContainer" parent="UI"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 31.0
+offset_right = 556.0
+offset_bottom = 629.0
+
+[node name="Output" type="RichTextLabel" parent="UI/PanelContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_uu6xs")
+theme_override_fonts/italics_font = SubResource("FontVariation_uu6xs")
+theme_override_fonts/bold_font = SubResource("FontVariation_r0du0")
+bbcode_enabled = true
+text = "aaaaa"
+tab_size = 2
+selection_enabled = true
+
+[node name="Graph" parent="UI" instance=ExtResource("6_3dxm6")]
+layout_mode = 1
+offset_left = 46.0
+offset_top = 688.0
+offset_right = 146.0
+offset_bottom = 728.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="button_up" from="UI/Step" to="." method="_on_step_button_up"]
+[connection signal="toggled" from="UI/Toggle" to="." method="_on_toggle_toggled"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

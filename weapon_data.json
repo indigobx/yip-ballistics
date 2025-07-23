@@ -1,0 +1,53 @@
+{
+  "weapons": [
+    {
+      "name": "Glock17_HST",
+      "mass": 0.625,
+      "barrel_length": 0.114,
+      "twist_rate": 250.0,
+      "rifling_depth_mm": 0.15,
+      "rifling_clockwise": true,
+      "progressive_rifling": false,
+      "rifling_shape": 1,
+      "spread_moa": 4.0,
+      "ammo_type": "9x19_HST_PlusP",
+      "fire_rate": {
+        "single": 1200
+      }
+    },
+    {
+      "name": "FN_EVOLYS",
+      "mass": 6.0,
+      "barrel_length": 0.508,
+      "twist_rate": 305.0,
+      "rifling_depth_mm": 0.2,
+      "rifling_clockwise": true,
+      "progressive_rifling": true,
+      "rifling_shape": 2,
+      "spread_moa": 2.2,
+      "ammo_type": "7.62x51_SLAP_T",
+      "fire_rate": {
+        "single": 750,
+        "auto": 750
+      }
+    },
+    {
+      "name": "SCAR_L_CQC",
+      "mass": 3.5,
+      "barrel_length": 0.263,
+      "twist_rate": 178.0,
+      "rifling_depth_mm": 0.18,
+      "rifling_clockwise": true,
+      "progressive_rifling": false,
+      "rifling_shape": 2,
+      "spread_moa": 1.5,
+      "ammo_type": "5.56x45_M855",
+      "fire_rate": {
+        "single": 60,
+        "auto": 600,
+        "burst": 650
+      },
+      "burst": 3
+    }
+  ]
+}
