@@ -16,7 +16,6 @@ func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
   var new_proj = proj.duplicate(true)
   var medium = GameState.env_conditions["medium"]
   var medium_props = Physics.get_medium_properties(medium)
-  print(medium_props)
   if medium_props.is_empty():
     push_warning("Unknown medium type")
     return new_proj
@@ -135,18 +134,29 @@ func _update_stability_factor(proj: Dictionary, delta: float) -> void:
 
 #=== Физика для разных сред ===#
 func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
+  var debug_vel = {}
   """Полная аэродинамика в газовых средах"""
+  debug_vel["0_initial"] = proj.velocity
   _apply_aerodynamic_drag(proj, medium_props, delta)
+  debug_vel["1_aero_drag"] = proj.velocity
   _apply_gravity(proj, delta)
+  debug_vel["2_gravity"] = proj.velocity
   _apply_lift_force(proj, medium_props, delta)
+  debug_vel["3_lift"] = proj.velocity
   _apply_angular_drag(proj, medium_props, delta)
+  debug_vel["4_ang_drag"] = proj.velocity
   
   if proj["ammo"].stab_type == AmmoData.StabilizationType.SPIN:
     _apply_gyroscopic_precession(proj, delta)
+    debug_vel["5_gyro"] = proj.velocity
     _apply_magnus_effect(proj, medium_props, delta)
+    debug_vel["6_magnus"] = proj.velocity
   
   _apply_wind(proj, delta)
+  debug_vel["7_wind"] = proj.velocity
   _apply_turbulence(proj, medium_props, delta)
+  debug_vel["8_turb"] = proj.velocity
+  print("%s flight time %s" % [proj["flight_time"], debug_vel])
 
 func _update_hydrodynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   """Гидродинамика в жидких средах"""
@@ -160,22 +170,34 @@ func _update_hydrodynamics(proj: Dictionary, medium_props: Dictionary, delta: fl
 
 #=== Реализация физических эффектов ===#
 func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
-  var density = medium_props["base_density"]  # кг/м³
+  var density = medium_props["base_density"]  # 1.225 кг/м³
   var speed = proj["velocity"].length()
   if speed < MIN_VELOCITY: return
   
-  # Получаем баллистический коэффициент из данных пули (по умолчанию 0.15 для G7)
-  var ballistic_coef = proj["ammo"].get("ballistic_coefficient_g7")
+  # Все величины в СИ:
+  var cd = _calculate_dynamic_drag_coef(proj)  # 0.28-0.45
+  var area = proj["effective_cross_section"]  # 2.55e-5 м²
+  var mass_kg = proj["mass"] * 0.001  # 0.0041 кг
   
-  # Динамический коэффициент сопротивления с учётом числа Маха
-  var drag_coef = _calculate_dynamic_drag_coef(proj)
+  # Формула сопротивления (F = 0.5 * ρ * v² * Cd * A)
+  var drag_force = 0.5 * density * speed * speed * cd * area
   
-  # Формула сопротивления с разделением BC и Cᴅ
-  var drag_force = (0.5 * density * speed * speed * drag_coef * proj["effective_cross_section"]) / ballistic_coef
+  # Ускорение (a = F/m)
+  var acceleration = drag_force / mass_kg
   
-  # Применяем силу (массу переводим граммы → кг)
-  var mass_kg = proj["mass"] * 0.001
-  proj["velocity"] -= drag_force * delta / mass_kg * proj["velocity"].normalized()
+  # Изменение скорости (Δv = a * Δt)
+  var delta_v = acceleration * delta
+  
+  # Ограничение максимального замедления (не более 10% за кадр)
+  delta_v = min(delta_v, speed * 0.1)
+  
+  # Применяем замедление
+  proj["velocity"] -= delta_v * proj["velocity"].normalized()
+  
+  # Отладочный вывод
+  print("Drag force: %.2f N, Accel: %.2f m/s², Delta v: %.2f m/s" % [
+    drag_force, acceleration, delta_v
+  ])
 
 func _calculate_dynamic_drag_coef(proj: Dictionary) -> float:
   # Базовый коэффициент из данных пули (для 5.56x45 M855 = 0.28)
@@ -192,13 +214,17 @@ func _calculate_dynamic_drag_coef(proj: Dictionary) -> float:
   return base_coef
 
 func _calculate_effective_cross_section(proj: Dictionary) -> float:
-  var base_area = PI * pow(proj["caliber"] * 0.0005, 2)  # мм → м
+  var base_area = PI * pow(proj["caliber"] * 0.0005, 2)
   var forward = Basis(proj["rotation"]).z.normalized()
-  var velocity_dir = proj["velocity"].normalized() if proj["velocity"].length_squared() > MIN_VELOCITY else forward
+  var velocity_dir = proj["velocity"].normalized()
   
-  # Угол атаки и коррекция площади
+  # Угол атаки (0° - идеальное движение)
   var angle_of_attack = forward.angle_to(velocity_dir)
-  return base_area * (1.0 + 0.3 * abs(sin(angle_of_attack)))
+  # Коррекция для кувыркающихся пуль
+  if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
+    return base_area * 1.5  # Максимальное сечение
+  
+  return base_area * (1.0 + 0.2 * sin(angle_of_attack))
 
 func _apply_lift_force(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   var density = Physics.get_density(
