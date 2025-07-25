@@ -1,0 +1,37 @@
+services:
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:latest
+    container_name: victoriametrics
+    restart: unless-stopped
+    volumes:
+      - victoria_data:/var/lib/victoria-metrics-data
+    ports:
+      - "8428:8428"  # Порт по умолчанию для VictoriaMetrics
+    command:
+      - --retentionPeriod=30d  # Хранение данных 30 дней
+      - --http.disableResponseCompression=false  # Для лучшей совместимости с Grafana
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana
+    restart: unless-stopped
+    depends_on:
+      - victoriametrics
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana-provisioning:/etc/grafana/provisioning  # Биндим локальную папку
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_AUTH_DISABLE_LOGIN_FORM=true  # Отключаем авторизацию
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_INSTALL_PLUGINS=victoriametrics-metrics-datasource  # Устанавливаем плагин
+
+volumes:
+  victoria_data:
+    driver: local
+    name: victoria_metrics_data
+  grafana_data:
+    driver: local
+    name: grafana_persistent_data
