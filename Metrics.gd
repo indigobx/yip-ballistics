@@ -1,9 +1,25 @@
 extends Node
 
 # Настройки
-var victoria_metrics_url = "http://192.168.1.3:28428/api/v1/import/prometheus"
+var victoria_metrics_url = "http://192.168.1.3:8428/api/v1/import/prometheus"
+var metric_storage = []
+const DUMP_DIR = "res://data_dump"
 
-func send_metrics(metrics: Dictionary):
+func record_metrics(metrics) -> int:
+  metric_storage.append(metrics)
+  var dump_btn = get_tree().root.get_node("Main/UI/Dump")
+  return len(metric_storage)
+
+func dump_metrics_json() -> void:
+  var dt = Time.get_datetime_string_from_system()
+  dt = dt.replace("-", "").replace("T", "-").replace(":", "")
+  var pid = metric_storage[0].naming.projectile_uid
+  var fn = "%s/%s_%s.json" % [DUMP_DIR, dt, pid]
+  print(fn)
+  Globals.save_json(metric_storage, fn)
+  metric_storage.clear()
+
+func send_metrics_prometheus(metrics: Dictionary):
   if not metrics.has("naming"):
     push_error("Missing 'naming' in metrics!")
     return

@@ -57,7 +57,39 @@ func _print_text() -> void:
     "projectile": projectile,
     "medium": Physics.get_medium_properties(GameState.env_conditions["medium"])
   }
+  $UI/Dump.text = "Dump\n%.0f frames" % len(Metrics.metric_storage)
   %Output.add_text(JSON.stringify(metrics, "  "))
+
+func get_type_schema(original: Dictionary) -> Dictionary:
+    var result = {}
+    for key in original:
+        result[key] = _get_type_info(original[key])
+    return result
+
+func _get_type_info(value) -> Variant:
+    if value == null:
+        return "null"
+    
+    var type = typeof(value)
+    
+    if type == TYPE_DICTIONARY:
+        # Рекурсия для словарей
+        var dict_result = {}
+        for k in value:
+            dict_result[k] = _get_type_info(value[k])
+        return dict_result
+    
+    if type == TYPE_ARRAY:
+        # Рекурсия для массивов (берём тип первого элемента)
+        if value.is_empty():
+            return "Array[]"
+        return "Array[%s]" % _get_type_info(value[0])
+    
+    if type == TYPE_OBJECT and value is Object:
+        return value.get_class()  # Для любых объектов
+    
+    # Базовые типы
+    return str(type)
 
 func _draw_axes() -> void:
   var vel = projectile.velocity * -1
@@ -99,9 +131,12 @@ func _do_ballistics() -> void:
   projectile = new_proj
   c += 1
   t += dt
+  Metrics.record_metrics(
+    Globals.prettify_dict(metrics)
+  )
+  #Metrics.send_metrics_prometheus(metrics)
   _print_text()
   _draw_axes()
-  Metrics.send_metrics(metrics)
 
 func _on_step_button_up() -> void:
   _do_ballistics()
@@ -121,3 +156,9 @@ func _on_copy_button_up() -> void:
   #var text = "%s" % %Output.get_parsed_text()
   #text = text.split("\n\n")[-1]  # copy metrics JSON only
   DisplayServer.clipboard_set(JSON.stringify(metrics, "  "))
+
+
+func _on_dump_button_up() -> void:
+  _print_text()
+  _draw_axes()
+  Metrics.dump_metrics_json()

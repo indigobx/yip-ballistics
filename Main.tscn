@@ -44,6 +44,16 @@ offset_right = 136.0
 offset_bottom = 770.0
 text = "Copy"
 
+[node name="Dump" type="Button" parent="UI"]
+layout_mode = 2
+offset_left = 146.0
+offset_top = 650.0
+offset_right = 266.0
+offset_bottom = 770.0
+text = "Dump
+0 frames
+"
+
 [node name="Toggle" type="Button" parent="UI"]
 layout_mode = 2
 offset_left = 730.0
@@ -321,10 +331,10 @@ selection_enabled = true
 
 [node name="Graph" parent="UI" instance=ExtResource("6_3dxm6")]
 layout_mode = 1
-offset_left = 254.0
-offset_top = 678.0
-offset_right = 354.0
-offset_bottom = 718.0
+offset_left = 306.0
+offset_top = 682.0
+offset_right = 406.0
+offset_bottom = 722.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
@@ -335,5 +345,6 @@ timeout = 1.0
 
 [connection signal="button_up" from="UI/Step" to="." method="_on_step_button_up"]
 [connection signal="button_up" from="UI/Copy" to="." method="_on_copy_button_up"]
+[connection signal="button_up" from="UI/Dump" to="." method="_on_dump_button_up"]
 [connection signal="toggled" from="UI/Toggle" to="." method="_on_toggle_toggled"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
