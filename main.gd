@@ -7,6 +7,7 @@ var muzzle_pos := Vector3.ZERO
 var muzzle_rot := Basis.IDENTITY
 var projectile: Dictionary = {}
 var dt: float = (1.0/60.0)
+var timeout: float = 0.025
 #var dt: float = 0.1
 var t: float = 0.0
 var ax_scale = 0.5
@@ -17,12 +18,12 @@ var metrics: Dictionary = {}
 func _ready() -> void:
   muzzle_pos = Vector3(0, 0, 0)
   var yaw = deg_to_rad(0.0)
-  var pitch = deg_to_rad(0.0)
+  var pitch = -deg_to_rad(45.0)  # (0.1° up really) is good
   muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
-  #weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
-  #ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
-  weapon = WeaponRegistry.get_weapon_by_name("SCAR_L_CQC")
-  ammo = AmmoRegistry.get_ammo_by_name("5.56x45_M855")
+  weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
+  ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
+  #weapon = WeaponRegistry.get_weapon_by_name("SCAR_L_CQC")
+  #ammo = AmmoRegistry.get_ammo_by_name("5.56x45_M855")
   projectile = Ballistics.create_projectile(
     weapon, ammo, muzzle_pos, muzzle_rot
   )
@@ -111,18 +112,22 @@ func _draw_axes() -> void:
   %AngX.value = "%.1f rad/s" % abs(angvel.x)
   %AngX.update()
   %BulletRear.rotation = rot.z
-  %Bullet.rotation = rot.x
+  %Bullet.rotation = -rot.x
   
   %GraphVelX.add_value(abs(vel.x))
   %GraphVelY.add_value(abs(vel.y))
   %GraphVelZ.add_value(abs(vel.z))
-  %GraphRotX.add_value(rot.x)
-  %GraphRotY.add_value(rot.y)
-  %GraphRotZ.add_value(rot.z)
+  %GraphRotX.add_value(rad_to_deg(rot.x))
+  %GraphRotY.add_value(rad_to_deg(rot.y))
+  %GraphRotZ.add_value(rad_to_deg(rot.z))
   var kinetic_energy = (projectile.mass * vel.length_squared())/2
   %GraphKE.add_value(kinetic_energy)
   var dist = projectile.position.length()
   %GraphDist.add_value(dist)
+  
+  %BarZ.value = Globals.normalize(abs(projectile.position.z), 0.0, 2000.0)
+  %BarY.value = Globals.normalize(projectile.position.y, 5.0, -45.0)
+  %BarX.value = Globals.normalize(projectile.position.x, 5.0, -5.0)
 
 func _do_ballistics() -> void:
   var t0 = Time.get_ticks_usec()
@@ -143,7 +148,7 @@ func _on_step_button_up() -> void:
 
 func _on_toggle_toggled(toggled_on: bool) -> void:
   if toggled_on and $Timer.is_stopped():
-    $Timer.start()
+    $Timer.start(timeout)
   if not toggled_on and not $Timer.is_stopped():
     $Timer.stop()
 

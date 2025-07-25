@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://3k8hqvejqa82"
+
+[deps]
+
+files=["res://samlpe_9x19_plus_p.elev.translation", "res://samlpe_9x19_plus_p.windage.translation", "res://samlpe_9x19_plus_p.projectile.flight.translation", "res://samlpe_9x19_plus_p.energy.translation", "res://samlpe_9x19_plus_p.vel.translation"]
+
+source_file="res://samlpe_9x19_plus_p.csv"
+dest_files=["res://samlpe_9x19_plus_p.elev.translation", "res://samlpe_9x19_plus_p.windage.translation", "res://samlpe_9x19_plus_p.projectile.flight.translation", "res://samlpe_9x19_plus_p.energy.translation", "res://samlpe_9x19_plus_p.vel.translation"]
+
+[params]
+
+compress=true
+delimiter=0

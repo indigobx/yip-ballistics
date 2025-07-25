@@ -28,7 +28,7 @@
       "length": 35.0,
       "spread_moa": 1.6,
       "drag_coef": 0.27,
-      "ballistic_coefficient_g7": 0.255,
+      "ballistic_coefficient_g7": 0.155,
       "stab_type": 1,
       "has_thruster": false,
       "thrust_force": 0.0,
@@ -43,7 +43,7 @@
     {
       "name": "5.56x45_M855",
       "speed": 922.0,
-      "mass": 4.1,
+      "mass": 4.0,
       "caliber": 5.7,
       "length": 23.0,
       "spread_moa": 1.2,

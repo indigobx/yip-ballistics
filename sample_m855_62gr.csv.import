@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d80bnkmpead6"
+
+[deps]
+
+files=["res://sample_m855_62gr.elev.translation", "res://sample_m855_62gr.windage.translation", "res://sample_m855_62gr.projectile.flight.translation", "res://sample_m855_62gr.energy.translation", "res://sample_m855_62gr.vel.translation"]
+
+source_file="res://sample_m855_62gr.csv"
+dest_files=["res://sample_m855_62gr.elev.translation", "res://sample_m855_62gr.windage.translation", "res://sample_m855_62gr.projectile.flight.translation", "res://sample_m855_62gr.energy.translation", "res://sample_m855_62gr.vel.translation"]
+
+[params]
+
+compress=true
+delimiter=0

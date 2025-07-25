@@ -1,0 +1,6410 @@
+[
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 32545.48828125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.0,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0,
+      "flight_time": 0.0,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.0,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "y": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "z": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -922.0
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0,
+      "exec_time": 0.0,
+      "frame": 0,
+      "time": 0.0
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.542424738407135,
+        "z": 32545.484375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255175858826194,
+      "flight_time": 0.00166666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.68804664723032,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000027190639229957,
+        "z": -1.5344523191452
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.670882225036621,
+          "y": -0.74156391620636,
+          "z": 0.000012359399079287
+        },
+        "y": {
+          "x": 0.74156391620636,
+          "y": -0.670882225036621,
+          "z": 0.0000278480365523137
+        },
+        "z": {
+          "x": -0.000012359399079287,
+          "y": 0.0000278480365523137,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0163143835961819,
+        "z": -920.67138671875
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04464,
+      "exec_time": 744.0,
+      "frame": 1,
+      "time": 0.00166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 1.08484935760498,
+        "z": 32545.48046875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176674064329,
+      "flight_time": 0.00333333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.68417313912172,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.0000815327948657796,
+        "z": -3.06669664382935
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.099826455116272,
+          "y": 0.995004892349243,
+          "z": -0.000045526227040682
+        },
+        "y": {
+          "x": -0.995004892349243,
+          "y": -0.099826455116272,
+          "z": 0.00000881284540810157
+        },
+        "z": {
+          "x": 0.00000422409902967047,
+          "y": 0.0000461785748484544,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0326052904129028,
+        "z": -919.346557617188
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04872,
+      "exec_time": 812.0,
+      "frame": 2,
+      "time": 0.00333333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 1.62727379798889,
+        "z": 32545.4765625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176455045128,
+      "flight_time": 0.005,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.68031066360696,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000162987504154444,
+        "z": -4.59673929214478
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.804824709892273,
+          "y": -0.59351259469986,
+          "z": 0.0000338996469508857
+        },
+        "y": {
+          "x": 0.59351259469986,
+          "y": 0.804824709892273,
+          "z": -0.0000364197112503462
+        },
+        "z": {
+          "x": -0.00000566770904697478,
+          "y": 0.0000494313499075361,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0488728247582912,
+        "z": -918.025573730469
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03624,
+      "exec_time": 604.0,
+      "frame": 3,
+      "time": 0.005
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 2.1696982383728,
+        "z": 32545.47265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176211690461,
+      "flight_time": 0.00666666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.6764593986311,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000271515978965908,
+        "z": -6.12458658218384
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.980073869228363,
+          "y": -0.198633193969727,
+          "z": 0.00000757435918785632
+        },
+        "y": {
+          "x": 0.198633193969727,
+          "y": -0.980073869228363,
+          "z": 0.0000825735260150395
+        },
+        "z": {
+          "x": -0.00000897842619451694,
+          "y": 0.0000824326707515866,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0651170834898949,
+        "z": -916.708374023438
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02976,
+      "exec_time": 496.0,
+      "frame": 4,
+      "time": 0.00666666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 2.71212244033813,
+        "z": 32545.46875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176601057929,
+      "flight_time": 0.00833333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.67261916624909,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000407079583965242,
+        "z": -7.65024471282959
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.510237872600555,
+          "y": 0.860033214092255,
+          "z": -0.0000806478346930817
+        },
+        "y": {
+          "x": -0.860033214092255,
+          "y": 0.510237872600555,
+          "z": -0.0000416191105614416
+        },
+        "z": {
+          "x": 0.00000535575964022428,
+          "y": 0.000090595509391278,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0813381671905518,
+        "z": -915.394958496094
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03258,
+      "exec_time": 543.0,
+      "frame": 5,
+      "time": 0.00833333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 3.25454664230347,
+        "z": 32545.46484375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176150851795,
+      "flight_time": 0.01,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.66878996646091,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000569639902096242,
+        "z": -9.17372035980225
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.295430868864059,
+          "y": -0.955363988876343,
+          "z": 0.000100891891634092
+        },
+        "y": {
+          "x": 0.955363988876343,
+          "y": 0.295430868864059,
+          "z": -0.0000201384173124097
+        },
+        "z": {
+          "x": -0.0000105670478660613,
+          "y": 0.000102337988209911,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.0975361764431,
+        "z": -914.085266113281
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04266,
+      "exec_time": 711.0,
+      "frame": 6,
+      "time": 0.01
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 3.79697036743164,
+        "z": 32545.4609375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176442877395,
+      "flight_time": 0.0116666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.66497162132152,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000759158574510366,
+        "z": -10.6950197219849
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.906646728515625,
+          "y": 0.421890527009964,
+          "z": -0.0000597878097323701
+        },
+        "y": {
+          "x": -0.421890497207642,
+          "y": -0.906646728515625,
+          "z": 0.000120103963126894
+        },
+        "z": {
+          "x": -0.00000353571522282436,
+          "y": 0.000134115805849433,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.113711208105087,
+        "z": -912.779357910156
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.039,
+      "exec_time": 650.0,
+      "frame": 7,
+      "time": 0.0116666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 4.33939409255981,
+        "z": 32545.45703125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176382038728,
+      "flight_time": 0.0133333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.66116430877597,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.000975597533397377,
+        "z": -12.2141485214233
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.921129822731018,
+          "y": 0.389255493879318,
+          "z": -0.0000554364669369534
+        },
+        "y": {
+          "x": -0.389255523681641,
+          "y": 0.921129822731018,
+          "z": -0.000123599573271349
+        },
+        "z": {
+          "x": 0.00000295239442493767,
+          "y": 0.00013543022214435,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.129863366484642,
+        "z": -911.477172851563
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03924,
+      "exec_time": 654.0,
+      "frame": 8,
+      "time": 0.0133333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 4.88181781768799,
+        "z": 32545.453125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176248193661,
+      "flight_time": 0.015,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.65736785087919,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.00121891882736236,
+        "z": -13.7311134338379
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.329362213611603,
+          "y": -0.944203615188599,
+          "z": 0.000144582401844673
+        },
+        "y": {
+          "x": 0.944203674793243,
+          "y": -0.329362243413925,
+          "z": 0.0000639742065686733
+        },
+        "z": {
+          "x": -0.0000127847233670764,
+          "y": 0.000157585891429335,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.145992755889893,
+        "z": -910.1787109375
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02676,
+      "exec_time": 446.0,
+      "frame": 9,
+      "time": 0.015
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 5.42424154281616,
+        "z": 32545.44921875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176528051529,
+      "flight_time": 0.0166666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.6535822476312,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.00148908467963338,
+        "z": -15.2459201812744
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.479173868894577,
+          "y": 0.877720057964325,
+          "z": -0.000159071540110745
+        },
+        "y": {
+          "x": -0.877720057964325,
+          "y": -0.479173868894577,
+          "z": 0.0000889428047230467
+        },
+        "z": {
+          "x": 0.00000184396049007773,
+          "y": 0.000182239396963269,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.162099465727806,
+        "z": -908.883911132813
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03036,
+      "exec_time": 506.0,
+      "frame": 10,
+      "time": 0.0166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 5.96666526794434,
+        "z": 32545.4453125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176077845395,
+      "flight_time": 0.0183333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.64980732108692,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": -0.00178605737164617,
+        "z": -16.7585754394531
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.97234046459198,
+          "y": -0.233568027615547,
+          "z": 0.0000446646445197985
+        },
+        "y": {
+          "x": 0.233568087220192,
+          "y": 0.97234034538269,
+          "z": -0.000177168200025335
+        },
+        "z": {
+          "x": -0.00000204835669137537,
+          "y": 0.000182699965080246,
+          "z": 0.99999988079071
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0,
+        "y": -0.17818358540535,
+        "z": -907.5927734375
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02166,
+      "exec_time": 361.0,
+      "frame": 11,
+      "time": 0.0183333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 6.50908899307251,
+        "z": 32545.44140625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176564554728,
+      "flight_time": 0.02,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.64604307124636,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000000244181286301881,
+        "y": -0.00210979953408241,
+        "z": -18.2690849304199
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.825570225715637,
+          "y": -0.564299285411835,
+          "z": 0.000110810928163119
+        },
+        "y": {
+          "x": 0.5642991065979,
+          "y": -0.825570166110992,
+          "z": 0.00018241377256345
+        },
+        "z": {
+          "x": -0.0000114538561319932,
+          "y": 0.000213125953450799,
+          "z": 0.999999761581421
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000146508767784326,
+        "y": -0.194245219230652,
+        "z": -906.305297851563
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01656,
+      "exec_time": 276.0,
+      "frame": 12,
+      "time": 0.02
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000271027670351032,
+        "y": 7.05151176452637,
+        "z": 32545.4375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176455045128,
+      "flight_time": 0.0216666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.64228967605457,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000000048801668262044,
+        "y": -0.00246027368120849,
+        "z": -19.7774543762207
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.135472014546394,
+          "y": 0.990781009197235,
+          "z": -0.000226123229367659
+        },
+        "y": {
+          "x": -0.99078094959259,
+          "y": 0.135472118854523,
+          "z": -0.0000258119107456878
+        },
+        "z": {
+          "x": 0.00000505952630192041,
+          "y": 0.00022753540542908,
+          "z": 0.999999642372131
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000146301232462065,
+        "y": -0.21028445661068,
+        "z": -905.021484375
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05568,
+      "exec_time": 928.0,
+      "frame": 13,
+      "time": 0.0216666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000397039229937945,
+        "y": 7.59393453598022,
+        "z": 32545.43359375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176223858195,
+      "flight_time": 0.0233333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.63854660167639,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000000731507188156399,
+        "y": -0.00283744279295206,
+        "z": -21.2836894989014
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.64378035068512,
+          "y": -0.765210032463074,
+          "z": 0.000183607960934751
+        },
+        "y": {
+          "x": 0.765210151672363,
+          "y": 0.64378023147583,
+          "z": -0.000144417339470237
+        },
+        "z": {
+          "x": -0.00000769361213315278,
+          "y": 0.000233471626415849,
+          "z": 0.999999582767487
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000146094293995702,
+        "y": -0.226301401853561,
+        "z": -903.741333007813
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03294,
+      "exec_time": 549.0,
+      "frame": 14,
+      "time": 0.0233333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000458241902379086,
+        "y": 8.13635730743408,
+        "z": 32545.4296875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176807909395,
+      "flight_time": 0.025,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.63481438194698,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000000974653691088179,
+        "y": -0.00324126961641014,
+        "z": -22.7877979278564
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.999349653720856,
+          "y": 0.0360530205070972,
+          "z": -0.0000167075777426362
+        },
+        "y": {
+          "x": -0.0360531844198704,
+          "y": -0.999349653720856,
+          "z": 0.000266365241259336
+        },
+        "z": {
+          "x": -0.00000709347659721971,
+          "y": 0.000266794522758573,
+          "z": 0.999999701976776
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000145887938174383,
+        "y": -0.242296129465103,
+        "z": -902.464782714844
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02526,
+      "exec_time": 421.0,
+      "frame": 15,
+      "time": 0.025
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000489160629513208,
+        "y": 8.67877960205078,
+        "z": 32545.42578125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176236025928,
+      "flight_time": 0.0266666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.63109283892128,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000000121745724612765,
+        "y": -0.00367171759717166,
+        "z": -24.2897834777832
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.697252631187439,
+          "y": 0.716825246810913,
+          "z": -0.000198247056687251
+        },
+        "y": {
+          "x": -0.716825187206268,
+          "y": 0.697252750396729,
+          "z": -0.000186061923159286
+        },
+        "z": {
+          "x": 0.00000485453347209841,
+          "y": 0.000271840632194653,
+          "z": 0.999999821186066
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000145682164998107,
+        "y": -0.258268743753433,
+        "z": -901.191833496094
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03312,
+      "exec_time": 552.0,
+      "frame": 16,
+      "time": 0.0266666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000505347452417482,
+        "y": 9.22120189666748,
+        "z": 32545.421875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176649728862,
+      "flight_time": 0.0283333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.62738161670918,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000000145991885247554,
+        "y": -0.00412874994799495,
+        "z": -25.7896537780762
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.0636946111917496,
+          "y": -0.997969269752502,
+          "z": 0.000287611415842548
+        },
+        "y": {
+          "x": 0.997969388961792,
+          "y": 0.0636944472789764,
+          "z": -0.00000655403709970415
+        },
+        "z": {
+          "x": -0.0000117786257760599,
+          "y": 0.000287444825517014,
+          "z": 0.999999940395355
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000145476974466874,
+        "y": -0.274219363927841,
+        "z": -899.922485351563
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0153,
+      "exec_time": 255.0,
+      "frame": 17,
+      "time": 0.0283333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000514101429871516,
+        "y": 9.76362419128418,
+        "z": 32545.41796875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176929586729,
+      "flight_time": 0.03,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.62368089325574,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000000121779875073003,
+        "y": -0.00461232988163829,
+        "z": -27.2874145507813
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.782720804214478,
+          "y": 0.62237274646759,
+          "z": -0.000198491325136274
+        },
+        "y": {
+          "x": -0.622373044490814,
+          "y": -0.782720744609833,
+          "z": 0.000247370742727071
+        },
+        "z": {
+          "x": -0.0000014064135029912,
+          "y": 0.000317158061079681,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000145272039731026,
+        "y": -0.290148049592972,
+        "z": -898.656677246094
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01632,
+      "exec_time": 272.0,
+      "frame": 18,
+      "time": 0.03
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.000000917492798180319,
+        "y": 10.3060464859009,
+        "z": 32545.4140625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176163019528,
+      "flight_time": 0.0316666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.61999031267083,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000000492458240852756,
+        "y": -0.00512242130935192,
+        "z": -28.7830715179443
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.986661374568939,
+          "y": 0.162785723805428,
+          "z": -0.0000529553217347711
+        },
+        "y": {
+          "x": -0.162785559892654,
+          "y": 0.986661434173584,
+          "z": -0.000312933843815699
+        },
+        "z": {
+          "x": 0.00000130782427731901,
+          "y": 0.000317379948683083,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000435204299265024,
+        "y": -0.306054919958115,
+        "z": -897.394470214844
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.07476,
+      "exec_time": 1246.0,
+      "frame": 19,
+      "time": 0.0316666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000561848355573602,
+        "y": 10.8484687805176,
+        "z": 32545.41015625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177075599529,
+      "flight_time": 0.0333333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.61631040878963,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000000231864916155899,
+        "y": -0.00565898790955544,
+        "z": -30.2766304016113
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.541316986083984,
+          "y": -0.840818405151367,
+          "z": 0.000281579094007611
+        },
+        "y": {
+          "x": 0.840818464756012,
+          "y": -0.541317164897919,
+          "z": 0.000196392444195226
+        },
+        "z": {
+          "x": -0.000012706994311884,
+          "y": 0.000343067746143788,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000434593886211587,
+        "y": -0.321940034627914,
+        "z": -896.135803222656
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02286,
+      "exec_time": 381.0,
+      "frame": 20,
+      "time": 0.0333333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000945563624554779,
+        "y": 11.3908910751343,
+        "z": 32545.40625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176917418996,
+      "flight_time": 0.035,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.61264100366709,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000000955173495853501,
+        "y": -0.00622199382632971,
+        "z": -31.7680988311768
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.260239094495773,
+          "y": 0.965544044971466,
+          "z": -0.000350647664163262
+        },
+        "y": {
+          "x": -0.9655442237854,
+          "y": -0.260238945484161,
+          "z": 0.0000980145414359868
+        },
+        "z": {
+          "x": 0.00000338544487021863,
+          "y": 0.000364073144737631,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000433985178460716,
+        "y": -0.337803512811661,
+        "z": -894.880676269531
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05916,
+      "exec_time": 986.0,
+      "frame": 21,
+      "time": 0.035
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000117612835310865,
+        "y": 11.933313369751,
+        "z": 32545.40234375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176564554728,
+      "flight_time": 0.0366666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.60898174141308,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000167747049584221,
+        "y": -0.00681140273809433,
+        "z": -33.2574806213379
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.890541732311249,
+          "y": -0.454901397228241,
+          "z": 0.000170182669535279
+        },
+        "y": {
+          "x": 0.454901546239853,
+          "y": 0.890541613101959,
+          "z": -0.000323937798384577
+        },
+        "z": {
+          "x": -0.00000419525895267725,
+          "y": 0.000365896325092763,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000433378176012411,
+        "y": -0.353645414113998,
+        "z": -893.629028320313
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05172,
+      "exec_time": 862.0,
+      "frame": 22,
+      "time": 0.0366666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000131768283608835,
+        "y": 12.4757356643677,
+        "z": 32545.3984375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177404128329,
+      "flight_time": 0.0383333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.60533262202761,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000239875852514615,
+        "y": -0.00742717925459147,
+        "z": -34.7447814941406
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.934837222099304,
+          "y": -0.355076283216476,
+          "z": 0.000131915701786056
+        },
+        "y": {
+          "x": 0.355076253414154,
+          "y": -0.934837222099304,
+          "z": 0.000375790637917817
+        },
+        "z": {
+          "x": -0.0000101147452369332,
+          "y": 0.000398143718484789,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000432772878866672,
+        "y": -0.369465857744217,
+        "z": -892.380859375
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01506,
+      "exec_time": 251.0,
+      "frame": 23,
+      "time": 0.0383333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000140634601848433,
+        "y": 13.0181570053101,
+        "z": 32545.39453125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176820077129,
+      "flight_time": 0.04,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.60169364551066,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000311904058136747,
+        "y": -0.00806928798556328,
+        "z": -36.2300071716309
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.363988935947418,
+          "y": 0.931403040885925,
+          "z": -0.000382675440050662
+        },
+        "y": {
+          "x": -0.93140321969986,
+          "y": 0.363988935947418,
+          "z": -0.000143740384373814
+        },
+        "z": {
+          "x": 0.00000540976179763675,
+          "y": 0.000408745021559298,
+          "z": 1.00000023841858
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000432169258601789,
+        "y": -0.385264933109283,
+        "z": -891.13623046875
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01488,
+      "exec_time": 248.0,
+      "frame": 24,
+      "time": 0.04
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000146292532008374,
+        "y": 13.5605783462524,
+        "z": 32545.390625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177099934996,
+      "flight_time": 0.0416666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.59806498980731,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000383831944006374,
+        "y": -0.00873769260942936,
+        "z": -37.7131652832031
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.446364670991898,
+          "y": -0.894850850105286,
+          "z": 0.000378263648599386
+        },
+        "y": {
+          "x": 0.89485102891922,
+          "y": 0.44636470079422,
+          "z": -0.000178062793565914
+        },
+        "z": {
+          "x": -0.0000095043214969337,
+          "y": 0.000417970732087269,
+          "z": 1.00000023841858
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000431567315217762,
+        "y": -0.401042729616165,
+        "z": -889.89501953125
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04446,
+      "exec_time": 741.0,
+      "frame": 25,
+      "time": 0.0416666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000149966472235974,
+        "y": 14.1029996871948,
+        "z": 32545.38671875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177598812063,
+      "flight_time": 0.0433333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.59444647697249,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000503545027896735,
+        "y": -0.00943235773593187,
+        "z": -39.1942596435547
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.963004052639008,
+          "y": 0.269485920667648,
+          "z": -0.000126283150166273
+        },
+        "y": {
+          "x": -0.269485920667648,
+          "y": -0.963004112243652,
+          "z": 0.000432663277024403
+        },
+        "z": {
+          "x": -0.00000501435715705156,
+          "y": 0.00045068867621012,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000718278329259192,
+        "y": -0.416799306869507,
+        "z": -888.657287597656
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0186,
+      "exec_time": 310.0,
+      "frame": 26,
+      "time": 0.0433333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000184824002644746,
+        "y": 14.6454210281372,
+        "z": 32545.3828125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255176832244862,
+      "flight_time": 0.045,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.59083775111607,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000623091800378006,
+        "y": -0.0101532489061356,
+        "z": -40.6732978820801
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.845990836620331,
+          "y": 0.533196866512299,
+          "z": -0.000244952068896964
+        },
+        "y": {
+          "x": -0.533197045326233,
+          "y": 0.845990836620331,
+          "z": -0.000381384452339262
+        },
+        "z": {
+          "x": 0.00000387424370273948,
+          "y": 0.000453255634056404,
+          "z": 1.00000047683716
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000717280670414766,
+        "y": -0.432534784078598,
+        "z": -887.422973632813
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01866,
+      "exec_time": 311.0,
+      "frame": 27,
+      "time": 0.045
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000208184428629465,
+        "y": 15.1878423690796,
+        "z": 32545.37890625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517762314753,
+      "flight_time": 0.0466666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.58723934607325,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000074247274994832,
+        "y": -0.0109003307297826,
+        "z": -42.1502838134766
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.172325938940048,
+          "y": -0.985039591789246,
+          "z": 0.000463557575130835
+        },
+        "y": {
+          "x": 0.985039889812469,
+          "y": -0.172325849533081,
+          "z": 0.0000938309531193227
+        },
+        "z": {
+          "x": -0.0000125444785226136,
+          "y": 0.000472792802611366,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000716285796897864,
+        "y": -0.448249250650406,
+        "z": -886.192138671875
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02556,
+      "exec_time": 426.0,
+      "frame": 28,
+      "time": 0.0466666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000224066079681506,
+        "y": 15.730263710022,
+        "z": 32545.375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177671818463,
+      "flight_time": 0.0483333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.5836509059539,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000861688320696885,
+        "y": -0.0116735687479377,
+        "z": -43.6252250671387
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.614721119403839,
+          "y": 0.78874409198761,
+          "z": -0.000393771508242935
+        },
+        "y": {
+          "x": -0.788744270801544,
+          "y": -0.614721238613129,
+          "z": 0.000307654147036374
+        },
+        "z": {
+          "x": 0.000000601023202762008,
+          "y": 0.000499706948176026,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000715293651865068,
+        "y": -0.463942766189575,
+        "z": -884.964660644531
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02616,
+      "exec_time": 436.0,
+      "frame": 29,
+      "time": 0.0483333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000235010083997622,
+        "y": 16.27268409729,
+        "z": 32545.37109375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177112102729,
+      "flight_time": 0.05,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.58007225281296,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.00000000980739045530754,
+        "y": -0.012472927570343,
+        "z": -45.0981254577637
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.997296273708344,
+          "y": -0.0734820365905762,
+          "z": 0.0000373426883015782
+        },
+        "y": {
+          "x": 0.0734819546341896,
+          "y": 0.997296333312988,
+          "z": -0.000498353969305754
+        },
+        "z": {
+          "x": -0.000000621861545369029,
+          "y": 0.000499750720337033,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000714304292159795,
+        "y": -0.479615449905396,
+        "z": -883.740600585938
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0204,
+      "exec_time": 340.0,
+      "frame": 30,
+      "time": 0.05
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000242648129642475,
+        "y": 16.8151054382324,
+        "z": 32545.3671875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517806118593,
+      "flight_time": 0.0516666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.57650356459548,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000109962527972129,
+        "y": -0.0132983736693859,
+        "z": -46.5689926147461
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.723688960075378,
+          "y": -0.690125823020935,
+          "z": 0.000355940661393106
+        },
+        "y": {
+          "x": 0.690126061439514,
+          "y": -0.723688960075378,
+          "z": 0.00039082212606445
+        },
+        "z": {
+          "x": -0.0000121261982712895,
+          "y": 0.000528478412888944,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000713317660938628,
+        "y": -0.495267361402512,
+        "z": -882.519958496094
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02574,
+      "exec_time": 429.0,
+      "frame": 31,
+      "time": 0.0516666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000248043324972969,
+        "y": 17.3575267791748,
+        "z": 32545.36328125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177647482996,
+      "flight_time": 0.0533333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.57294501924654,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000012658365022844,
+        "y": -0.0141498716548085,
+        "z": -48.0378303527832
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.0260679647326469,
+          "y": 0.999659717082977,
+          "z": -0.000545278075151145
+        },
+        "y": {
+          "x": -0.999660134315491,
+          "y": -0.0260680112987757,
+          "z": 0.0000187560217455029
+        },
+        "z": {
+          "x": 0.00000453571556136012,
+          "y": 0.000545581919141114,
+          "z": 1.00000035762787
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000997267079583253,
+        "y": -0.510898590087891,
+        "z": -881.302673339844
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02904,
+      "exec_time": 484.0,
+      "frame": 32,
+      "time": 0.0533333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000278914303635247,
+        "y": 17.8999481201172,
+        "z": 32545.359375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517762314753,
+      "flight_time": 0.055,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.56939590498588,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000143181875245091,
+        "y": -0.0150273870676756,
+        "z": -49.5046463012695
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.7586709856987,
+          "y": -0.65147340297699,
+          "z": 0.000362845894414932
+        },
+        "y": {
+          "x": 0.651473641395569,
+          "y": 0.75867110490799,
+          "z": -0.000412849098211154
+        },
+        "z": {
+          "x": -0.00000632088631391525,
+          "y": 0.000549601390957832,
+          "z": 1.00000023841858
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000995893401523062,
+        "y": -0.5265092253685,
+        "z": -880.088745117188
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02298,
+      "exec_time": 383.0,
+      "frame": 33,
+      "time": 0.055
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000301207746815635,
+        "y": 18.4423694610596,
+        "z": 32545.35546875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178365379263,
+      "flight_time": 0.0566666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.56585675564869,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000159757274076355,
+        "y": -0.0159308854490519,
+        "z": -50.9694442749023
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.992114007472992,
+          "y": -0.125336602330208,
+          "z": 0.0000647000852040946
+        },
+        "y": {
+          "x": 0.125336706638336,
+          "y": -0.992114126682281,
+          "z": 0.000579262035898864
+        },
+        "z": {
+          "x": -0.00000841275323182344,
+          "y": 0.000582804088480771,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000994523475128517,
+        "y": -0.542099356651306,
+        "z": -878.878112792969
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02172,
+      "exec_time": 362.0,
+      "frame": 34,
+      "time": 0.0566666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000317471822199877,
+        "y": 18.984790802002,
+        "z": 32545.3515625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255177647482996,
+      "flight_time": 0.0583333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.56232739328991,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000173945231551897,
+        "y": -0.0168603342026472,
+        "z": -52.4322280883789
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.572818517684937,
+          "y": 0.819681704044342,
+          "z": -0.000486559118144214
+        },
+        "y": {
+          "x": -0.8196821808815,
+          "y": 0.572818517684937,
+          "z": -0.000333616218995303
+        },
+        "z": {
+          "x": 0.00000525126233696938,
+          "y": 0.000589925330132246,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000851277775382187,
+        "y": -0.557669103145599,
+        "z": -877.670837402344
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01986,
+      "exec_time": 331.0,
+      "frame": 35,
+      "time": 0.0583333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000317046069540083,
+        "y": 19.5272121429443,
+        "z": 32545.34765625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178195030997,
+      "flight_time": 0.0599999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.55880763996447,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000185752320192023,
+        "y": -0.0178156979382038,
+        "z": -53.8930053710938
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.223340794444084,
+          "y": -0.974739909172058,
+          "z": 0.000590093550272286
+        },
+        "y": {
+          "x": 0.974740386009216,
+          "y": 0.223340958356857,
+          "z": -0.000123927951790392
+        },
+        "z": {
+          "x": -0.0000109950196929276,
+          "y": 0.000602866639383137,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000708425204720697,
+        "y": -0.573218524456024,
+        "z": -876.466857910156
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01854,
+      "exec_time": 309.0,
+      "frame": 36,
+      "time": 0.0599999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000304659988614731,
+        "y": 20.0696334838867,
+        "z": 32545.34375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517853572753,
+      "flight_time": 0.0616666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.55529749567238,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000195185059226333,
+        "y": -0.018796943128109,
+        "z": -55.3517837524414
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.872557580471039,
+          "y": 0.48851066827774,
+          "z": -0.000312245392706245
+        },
+        "y": {
+          "x": -0.48851078748703,
+          "y": -0.872557699680328,
+          "z": 0.000551874923985451
+        },
+        "z": {
+          "x": -0.00000285491114482284,
+          "y": 0.000634078518487513,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000565963944154646,
+        "y": -0.588747680187225,
+        "z": -875.266174316406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0189,
+      "exec_time": 315.0,
+      "frame": 37,
+      "time": 0.0616666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000283624394796789,
+        "y": 20.6120529174805,
+        "z": 32545.33984375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517784216673,
+      "flight_time": 0.0633333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.55179713835869,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000020224993235729,
+        "y": -0.0198040381073952,
+        "z": -56.8085632324219
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.947718262672424,
+          "y": 0.319106996059418,
+          "z": -0.000204954849323258
+        },
+        "y": {
+          "x": -0.319107294082642,
+          "y": 0.947718322277069,
+          "z": -0.0006009666249156
+        },
+        "z": {
+          "x": 0.00000246678246185184,
+          "y": 0.0006349494215101,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000423892515755142,
+        "y": -0.604256629943848,
+        "z": -874.068786621094
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04776,
+      "exec_time": 796.0,
+      "frame": 38,
+      "time": 0.0633333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000256280236499151,
+        "y": 21.1544723510742,
+        "z": 32545.3359375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178742578997,
+      "flight_time": 0.0649999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.54830621213329,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000206953423287359,
+        "y": -0.0208369474858046,
+        "z": -58.263355255127
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.399382442235947,
+          "y": -0.91678375005722,
+          "z": 0.000598373124375939
+        },
+        "y": {
+          "x": 0.916784346103668,
+          "y": -0.399382323026657,
+          "z": 0.000274649646598846
+        },
+        "z": {
+          "x": -0.0000128152023535222,
+          "y": 0.000658270204439759,
+          "z": 0.999999940395355
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000282209271063039,
+        "y": -0.619745492935181,
+        "z": -872.874694824219
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02124,
+      "exec_time": 354.0,
+      "frame": 39,
+      "time": 0.0649999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000224298473767703,
+        "y": 21.696891784668,
+        "z": 32545.33203125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178584398463,
+      "flight_time": 0.0666666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.54482489494124,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000211650501569238,
+        "y": -0.0218956377357244,
+        "z": -59.7161636352539
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.411696344614029,
+          "y": 0.911320507526398,
+          "z": -0.000620363047346473
+        },
+        "y": {
+          "x": -0.911320865154266,
+          "y": -0.411696523427963,
+          "z": 0.00028285788721405
+        },
+        "z": {
+          "x": 0.00000237341737374663,
+          "y": 0.000681801931932569,
+          "z": 0.99999988079071
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000281824270587094,
+        "y": -0.635214388370514,
+        "z": -871.683837890625
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01704,
+      "exec_time": 284.0,
+      "frame": 40,
+      "time": 0.0666666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000199735259229783,
+        "y": 22.2393112182617,
+        "z": 32545.328125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178255869663,
+      "flight_time": 0.0683333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.5413528308924,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000213995843267867,
+        "y": -0.0229800771921873,
+        "z": -61.1669921875
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.951926410198212,
+          "y": -0.306325703859329,
+          "z": 0.000211695907637477
+        },
+        "y": {
+          "x": 0.306325644254684,
+          "y": 0.951926469802856,
+          "z": -0.000648950459435582
+        },
+        "z": {
+          "x": -0.00000272906618192792,
+          "y": 0.000682600773870945,
+          "z": 0.99999988079071
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000140720686658824,
+        "y": -0.650663375854492,
+        "z": -870.496215820313
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.07872,
+      "exec_time": 1312.0,
+      "frame": 41,
+      "time": 0.0683333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000170155290106777,
+        "y": 22.7817306518555,
+        "z": 32545.32421875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179180617396,
+      "flight_time": 0.0699999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.53789055382198,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000216338005287753,
+        "y": -0.0240902304649353,
+        "z": -62.6158447265625
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.865916609764099,
+          "y": -0.500187635421753,
+          "z": 0.000347398337908089
+        },
+        "y": {
+          "x": 0.500188052654266,
+          "y": -0.865916550159454,
+          "z": 0.000623539730440825
+        },
+        "z": {
+          "x": -0.0000110691762529314,
+          "y": 0.000713699031621218,
+          "z": 0.99999988079071
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000140529223813246,
+        "y": -0.66609251499176,
+        "z": -869.311828613281
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04422,
+      "exec_time": 737.0,
+      "frame": 42,
+      "time": 0.0699999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00001471134237363,
+        "y": 23.3241500854492,
+        "z": 32545.3203125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517860873393,
+      "flight_time": 0.0716666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.53443752989477,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000218676969865328,
+        "y": -0.025226067751646,
+        "z": -64.0627288818359
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.210256785154343,
+          "y": 0.977645576000214,
+          "z": -0.000711715198121965
+        },
+        "y": {
+          "x": -0.977646172046661,
+          "y": 0.210256636142731,
+          "z": -0.000147718470543623
+        },
+        "z": {
+          "x": 0.00000522728078067303,
+          "y": 0.000726864323951304,
+          "z": 0.999999701976776
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000140338286769293,
+        "y": -0.681501865386963,
+        "z": -868.130676269531
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02586,
+      "exec_time": 431.0,
+      "frame": 43,
+      "time": 0.0716666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.000012904558388982,
+        "y": 23.866569519043,
+        "z": 32545.31640625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255178839920863,
+      "flight_time": 0.0733333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.53099393705585,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000218676987628896,
+        "y": -0.0263875536620617,
+        "z": -65.5076522827148
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.583715558052063,
+          "y": -0.811957478523254,
+          "z": 0.000600660510826856
+        },
+        "y": {
+          "x": 0.811957776546478,
+          "y": 0.583715796470642,
+          "z": -0.000421587901655585
+        },
+        "z": {
+          "x": -0.00000830437056720257,
+          "y": 0.000733798311557621,
+          "z": 0.999999582767487
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.00000000000109423581307055,
+        "y": -0.69689154624939,
+        "z": -866.952758789063
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0162,
+      "exec_time": 270.0,
+      "frame": 44,
+      "time": 0.0733333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.0000104974551504711,
+        "y": 24.4089889526367,
+        "z": 32545.3125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179460475263,
+      "flight_time": 0.0749999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.52755995325027,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000216344400172375,
+        "y": -0.0275746565312147,
+        "z": -66.9506149291992
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.993692576885223,
+          "y": 0.112134732306004,
+          "z": -0.000092409027274698
+        },
+        "y": {
+          "x": -0.112134464085102,
+          "y": -0.993692636489868,
+          "z": 0.00076146813808009
+        },
+        "z": {
+          "x": -0.00000643898965790868,
+          "y": 0.000767028541304171,
+          "z": 0.999999463558197
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000139955758982069,
+        "y": -0.712261617183685,
+        "z": -865.778015136719
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06174,
+      "exec_time": 1029.0,
+      "frame": 45,
+      "time": 0.0749999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000762871150072897,
+        "y": 24.9514064788818,
+        "z": 32545.30859375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517871824353,
+      "flight_time": 0.0766666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.52413504464286,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000214014956867459,
+        "y": -0.0287873428314924,
+        "z": -68.3916244506836
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.749987483024597,
+          "y": 0.661451101303101,
+          "z": -0.000513551232870668
+        },
+        "y": {
+          "x": -0.661451756954193,
+          "y": 0.749987244606018,
+          "z": -0.000575353275053203
+        },
+        "z": {
+          "x": 0.0000045892084017396,
+          "y": 0.000771196850109845,
+          "z": 0.999999403953552
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000139766370921279,
+        "y": -0.727612197399139,
+        "z": -864.6064453125
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03516,
+      "exec_time": 586.0,
+      "frame": 46,
+      "time": 0.0766666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000533795537194237,
+        "y": 25.493824005127,
+        "z": 32545.3046875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179460475263,
+      "flight_time": 0.0783333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.52071938917866,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000211688657714149,
+        "y": -0.0300255827605724,
+        "z": -69.8306884765625
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.0129271447658539,
+          "y": -0.999915659427643,
+          "z": 0.00078785268124193
+        },
+        "y": {
+          "x": 0.999916255474091,
+          "y": -0.0129268253222108,
+          "z": 0.0000222630333155394
+        },
+        "z": {
+          "x": -0.0000120773911476135,
+          "y": 0.000788074859883636,
+          "z": 0.999999403953552
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.00000013957749445126,
+        "y": -0.742943346500397,
+        "z": -863.438049316406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02718,
+      "exec_time": 453.0,
+      "frame": 47,
+      "time": 0.0783333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000349851165992732,
+        "y": 26.0362415313721,
+        "z": 32545.30078125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179606488062,
+      "flight_time": 0.0799999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.51731298685769,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000209365502712444,
+        "y": -0.0312893427908421,
+        "z": -71.2678070068359
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.732634305953979,
+          "y": 0.680621564388275,
+          "z": -0.000556577229872346
+        },
+        "y": {
+          "x": -0.680621743202209,
+          "y": -0.732634484767914,
+          "z": 0.000598029000684619
+        },
+        "z": {
+          "x": -0.000000735744833946228,
+          "y": 0.000816955871414393,
+          "z": 0.999999284744263
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.00000013938912957201,
+        "y": -0.758255124092102,
+        "z": -862.272827148438
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02802,
+      "exec_time": 467.0,
+      "frame": 48,
+      "time": 0.0799999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": -0.00000201354191631253,
+        "y": 26.5786590576172,
+        "z": 32545.296875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517904677233,
+      "flight_time": 0.0816666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.51391583767994,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000020472544548511,
+        "y": -0.0325785875320435,
+        "z": -72.702995300293
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.996261358261108,
+          "y": 0.0863854140043259,
+          "z": -0.0000712844484951347
+        },
+        "y": {
+          "x": -0.0863858237862587,
+          "y": 0.996261239051819,
+          "z": -0.000813902239315212
+        },
+        "z": {
+          "x": 0.000000708678271621466,
+          "y": 0.00081701681483537,
+          "z": 0.999999225139618
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000278403575748598,
+        "y": -0.7735475897789,
+        "z": -861.110717773438
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.02838,
+      "exec_time": 473.0,
+      "frame": 49,
+      "time": 0.0816666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0000000628983798378613,
+        "y": 27.1210765838623,
+        "z": 32545.29296875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180008023262,
+      "flight_time": 0.0833333333333332,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.51052794164541,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000200091623270282,
+        "y": -0.0338932871818542,
+        "z": -74.1362457275391
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.604550719261169,
+          "y": -0.79656583070755,
+          "z": 0.000664508203044534
+        },
+        "y": {
+          "x": 0.796566426753998,
+          "y": -0.604550302028656,
+          "z": 0.000520107394549996
+        },
+        "z": {
+          "x": -0.0000125715741887689,
+          "y": 0.000843756890390068,
+          "z": 0.999999165534973
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000278028863931468,
+        "y": -0.788820862770081,
+        "z": -859.951721191406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03294,
+      "exec_time": 549.0,
+      "frame": 50,
+      "time": 0.0833333333333332
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000175617901732039,
+        "y": 27.6634941101074,
+        "z": 32545.2890625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179667326729,
+      "flight_time": 0.0849999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.50714894286398,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000019546403606796,
+        "y": -0.035233411937952,
+        "z": -75.5675735473633
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.184822410345078,
+          "y": 0.982771158218384,
+          "z": -0.000847928342409432
+        },
+        "y": {
+          "x": -0.982771515846252,
+          "y": -0.184822738170624,
+          "z": 0.0001633390202187
+        },
+        "z": {
+          "x": 0.00000380922574549913,
+          "y": 0.000863508670590818,
+          "z": 0.999999165534973
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000277655175295877,
+        "y": -0.804075002670288,
+        "z": -858.7958984375
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.11268,
+      "exec_time": 1878.0,
+      "frame": 51,
+      "time": 0.0849999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000314358135256043,
+        "y": 28.2059116363525,
+        "z": 32545.28515625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179582152596,
+      "flight_time": 0.0866666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.50377919722577,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000190842666114577,
+        "y": -0.0365989282727242,
+        "z": -76.9969787597656
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.85261857509613,
+          "y": -0.522532761096954,
+          "z": 0.000456668261904269
+        },
+        "y": {
+          "x": 0.52253270149231,
+          "y": 0.85261857509613,
+          "z": -0.00073577678995207
+        },
+        "z": {
+          "x": -0.00000489677768200636,
+          "y": 0.000865961075760424,
+          "z": 0.999999225139618
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000277282481420116,
+        "y": -0.819310069084167,
+        "z": -857.643127441406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.04488,
+      "exec_time": 748.0,
+      "frame": 52,
+      "time": 0.0866666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000428557314080535,
+        "y": 28.7483291625977,
+        "z": 32545.28125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180433893927,
+      "flight_time": 0.0883333333333332,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.50041852678571,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000186227477882994,
+        "y": -0.0379898063838482,
+        "z": -78.4244689941406
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.959587395191193,
+          "y": -0.281409174203873,
+          "z": 0.000243676011450589
+        },
+        "y": {
+          "x": 0.281409680843353,
+          "y": -0.959587037563324,
+          "z": 0.000865004607476294
+        },
+        "z": {
+          "x": -0.00000959180761128664,
+          "y": 0.000898621103260666,
+          "z": 0.999999105930328
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000276910782304185,
+        "y": -0.834526181221008,
+        "z": -856.493469238281
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05754,
+      "exec_time": 959.0,
+      "frame": 53,
+      "time": 0.0883333333333332
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000522971640748437,
+        "y": 29.2907466888428,
+        "z": 32545.27734375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179764668596,
+      "flight_time": 0.0899999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.49706675359876,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000181618471373213,
+        "y": -0.0394060127437115,
+        "z": -79.8500442504883
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.43537563085556,
+          "y": 0.900247991085052,
+          "z": -0.000819815555587411
+        },
+        "y": {
+          "x": -0.900248765945435,
+          "y": 0.435375154018402,
+          "z": -0.000390461063943803
+        },
+        "z": {
+          "x": 0.00000541593180969357,
+          "y": 0.000908034853637218,
+          "z": 0.999999105930328
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000276540077948084,
+        "y": -0.849723398685455,
+        "z": -855.346923828125
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06648,
+      "exec_time": 1108.0,
+      "frame": 54,
+      "time": 0.0899999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000601360716245836,
+        "y": 29.8331642150879,
+        "z": 32545.2734375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180227042461,
+      "flight_time": 0.0916666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.49372405560997,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000181618489136781,
+        "y": -0.0408475175499916,
+        "z": -81.2737197875977
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.375201851129532,
+          "y": -0.92694228887558,
+          "z": 0.000855108839459717
+        },
+        "y": {
+          "x": 0.926942646503448,
+          "y": 0.375202208757401,
+          "z": -0.00033530275686644
+        },
+        "z": {
+          "x": -0.0000100331963039935,
+          "y": 0.000918443314731121,
+          "z": 0.999999105930328
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000000000881072992342524,
+        "y": -0.864901781082153,
+        "z": -854.203430175781
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.09102,
+      "exec_time": 1517.0,
+      "frame": 55,
+      "time": 0.0916666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000514192925038515,
+        "y": 30.375581741333,
+        "z": 32545.26953125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180689416327,
+      "flight_time": 0.0933333333333332,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.49039025487427,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000018161850690035,
+        "y": -0.0423142872750759,
+        "z": -82.6954879760742
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.938988149166107,
+          "y": 0.343948245048523,
+          "z": -0.000331055256538093
+        },
+        "y": {
+          "x": -0.343948036432266,
+          "y": -0.938988029956818,
+          "z": 0.00089127488899976
+        },
+        "z": {
+          "x": -0.00000430399086326361,
+          "y": 0.000950763060245663,
+          "z": 0.999999165534973
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000000000879896687195486,
+        "y": -0.880061447620392,
+        "z": -853.06298828125
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06402,
+      "exec_time": 1067.0,
+      "frame": 56,
+      "time": 0.0933333333333332
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000441235806647455,
+        "y": 30.9179992675781,
+        "z": 32545.265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255179995855528,
+      "flight_time": 0.0949999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.48706535139167,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000179323222937455,
+        "y": -0.043806292116642,
+        "z": -84.115364074707
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.885169982910156,
+          "y": 0.465266823768616,
+          "z": -0.000446308171376586
+        },
+        "y": {
+          "x": -0.465267479419708,
+          "y": 0.885169625282288,
+          "z": -0.000841674394905567
+        },
+        "z": {
+          "x": 0.00000345526495948434,
+          "y": 0.000952677219174802,
+          "z": 0.999999284744263
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000137716526182885,
+        "y": -0.895202457904816,
+        "z": -851.925598144531
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06204,
+      "exec_time": 1034.0,
+      "frame": 57,
+      "time": 0.0949999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000453025586466538,
+        "y": 31.4604167938232,
+        "z": 32545.26171875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180871932326,
+      "flight_time": 0.0966666666666666,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.48374952310723,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000177031012071893,
+        "y": -0.0453234985470772,
+        "z": -85.5333480834961
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.24915574491024,
+          "y": -0.968462646007538,
+          "z": 0.000939630321227014
+        },
+        "y": {
+          "x": 0.96846342086792,
+          "y": -0.249155268073082,
+          "z": 0.000254839309491217
+        },
+        "z": {
+          "x": -0.0000126889208331704,
+          "y": 0.000973492977209389,
+          "z": 0.999999463558197
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.00000013753314931364,
+        "y": -0.91032487154007,
+        "z": -850.791198730469
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06894,
+      "exec_time": 1149.0,
+      "frame": 58,
+      "time": 0.0966666666666666
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000462967545900028,
+        "y": 32.0028343200684,
+        "z": 32545.2578125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180835429126,
+      "flight_time": 0.0983333333333332,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.48044223618577,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000174741838776526,
+        "y": -0.0468658804893494,
+        "z": -86.9494476318359
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.550730228424072,
+          "y": 0.834682524204254,
+          "z": -0.00083346210885793
+        },
+        "y": {
+          "x": -0.834682881832123,
+          "y": -0.550730407238007,
+          "z": 0.000551388424355537
+        },
+        "z": {
+          "x": 0.00000122189521789551,
+          "y": 0.000999343232251704,
+          "z": 0.999999463558197
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000137350255613455,
+        "y": -0.925428748130798,
+        "z": -849.659851074219
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0726,
+      "exec_time": 1210.0,
+      "frame": 59,
+      "time": 0.0983333333333332
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000471381144961924,
+        "y": 32.5452499389648,
+        "z": 32545.25390625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180446061661,
+      "flight_time": 0.0999999999999999,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.47714402446246,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000172455703051355,
+        "y": -0.0484334044158459,
+        "z": -88.3636703491211
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.988391399383545,
+          "y": -0.151926621794701,
+          "z": 0.00015314674237743
+        },
+        "y": {
+          "x": 0.151926383376122,
+          "y": 0.988391220569611,
+          "z": -0.000987733132205904
+        },
+        "z": {
+          "x": -0.00000130617991089821,
+          "y": 0.000999533920548856,
+          "z": 0.999999523162842
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000137167859293186,
+        "y": -0.940514147281647,
+        "z": -848.531494140625
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.066,
+      "exec_time": 1100.0,
+      "frame": 60,
+      "time": 0.0999999999999999
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000478525817015907,
+        "y": 33.0876655578613,
+        "z": 32545.25
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181419480324,
+      "flight_time": 0.101666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.47385417615707,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000170172604896379,
+        "y": -0.0500260405242443,
+        "z": -89.7760162353516
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.77598625421524,
+          "y": -0.630748987197876,
+          "z": 0.000639949692413211
+        },
+        "y": {
+          "x": 0.630749702453613,
+          "y": -0.775985836982727,
+          "z": 0.000806049909442663
+        },
+        "z": {
+          "x": -0.0000118235475383699,
+          "y": 0.00102913286536932,
+          "z": 0.999999582767487
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000136985946141976,
+        "y": -0.955581188201904,
+        "z": -847.406127929688
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05478,
+      "exec_time": 913.0,
+      "frame": 61,
+      "time": 0.101666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000484613156004343,
+        "y": 33.6300811767578,
+        "z": 32545.24609375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180932770993,
+      "flight_time": 0.103333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.47057340304984,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000016789252654803,
+        "y": -0.0516437590122223,
+        "z": -91.1864929199219
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.0532201677560806,
+          "y": 0.998581886291504,
+          "z": -0.00104369199834764
+        },
+        "y": {
+          "x": -0.998582661151886,
+          "y": 0.053219847381115,
+          "z": -0.0000507954973727465
+        },
+        "z": {
+          "x": 0.00000482221366837621,
+          "y": 0.00104491645470262,
+          "z": 0.999999582767487
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000136804516159827,
+        "y": -0.970629930496216,
+        "z": -846.283752441406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.01956,
+      "exec_time": 326.0,
+      "frame": 62,
+      "time": 0.103333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000489816329718451,
+        "y": 34.1724967956543,
+        "z": 32545.2421875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181078783792,
+      "flight_time": 0.105,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.46730117130558,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000163338391701018,
+        "y": -0.0532865263521671,
+        "z": -92.595100402832
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.704542994499207,
+          "y": -0.709660470485687,
+          "z": 0.000749961705878377
+        },
+        "y": {
+          "x": 0.709660768508911,
+          "y": 0.704542934894562,
+          "z": -0.000734684872440994
+        },
+        "z": {
+          "x": -0.00000700406963005662,
+          "y": 0.00104983593337238,
+          "z": 0.999999642372131
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000273247906079632,
+        "y": -0.985660433769226,
+        "z": -845.164367675781
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.09576,
+      "exec_time": 1596.0,
+      "frame": 63,
+      "time": 0.105
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0000055895898185554,
+        "y": 34.7149124145508,
+        "z": 32545.23828125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181808847789,
+      "flight_time": 0.106666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.46403783681441,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000158790278703691,
+        "y": -0.0549543127417564,
+        "z": -94.0018463134766
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.998941838741302,
+          "y": -0.0459837354719639,
+          "z": 0.00004204036667943
+        },
+        "y": {
+          "x": 0.0459840446710587,
+          "y": -0.998941421508789,
+          "z": 0.00108236470259726
+        },
+        "z": {
+          "x": -0.00000777508830651641,
+          "y": 0.00108315423130989,
+          "z": 0.999999701976776
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000272886950369866,
+        "y": -1.00067269802094,
+        "z": -844.047912597656
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.0657,
+      "exec_time": 1095.0,
+      "frame": 64,
+      "time": 0.106666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000618422109255334,
+        "y": 35.2573280334473,
+        "z": 32545.234375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181103119259,
+      "flight_time": 0.108333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.46078286574116,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000154248169792481,
+        "y": -0.0566470921039581,
+        "z": -95.40673828125
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.636369705200195,
+          "y": 0.771383285522461,
+          "z": -0.000843440648168325
+        },
+        "y": {
+          "x": -0.771384060382843,
+          "y": 0.636369228363037,
+          "z": -0.000689221196807921
+        },
+        "z": {
+          "x": 0.00000508630182594061,
+          "y": 0.00108921644277871,
+          "z": 0.99999988079071
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000272526960998221,
+        "y": -1.01566696166992,
+        "z": -842.934387207031
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.07392,
+      "exec_time": 1232.0,
+      "frame": 65,
+      "time": 0.108333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000669710152578773,
+        "y": 35.7997436523438,
+        "z": 32545.23046875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181772344589,
+      "flight_time": 0.11,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.45753643603089,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.000000015424818755605,
+        "y": -0.0583648309111595,
+        "z": -96.8097763061523
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.14471623301506,
+          "y": -0.989472270011902,
+          "z": 0.00109350006096065
+        },
+        "y": {
+          "x": 0.989472925662994,
+          "y": 0.144716426730156,
+          "z": -0.000148403516504914
+        },
+        "z": {
+          "x": -0.0000114071881398559,
+          "y": 0.0011034666094929,
+          "z": 0.999999940395355
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000000000682121026329696,
+        "y": -1.03064322471619,
+        "z": -841.823852539063
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06546,
+      "exec_time": 1091.0,
+      "frame": 66,
+      "time": 0.11
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0000059203703131061,
+        "y": 36.3421592712402,
+        "z": 32545.2265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255182052202454,
+      "flight_time": 0.111666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.45429872562864,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000154248205319618,
+        "y": -0.0601074993610382,
+        "z": -98.2109680175781
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.830624163150787,
+          "y": 0.556832611560822,
+          "z": -0.000633206334896386
+        },
+        "y": {
+          "x": -0.556832790374756,
+          "y": -0.830623865127563,
+          "z": 0.000940726371482015
+        },
+        "z": {
+          "x": -0.00000212836312130094,
+          "y": 0.00113398185931146,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.000000000000681223523771313,
+        "y": -1.04560148715973,
+        "z": -840.716186523438
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.07224,
+      "exec_time": 1204.0,
+      "frame": 67,
+      "time": 0.111666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.0000052466825763986,
+        "y": 36.8845748901367,
+        "z": 32545.22265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181468151257,
+      "flight_time": 0.113333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.45106937864432,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000154248223083187,
+        "y": -0.0618750676512718,
+        "z": -99.6103210449219
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.970276176929474,
+          "y": 0.24199914932251,
+          "z": -0.000276395410764962
+        },
+        "y": {
+          "x": -0.241999611258507,
+          "y": 0.970275521278381,
+          "z": -0.00110029266215861
+        },
+        "z": {
+          "x": 0.00000190979335457087,
+          "y": 0.00113447569310665,
+          "z": 1.00000023841858
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": 0.0000000000006803283522476,
+        "y": -1.06054186820984,
+        "z": -839.611450195313
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.06324,
+      "exec_time": 1054.0,
+      "frame": 68,
+      "time": 0.113333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000466081337435753,
+        "y": 37.4269905090332,
+        "z": 32545.21875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255182429402185,
+      "flight_time": 0.115,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.44784875096802,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000151989087981974,
+        "y": -0.063667505979538,
+        "z": -101.007835388184
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.471843004226685,
+          "y": -0.881681799888611,
+          "z": 0.00101583730429411
+        },
+        "y": {
+          "x": 0.881682515144348,
+          "y": -0.471842378377914,
+          "z": 0.000558142201043665
+        },
+        "z": {
+          "x": -0.0000127893872559071,
+          "y": 0.0011590039357543,
+          "z": 1.00000023841858
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000135547821855653,
+        "y": -1.07546448707581,
+        "z": -838.509643554688
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.03486,
+      "exec_time": 581.0,
+      "frame": 69,
+      "time": 0.115
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000472659576189471,
+        "y": 37.9694061279297,
+        "z": 32545.21484375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255182198215253,
+      "flight_time": 0.116666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.4446366646547,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000147476733047824,
+        "y": -0.0654847919940948,
+        "z": -102.403518676758
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.336888432502747,
+          "y": 0.941543698310852,
+          "z": -0.00111125828698277
+        },
+        "y": {
+          "x": -0.941544234752655,
+          "y": -0.336888492107391,
+          "z": 0.00040069647366181
+        },
+        "z": {
+          "x": 0.00000290409661829472,
+          "y": 0.00118129001930356,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000270741026042742,
+        "y": -1.09036934375763,
+        "z": -837.410705566406
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.05982,
+      "exec_time": 997.0,
+      "frame": 70,
+      "time": 0.116666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 0.5,
+      "drag_coef": 0.45,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "type": "gas",
+      "viscosity": 0.000035
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_HiFyCpkF",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995398273689>",
+      "angular_velocity": {
+        "x": 0.00000535011713509448,
+        "y": 38.5118217468262,
+        "z": 32545.2109375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.588,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255182027866987,
+      "flight_time": 0.118333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 2.44143276381423,
+      "magnus_effect_factor": 0.0,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0000000140717055785444,
+        "y": -0.0673268884420395,
+        "z": -103.797378540039
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.924068868160248,
+          "y": -0.382225155830383,
+          "z": 0.000455200672149658
+        },
+        "y": {
+          "x": 0.382225036621094,
+          "y": 0.92406839132309,
+          "z": -0.00109143566805869
+        },
+        "z": {
+          "x": -0.00000346341403201222,
+          "y": 0.00118255196139216,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.357,
+      "tumble_time": 0.0,
+      "uid": "proj_HiFyCpkF",
+      "velocity": {
+        "x": -0.000000405580351525714,
+        "y": -1.1052565574646,
+        "z": -836.314636230469
+      },
+      "weapon": "<Resource#-9223371995314387595>"
+    },
+    "timing": {
+      "delta": 0.00166666666666667,
+      "exec_ratio": 0.07608,
+      "exec_time": 1268.0,
+      "frame": 71,
+      "time": 0.118333333333333
+    }
+  }
+]

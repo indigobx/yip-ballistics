@@ -3,13 +3,13 @@ class_name AdvancedBallistics
 
 # Константы
 const MIN_VELOCITY := 0.01  # Минимальная значимая скорость [м/с]
-const G7_DRAG_BASE := 0.371  # Базовый коэффициент сопротивления модели G7
+const G7_DRAG_BASE := 0.471  # Базовый коэффициент сопротивления модели G7
 const STABILITY_THRESHOLD := 1.5  # Порог устойчивости снаряда
-const LIFT_COEFFICIENT := 0.0025  # Коэффициент подъемной силы
-const GYROSCOPIC_PRECESSION_FACTOR := 0.0001  # Фактор гироскопической прецессии
+const LIFT_COEFFICIENT := 0.0045  # Коэффициент подъемной силы 0.0025
+const GYROSCOPIC_PRECESSION_FACTOR := 0.00025  # Фактор гироскопической прецессии 0.0001
 const SPIN_DECAY_AIR := 0.998  # Коэффициент затухания вращения в воздухе
 const SPIN_DECAY_WATER := 0.8  # Коэффициент затухания вращения в воде
-const BULLET_TUMBLE_THRESHOLD := 0.5  # Порог начала кувыркания
+const BULLET_TUMBLE_THRESHOLD := 1.0  # Порог начала кувыркания
 
 #=== Основной метод обновления ===#
 func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
@@ -46,14 +46,12 @@ func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
 func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis) -> Dictionary:
   var direction = -muzzle_rot.z.normalized()
   var length_diameter_ratio = ammo.get_property("length_diameter_ratio", ammo.length / ammo.caliber if ammo.caliber > 0 else 3.0)
-  
   # Расчет начального вращения в зависимости от типа стабилизации
   var angular_velocity = Vector3.ZERO
   if ammo.stab_type == AmmoData.StabilizationType.SPIN:
     var twist_rate_m = weapon.twist_rate * 0.001  # Переводим мм/оборот в м/оборот
     var spin_magnitude = (2.0 * PI * ammo.speed) / twist_rate_m
     angular_velocity = (muzzle_rot * Vector3.FORWARD) * spin_magnitude * (-1.0 if weapon.rifling_clockwise else 1.0)
-  
   # Расчет коэффициента эффекта Магнуса с учетом глубины нарезов
   var magnus_factor = 0.00025 * weapon.rifling_depth_mm * length_diameter_ratio
   
@@ -94,7 +92,7 @@ func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, 
     "tumble_time": 0.0,  # Время кувыркания
     "effective_cross_section": 0.0,  # Будет рассчитано
     "current_drag_coef": 0.0,  # Будет рассчитано
-    "mach_number": 0.0  # Будет рассчитано
+    "mach_number": 0.0,  # Будет рассчитано,
   }
 
 #=== Детализированные физические модели ===#
@@ -151,6 +149,7 @@ func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: flo
     debug_vel["5_gyro"] = proj.velocity
     _apply_magnus_effect(proj, medium_props, delta)
     debug_vel["6_magnus"] = proj.velocity
+    _apply_derivation(proj, delta)
   
   _apply_wind(proj, delta)
   debug_vel["7_wind"] = proj.velocity
@@ -160,13 +159,22 @@ func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: flo
 
 func _update_hydrodynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   """Гидродинамика в жидких средах"""
+  # Усиленное демпфирование вращения в жидкостях
+  proj["spin_decay_rate"] = SPIN_DECAY_WATER
+  
+  # Применение гидродинамических сил
   _apply_hydrodynamic_drag(proj, medium_props, delta)
   _apply_gravity(proj, delta)
   _apply_buoyancy(proj, medium_props, delta)
-  _apply_angular_drag(proj, medium_props, delta, 5.0)  # Усиленное демпфирование
+  _apply_angular_drag(proj, medium_props, delta, 10.0)  # Сильное демпфирование вращения
+  _apply_derivation(proj, delta)
   
-  if proj["flight_time"] < 0.1:  # Эффект кавитации
-    proj["velocity"] *= 0.95
+  # Эффект кавитации - временное снижение сопротивления
+  if proj["flight_time"] < 0.05:  # Первые 50 мс - кавитационный режим
+    proj["velocity"] *= 0.98  # Слабое замедление
+  else:
+    # После кавитации - полное сопротивление
+    pass
 
 #=== Реализация физических эффектов ===#
 func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
@@ -189,7 +197,7 @@ func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: 
   var delta_v = acceleration * delta
   
   # Ограничение максимального замедления (не более 10% за кадр)
-  delta_v = min(delta_v, speed * 0.1)
+  #delta_v = min(delta_v, speed * 0.2)
   
   # Применяем замедление
   proj["velocity"] -= delta_v * proj["velocity"].normalized()
@@ -200,18 +208,14 @@ func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: 
   ])
 
 func _calculate_dynamic_drag_coef(proj: Dictionary) -> float:
-  # Базовый коэффициент из данных пули (для 5.56x45 M855 = 0.28)
-  var base_coef = proj["drag_coef"]
-  
-  # Коррекция для сверхзвукового режима (M855)
-  if proj["mach_number"] > 1.0:
-    return base_coef * (1.0 + 0.2 * (proj["mach_number"] - 1.0))
-  
-  # Коррекция для дозвукового режима
-  elif proj["mach_number"] < 0.9:
-    return base_coef * 0.9
-  
-  return base_coef
+  var mach = proj["mach_number"]
+  if mach > 1.0:
+    return proj["drag_coef"] * 2.1  # Сильное сопротивление на сверхзвуке
+  elif mach > 0.9:
+    return proj["drag_coef"] * 1.85  # Переходный режим
+  elif mach > 0.8:
+    return proj["drag_coef"] * 1.33  # Дозвуковой
+  return proj["drag_coef"]
 
 func _calculate_effective_cross_section(proj: Dictionary) -> float:
   var base_area = PI * pow(proj["caliber"] * 0.0005, 2)
@@ -339,23 +343,53 @@ func _apply_turbulence(proj: Dictionary, medium_props: Dictionary, delta: float)
 
 func _apply_hydrodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   """Гидродинамическое сопротивление в жидкостях"""
-  var density = medium_props["base_density"]
-  var viscosity = medium_props.get("viscosity", 0.001)
+  var density = medium_props["base_density"]  # Плотность воды 998 кг/м³
+  var viscosity = medium_props["viscosity"]   # Вязкость воды 0.001002 Па·с
   var speed = proj["velocity"].length()
   
   if speed < MIN_VELOCITY:
     return
   
-  # Квадратичное сопротивление
-  var quadratic_drag = 0.5 * density * speed * speed * proj["current_drag_coef"] * proj["cross_section"]
+  # Все величины в СИ:
+  var cd = _calculate_underwater_drag_coef(proj)  # 0.3-0.5 для подводных снарядов
+  var area = proj["effective_cross_section"]      # ~6.4e-5 м² для 9мм
+  var mass_kg = proj["mass"] * 0.001              # 0.0075 кг
   
-  # Вязкое сопротивление (Стокс)
-  var radius = proj["caliber"] * 0.0005
+  # 1. Квадратичное сопротивление (преобладает на высоких скоростях)
+  var quadratic_drag = 0.5 * density * speed * speed * cd * area
+  
+  # 2. Вязкое сопротивление (преобладает на низких скоростях)
+  var radius = proj["caliber"] * 0.0005           # Радиус в метрах
   var stokes_drag = 6 * PI * viscosity * radius * speed
   
-  # Комбинированная модель
-  var total_drag = quadratic_drag + stokes_drag
-  proj["velocity"] -= total_drag * delta / (proj["mass"] * 0.001) * proj["velocity"].normalized()
+  # Комбинированная модель сопротивления с плавным переходом
+  var reynolds = (2 * radius * speed * density) / viscosity
+  var transition = clamp(reynolds / 1000.0, 0.0, 1.0)  # Переход между режимами
+  var total_drag = lerp(stokes_drag, quadratic_drag, transition)
+  
+  # Ограничение максимального замедления (не более 30% скорости за кадр)
+  var max_delta_v = speed * 0.3
+  var delta_v = min(total_drag * delta / mass_kg, max_delta_v)
+  
+  # Применение замедления
+  proj["velocity"] -= delta_v * proj["velocity"].normalized()
+  
+  var speed_effect = smoothstep(100.0, 300.0, speed)  # Плавный переход 100-300 м/с
+  var water_hammer = 1.0 - speed_effect * 0.4  # Доп. потери до 40%
+  
+  # Итоговое применение
+  proj["velocity"] -= delta_v * water_hammer * proj["velocity"].normalized()
+
+func _calculate_underwater_drag_coef(proj: Dictionary) -> float:
+  # Базовый коэффициент для подводных снарядов
+  var base_cd = 0.4
+  
+  # Увеличение сопротивления при кувыркании
+  if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
+    return base_cd * 1.5
+  
+  return base_cd
+
 
 func _apply_buoyancy(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   """Плавучесть в жидких средах"""
@@ -370,16 +404,62 @@ func _apply_buoyancy(proj: Dictionary, medium_props: Dictionary, delta: float) -
   if abs(proj["velocity"].y) > 2.0:
     proj["velocity"].y *= pow(0.9, delta)
 
+func _apply_derivation(proj: Dictionary, delta: float) -> void:
+  #return
+  if proj["ammo"].stab_type != AmmoData.StabilizationType.SPIN:
+    return
+  
+  var spin_axis = proj["angular_velocity"].normalized()
+  var vel_dir = proj["velocity"].normalized()
+  var speed = proj["velocity"].length()
+  
+  # 1. Рассчитываем угловую скорость деривации (рад/с)
+  var spin_rate = proj["angular_velocity"].length()
+  var derivation_rate = spin_rate * (1.0 - abs(spin_axis.dot(vel_dir))) * 0.0005
+  
+  # 2. Создаем вектор отклонения (перпендикулярно скорости и оси вращения)
+  var derivation_dir = vel_dir.cross(spin_axis).normalized()
+  
+  # 3. Рассчитываем мгновенное отклонение (м/с²)
+  var derivation_accel = derivation_dir * derivation_rate * speed * 0.1
+  
+  # 4. Применяем к скорости и угловой скорости:
+  proj["velocity"] += derivation_accel * delta
+  
+  # 5. Гироскопический эффект - корректируем вращение
+  var correction_torque = vel_dir.cross(derivation_dir) * spin_rate * 0.01
+  proj["angular_velocity"] += correction_torque * delta
+  
+  # 6. Визуальный эффект - небольшой доворот пули
+  if derivation_dir.length_squared() > 0.1:
+    var visual_rotation = Basis(derivation_dir, derivation_rate * delta * 0.1)
+    proj["rotation"] = visual_rotation * proj["rotation"]
 
 #=== Обновление положения и состояния ===#
 func _update_position_orientation(proj: Dictionary, delta: float) -> void:
+  # Обновление позиции с проверкой на валидность скорости
   if proj["velocity"].is_finite():
     proj["position"] += proj["velocity"] * delta
   else:
     proj["velocity"] = Vector3.ZERO
   
+  # Обновление вращения с защитой от NaN и проверкой длины
   if proj["angular_velocity"].length_squared() > 0.01:
+    # Защита от NaN в угловой скорости
+    if not proj["angular_velocity"].is_finite():
+      proj["angular_velocity"] = Vector3.ZERO
+      return
+      
     var axis = proj["angular_velocity"].normalized()
+    
+    # Дополнительная проверка нормализации (на случай численных ошибок)
+    if not axis.is_normalized():
+      axis = axis.normalized()
+      # Если все равно не нормализуется - сбрасываем вращение
+      if not axis.is_normalized():
+        proj["angular_velocity"] = Vector3.ZERO
+        return
+    
     var angle = proj["angular_velocity"].length() * delta
     var rotation = Basis(proj["rotation"]).rotated(axis, angle)
     proj["rotation"] = rotation
@@ -394,3 +474,7 @@ func _update_post_physics(proj: Dictionary, delta: float) -> void:
     proj["velocity"] = Vector3.ZERO
   if not proj["position"].is_finite():
     proj["position"] = Vector3.ZERO
+
+func smoothstep(edge0: float, edge1: float, x: float) -> float:
+  var t = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0)
+  return t * t * (3.0 - 2.0 * t)

@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp8ohrghu7y6b"]
+[gd_scene load_steps=10 format=3 uid="uid://bp8ohrghu7y6b"]
 
 [ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
 [ext_resource type="PackedScene" uid="uid://cwh5cpvi8dams" path="res://arrow.tscn" id="3_r0du0"]
 [ext_resource type="PackedScene" uid="uid://cb1wb0k25ppvm" path="res://bullet.tscn" id="4_cm0pq"]
 [ext_resource type="PackedScene" uid="uid://djm2xn3q1dpls" path="res://bullet_rear.tscn" id="5_fos0i"]
+[ext_resource type="PackedScene" uid="uid://ctr13dyvyshpj" path="res://bar.tscn" id="5_lgr22"]
 [ext_resource type="PackedScene" uid="uid://brkyfxo7vih3l" path="res://graph.tscn" id="6_3dxm6"]
 
 [sub_resource type="FontVariation" id="FontVariation_uu6xs"]
@@ -244,7 +245,7 @@ offset_bottom = 290.0
 grow_horizontal = 1
 grow_vertical = 1
 graph_width = 120
-color = Color(0.8, 0.466667, 0.133333, 1)
+color = Color(0.8, 0.592, 0.384, 1)
 thickness = 1.0
 max = 2e+06
 hard_limits = true
@@ -263,11 +264,49 @@ offset_bottom = 290.0
 grow_horizontal = 1
 grow_vertical = 1
 graph_width = 120
-color = Color(0.5712, 0.272, 0.8, 1)
+color = Color(0.689067, 0.544, 0.8, 1)
 thickness = 1.0
 max = 2000.0
 hard_limits = true
 label = "Dist"
+
+[node name="BarZ" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("5_lgr22")]
+unique_name_in_owner = true
+modulate = Color(0, 0.666667, 1, 1)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -314.0
+offset_top = 154.0
+offset_right = 286.0
+offset_bottom = 174.0
+grow_horizontal = 1
+grow_vertical = 1
+tick_thickness = 1.0
+marker_thickness = 1.0
+central_tick = false
+ticks = 20
+
+[node name="BarY" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("5_lgr22")]
+unique_name_in_owner = true
+modulate = Color(0.2, 0.866667, 0.2, 1)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -317.0
+offset_top = -215.0
+offset_right = 33.0
+offset_bottom = -195.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 1.5708
+tick_thickness = 1.0
+marker_thickness = 1.0
+value = 0.25
+central_tick = false
+ticks = 10
 
 [node name="PanelContainer2" type="PanelContainer" parent="UI"]
 layout_mode = 0
@@ -310,6 +349,24 @@ show_value = true
 label_text = "ω.Z"
 label_offset = Vector2(10, -10)
 
+[node name="BarX" parent="UI/PanelContainer2/CenterContainer/Vis" instance=ExtResource("5_lgr22")]
+unique_name_in_owner = true
+modulate = Color(1, 0.4, 0.333333, 1)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -170.0
+offset_top = 32.0
+offset_right = 170.0
+offset_bottom = 52.0
+grow_horizontal = 1
+grow_vertical = 1
+tick_thickness = 1.0
+marker_thickness = 1.0
+value = 0.5
+ticks = 10
+
 [node name="PanelContainer3" type="PanelContainer" parent="UI"]
 layout_mode = 0
 offset_left = 16.0
@@ -337,7 +394,6 @@ offset_right = 406.0
 offset_bottom = 722.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.1
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 use_threads = true

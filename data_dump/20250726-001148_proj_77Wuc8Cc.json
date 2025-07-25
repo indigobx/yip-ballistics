@@ -1,0 +1,6932 @@
+[
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -16.6686553955078,
+        "z": 9550.4267578125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.0,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0,
+      "flight_time": 0.0,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.0,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "y": {
+          "x": 0.0,
+          "y": 0.999998450279236,
+          "z": 0.00174532830715179
+        },
+        "z": {
+          "x": 0.0,
+          "y": -0.00174532830715179,
+          "z": 0.999998450279236
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.663224816322327,
+        "z": -379.999420166016
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0,
+      "exec_time": 0.0,
+      "frame": 0,
+      "time": 0.0
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -15.0769100189209,
+        "z": 9550.423828125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640420719820278,
+      "flight_time": 0.0166666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.10787172011662,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000000058875393449398,
+        "y": 0.00811170134693384,
+        "z": -6.20556497573853
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.49990639090538,
+          "y": 0.86607837677002,
+          "z": 0.00136724673211575
+        },
+        "y": {
+          "x": -0.866079390048981,
+          "y": -0.499906003475189,
+          "z": -0.000622517894953489
+        },
+        "z": {
+          "x": 0.000144345685839653,
+          "y": -0.00149534502997994,
+          "z": 0.999998807907104
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000000353252346485533,
+        "y": 0.486702054738998,
+        "z": -372.333892822266
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.08106,
+      "exec_time": 1351.0,
+      "frame": 1,
+      "time": 0.0166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00000210183293347654,
+        "y": -13.485164642334,
+        "z": 9550.419921875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640451104771936,
+      "flight_time": 0.0333333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.08552244314299,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000000232010144429751,
+        "y": 0.0133439991623163,
+        "z": -12.2884674072266
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.500266432762146,
+          "y": -0.865870893001556,
+          "z": -0.00107826222665608
+        },
+        "y": {
+          "x": 0.865871489048004,
+          "y": -0.500266075134277,
+          "z": -0.000623025756794959
+        },
+        "z": {
+          "x": 0.0000000419095158576965,
+          "y": -0.00124531495384872,
+          "z": 0.999999105930328
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00000103880847746041,
+        "y": 0.313937813043594,
+        "z": -364.974151611328
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.08184,
+      "exec_time": 1364.0,
+      "frame": 2,
+      "time": 0.0333333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00000625021311861929,
+        "y": -11.8934211730957,
+        "z": 9550.416015625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640470068645529,
+      "flight_time": 0.05,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.06406493784735,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000000628163263627357,
+        "y": 0.0157558489590883,
+        "z": -18.2535057067871
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999999821186066,
+          "y": -0.000598830753006041,
+          "z": -0.00000071059912443161
+        },
+        "y": {
+          "x": 0.000598894024733454,
+          "y": 0.999999046325684,
+          "z": 0.00124530191533268
+        },
+        "z": {
+          "x": -0.0000000356230884790421,
+          "y": -0.00124530214816332,
+          "z": 0.999998927116394
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00000237691870097478,
+        "y": 0.144711002707481,
+        "z": -357.902282714844
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.069,
+      "exec_time": 1150.0,
+      "frame": 3,
+      "time": 0.05
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0000135487407533219,
+        "y": -10.3016786575317,
+        "z": 9550.4111328125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640528456602003,
+      "flight_time": 0.0666666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.043446977354,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000143317208767257,
+        "y": 0.0154028031975031,
+        "z": -24.1051921844482
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.499123215675354,
+          "y": 0.866530478000641,
+          "z": 0.000934632204007357
+        },
+        "y": {
+          "x": -0.866531014442444,
+          "y": -0.499123066663742,
+          "z": -0.000371751841157675
+        },
+        "z": {
+          "x": 0.000144362507853657,
+          "y": -0.000995437614619732,
+          "z": 0.999999165534973
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00000483005260321079,
+        "y": -0.0211827214807272,
+        "z": -351.101196289063
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.11562,
+      "exec_time": 1927.0,
+      "frame": 4,
+      "time": 0.0666666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0000257281571975909,
+        "y": -8.70993900299072,
+        "z": 9550.4052734375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640557223045885,
+      "flight_time": 0.0833333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.02361864807307,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000282248436178634,
+        "y": 0.0123372748494148,
+        "z": -29.8477897644043
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.501339495182037,
+          "y": -0.8652503490448,
+          "z": -0.000644755316898227
+        },
+        "y": {
+          "x": 0.865250647068024,
+          "y": -0.501339435577393,
+          "z": -0.000373772607417777
+        },
+        "z": {
+          "x": 0.000000165426172316074,
+          "y": -0.000745261320844293,
+          "z": 0.999999403953552
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00000833587364468258,
+        "y": -0.183931663632393,
+        "z": -344.555847167969
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04602,
+      "exec_time": 767.0,
+      "frame": 5,
+      "time": 0.0833333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0000434763423982076,
+        "y": -7.11820220947266,
+        "z": 9550.3984375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064058455421498,
+      "flight_time": 0.1,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 1.00453617551932,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000050421544983692,
+        "y": 0.00660876836627722,
+        "z": -35.4853210449219
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999997437000275,
+          "y": -0.00222011865116656,
+          "z": -0.00000150629784911871
+        },
+        "y": {
+          "x": 0.00222018663771451,
+          "y": 0.999997317790985,
+          "z": 0.000745230820029974
+        },
+        "z": {
+          "x": -0.000000148371327668428,
+          "y": -0.000745232391636819,
+          "z": 0.999999344348907
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000133180183183867,
+        "y": -0.343710362911224,
+        "z": -338.251983642578
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03564,
+      "exec_time": 594.0,
+      "frame": 6,
+      "time": 0.1
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0000680929297232069,
+        "y": -5.52646780014038,
+        "z": 9550.3916015625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.609,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640646331789008,
+      "flight_time": 0.116666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.986157920548242,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000000833213107398478,
+        "y": -0.0017481530085206,
+        "z": -41.0336456298828
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.49738672375679,
+          "y": 0.867528676986694,
+          "z": 0.000501796777825803
+        },
+        "y": {
+          "x": -0.867528975009918,
+          "y": -0.497386753559113,
+          "z": -0.000121265125926584
+        },
+        "z": {
+          "x": 0.000144386489409953,
+          "y": -0.00049563858192414,
+          "z": 0.999999463558197
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000197398603631882,
+        "y": -0.501415252685547,
+        "z": -332.8994140625
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0363,
+      "exec_time": 605.0,
+      "frame": 7,
+      "time": 0.116666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000100243603810668,
+        "y": -3.93473649024963,
+        "z": 9550.3837890625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640677816040025,
+      "flight_time": 0.133333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.970553295257835,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000129959107653121,
+        "y": -0.0126939825713634,
+        "z": -46.4955558776855
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.503427386283875,
+          "y": -0.864037334918976,
+          "z": -0.000211627164389938
+        },
+        "y": {
+          "x": 0.864037573337555,
+          "y": -0.503427505493164,
+          "z": -0.000123759105917998
+        },
+        "z": {
+          "x": 0.000000393250957131386,
+          "y": -0.00024515698896721,
+          "z": 0.999999463558197
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000279826799669536,
+        "y": -0.656749725341797,
+        "z": -327.714630126953
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04086,
+      "exec_time": 681.0,
+      "frame": 8,
+      "time": 0.133333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000141045049531385,
+        "y": -2.34300947189331,
+        "z": 9550.375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640708811674504,
+      "flight_time": 0.15,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.955438107860332,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000193995765584987,
+        "y": -0.0261910445988178,
+        "z": -51.8737182617188
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999986946582794,
+          "y": -0.00506208511069417,
+          "z": -0.000000886429916135967
+        },
+        "y": {
+          "x": 0.00506209954619408,
+          "y": 0.999987185001373,
+          "z": 0.000245105766225606
+        },
+        "z": {
+          "x": -0.000000354557414539158,
+          "y": -0.000245107396040112,
+          "z": 0.999999225139618
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000384220002160873,
+        "y": -0.809823751449585,
+        "z": -322.689849853516
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04884,
+      "exec_time": 814.0,
+      "frame": 9,
+      "time": 0.15
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000191841143532656,
+        "y": -0.75128698348999,
+        "z": 9550.365234375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640773551268303,
+      "flight_time": 0.166666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.940789670360332,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000279177652373619,
+        "y": -0.0422033742070198,
+        "z": -57.1706771850586
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.494508028030396,
+          "y": 0.869172751903534,
+          "z": 0.0000679161748848856
+        },
+        "y": {
+          "x": -0.869172990322113,
+          "y": -0.494508177042007,
+          "z": 0.00012751595932059
+        },
+        "z": {
+          "x": 0.000144418940180913,
+          "y": 0.00000402679870603606,
+          "z": 0.999999225139618
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000511091275257058,
+        "y": -0.960739850997925,
+        "z": -317.817474365234
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06918,
+      "exec_time": 1153.0,
+      "frame": 10,
+      "time": 0.166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000253672420512885,
+        "y": 0.8404301404953,
+        "z": 9550.3544921875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064080784489502,
+      "flight_time": 0.183333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.926585739625091,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000390569357477943,
+        "y": -0.0606966316699982,
+        "z": -62.388858795166
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.506723046302795,
+          "y": -0.862108588218689,
+          "z": 0.000220223300857469
+        },
+        "y": {
+          "x": 0.862108826637268,
+          "y": -0.506723165512085,
+          "z": 0.000128570929518901
+        },
+        "z": {
+          "x": 0.00000074985291576013,
+          "y": 0.000255006598308682,
+          "z": 0.999999225139618
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000668350112391636,
+        "y": -1.10959553718567,
+        "z": -313.090881347656
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06828,
+      "exec_time": 1138.0,
+      "frame": 11,
+      "time": 0.183333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000328330788761377,
+        "y": 2.43214154243469,
+        "z": 9550.3427734375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640841985806612,
+      "flight_time": 0.2,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.91280718656045,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000532769081473816,
+        "y": -0.0816380009055138,
+        "z": -67.5305862426758
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999955296516418,
+          "y": -0.00942990742623806,
+          "z": 0.00000307816662825644
+        },
+        "y": {
+          "x": 0.00942989997565746,
+          "y": 0.999955534934998,
+          "z": -0.000255066668614745
+        },
+        "z": {
+          "x": -0.000000673011527396739,
+          "y": 0.000255083723459393,
+          "z": 0.999999344348907
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0000853198362165131,
+        "y": -1.25648200511932,
+        "z": -308.503570556641
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06504,
+      "exec_time": 1084.0,
+      "frame": 12,
+      "time": 0.2
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000416895374655724,
+        "y": 4.02384662628174,
+        "z": 9550.330078125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.5365,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640909717864067,
+      "flight_time": 0.216666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.899434793099718,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000711630673322361,
+        "y": -0.105081059038639,
+        "z": -72.6189422607422
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.490201562643051,
+          "y": 0.871608674526215,
+          "z": -0.000368064647773281
+        },
+        "y": {
+          "x": -0.871608972549438,
+          "y": -0.490201562643051,
+          "z": 0.000372745678760111
+        },
+        "z": {
+          "x": 0.000144462974276394,
+          "y": 0.000503528804983944,
+          "z": 0.999999165534973
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000107316933281254,
+        "y": -1.40658342838287,
+        "z": -305.30126953125
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0687,
+      "exec_time": 1145.0,
+      "frame": 13,
+      "time": 0.216666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000520585628692061,
+        "y": 5.61554431915283,
+        "z": 9550.3173828125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640946668118505,
+      "flight_time": 0.233333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.890100595902424,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00000934045783651527,
+        "y": -0.131002351641655,
+        "z": -77.6550216674805
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.511493682861328,
+          "y": -0.859286367893219,
+          "z": 0.000649616587907076
+        },
+        "y": {
+          "x": 0.859286904335022,
+          "y": -0.511493682861328,
+          "z": 0.000385215214919299
+        },
+        "z": {
+          "x": 0.00000126438681036234,
+          "y": 0.000755242304876447,
+          "z": 0.999998986721039
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000133449037093669,
+        "y": -1.55527746677399,
+        "z": -302.164916992188
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06552,
+      "exec_time": 1092.0,
+      "frame": 14,
+      "time": 0.233333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00064129987731576,
+        "y": 7.20723438262939,
+        "z": 9550.3037109375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000640983251881027,
+      "flight_time": 0.25,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.880959024234694,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000120598642752157,
+        "y": -0.15937913954258,
+        "z": -82.639892578125
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999878466129303,
+          "y": -0.0155673129484057,
+          "z": 0.0000128832180052996
+        },
+        "y": {
+          "x": 0.0155672868713737,
+          "y": 0.999878466129303,
+          "z": -0.000755247310735285
+        },
+        "z": {
+          "x": -0.00000112468842417002,
+          "y": 0.000755355518776923,
+          "z": 0.999998927116394
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00016316439723596,
+        "y": -1.70260715484619,
+        "z": -299.092468261719
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02814,
+      "exec_time": 469.0,
+      "frame": 15,
+      "time": 0.25
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000780021364334971,
+        "y": 8.79891681671143,
+        "z": 9550.2890625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641053090703417,
+      "flight_time": 0.266666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.87200385001936,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000153441487782402,
+        "y": -0.190189361572266,
+        "z": -87.574592590332
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.484295219182968,
+          "y": 0.874903917312622,
+          "z": -0.000807406788226217
+        },
+        "y": {
+          "x": -0.87490451335907,
+          "y": -0.484295040369034,
+          "z": 0.00061211094725877
+        },
+        "z": {
+          "x": 0.000144515535794199,
+          "y": 0.00100284582003951,
+          "z": 0.99999874830246
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000197057044715621,
+        "y": -1.84861290454865,
+        "z": -296.081848144531
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02928,
+      "exec_time": 488.0,
+      "frame": 16,
+      "time": 0.266666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.000938103825319558,
+        "y": 10.3905906677246,
+        "z": 9550.2734375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641092239450806,
+      "flight_time": 0.283333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.863229201069379,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000019267805328127,
+        "y": -0.223411619663239,
+        "z": -92.4601135253906
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.517868220806122,
+          "y": -0.855459332466125,
+          "z": 0.00107509223744273
+        },
+        "y": {
+          "x": 0.855460405349731,
+          "y": -0.517867922782898,
+          "z": 0.000648534565698355
+        },
+        "z": {
+          "x": 0.00000196055043488741,
+          "y": 0.00125555403064936,
+          "z": 0.99999862909317
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00023541938571725,
+        "y": -1.99333500862122,
+        "z": -293.13134765625
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03162,
+      "exec_time": 527.0,
+      "frame": 17,
+      "time": 0.283333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00111692224163562,
+        "y": 11.9822549819946,
+        "z": 9550.2568359375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641130899540733,
+      "flight_time": 0.3,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.854630094923014,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000239123037317768,
+        "y": -0.259025156497955,
+        "z": -97.2974319458008
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.999718725681305,
+          "y": -0.0237024798989296,
+          "z": 0.0000314832432195544
+        },
+        "y": {
+          "x": 0.0237024035304785,
+          "y": 0.999718308448792,
+          "z": -0.00125533039681613
+        },
+        "z": {
+          "x": -0.00000172003637999296,
+          "y": 0.00125572271645069,
+          "z": 0.999998509883881
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000278669933322817,
+        "y": -2.13681173324585,
+        "z": -290.239166259766
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06762,
+      "exec_time": 1127.0,
+      "frame": 18,
+      "time": 0.3
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00131797371432185,
+        "y": 13.5739097595215,
+        "z": 9550.2392578125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641202844999189,
+      "flight_time": 0.316666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.846201282200938,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000293612702080281,
+        "y": -0.29700979590416,
+        "z": -102.08748626709
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.476516544818878,
+          "y": 0.879164218902588,
+          "z": -0.00125156785361469
+        },
+        "y": {
+          "x": -0.879165351390839,
+          "y": -0.476516097784042,
+          "z": 0.000842812587507069
+        },
+        "z": {
+          "x": 0.000144578749313951,
+          "y": 0.00150194892194122,
+          "z": 0.999998152256012
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000326937966747209,
+        "y": -2.27907848358154,
+        "z": -287.403442382813
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0663,
+      "exec_time": 1105.0,
+      "frame": 19,
+      "time": 0.316666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00154262676369399,
+        "y": 15.1655530929565,
+        "z": 9550.220703125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641244222688618,
+      "flight_time": 0.333333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.837937246606232,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000357026583515108,
+        "y": -0.337345987558365,
+        "z": -106.831199645996
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.526084005832672,
+          "y": -0.850430905818939,
+          "z": 0.00149482628330588
+        },
+        "y": {
+          "x": 0.850432574748993,
+          "y": -0.52608323097229,
+          "z": 0.000921339902561158
+        },
+        "z": {
+          "x": 0.0000028668437153101,
+          "y": 0.00175595062319189,
+          "z": 0.999997794628143
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000380483164917678,
+        "y": -2.42017126083374,
+        "z": -284.622680664063
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.07572,
+      "exec_time": 1262.0,
+      "frame": 20,
+      "time": 0.333333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00179224635940045,
+        "y": 16.7571849822998,
+        "z": 9550.201171875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641284897942378,
+      "flight_time": 0.35,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.829833717457407,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000430352629336994,
+        "y": -0.380014717578888,
+        "z": -111.529457092285
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.99941623210907,
+          "y": -0.0341541841626167,
+          "z": 0.0000624565873295069
+        },
+        "y": {
+          "x": 0.0341541208326817,
+          "y": 0.99941498041153,
+          "z": -0.00175509275868535
+        },
+        "z": {
+          "x": -0.00000247650314122438,
+          "y": 0.00175620033405721,
+          "z": 0.999997735023499
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000439956231275573,
+        "y": -2.56012392044067,
+        "z": -281.895294189453
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06816,
+      "exec_time": 1136.0,
+      "frame": 21,
+      "time": 0.35
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00206847558729351,
+        "y": 18.348804473877,
+        "z": 9550.1806640625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641358980422494,
+      "flight_time": 0.366666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.821886068182853,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000051455066568451,
+        "y": -0.424997508525848,
+        "z": -116.183120727539
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.466542363166809,
+          "y": 0.884496808052063,
+          "z": -0.00170222553424537
+        },
+        "y": {
+          "x": -0.884498596191406,
+          "y": -0.46654137969017,
+          "z": 0.00106140621937811
+        },
+        "z": {
+          "x": 0.000144652090966702,
+          "y": 0.00200080685317516,
+          "z": 0.99999725818634
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000505188188981265,
+        "y": -2.69896745681763,
+        "z": -279.219604492188
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02292,
+      "exec_time": 382.0,
+      "frame": 22,
+      "time": 0.366666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00237262458540499,
+        "y": 19.9404106140137,
+        "z": 9550.1591796875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641402648020885,
+      "flight_time": 0.383333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.814089316320836,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000610706556471996,
+        "y": -0.472276419401169,
+        "z": -120.793022155762
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.536403238773346,
+          "y": -0.843959212303162,
+          "z": 0.00190650508739054
+        },
+        "y": {
+          "x": 0.843961596488953,
+          "y": -0.536401867866516,
+          "z": 0.0012069724034518
+        },
+        "z": {
+          "x": 0.00000401714351028204,
+          "y": 0.00225644046440721,
+          "z": 0.999996423721313
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000576935417484492,
+        "y": -2.83673453330994,
+        "z": -276.594268798828
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02736,
+      "exec_time": 456.0,
+      "frame": 23,
+      "time": 0.383333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00270633865147829,
+        "y": 21.53200340271,
+        "z": 9550.13671875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641445277258625,
+      "flight_time": 0.4,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.806439725025055,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000719919189577922,
+        "y": -0.521834015846252,
+        "z": -125.359985351563
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.998883903026581,
+          "y": -0.0472237840294838,
+          "z": 0.000109985936433077
+        },
+        "y": {
+          "x": 0.0472237877547741,
+          "y": 0.998881578445435,
+          "z": -0.00225413078442216
+        },
+        "z": {
+          "x": -0.00000341469421982765,
+          "y": 0.0022568074055016,
+          "z": 0.999996364116669
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00065527594415471,
+        "y": -2.97345519065857,
+        "z": -274.017883300781
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02466,
+      "exec_time": 411.0,
+      "frame": 24,
+      "time": 0.4
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00307116890326142,
+        "y": 23.1235828399658,
+        "z": 9550.11328125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.3857,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641521496583972,
+      "flight_time": 0.416666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.798933023614022,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0000843671150505543,
+        "y": -0.573766767978668,
+        "z": -129.895263671875
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.454090297222137,
+          "y": 0.890952587127686,
+          "z": -0.00216112704947591
+        },
+        "y": {
+          "x": -0.890955328941345,
+          "y": -0.454088747501373,
+          "z": 0.00126389530487359
+        },
+        "z": {
+          "x": 0.000144727528095245,
+          "y": 0.00249938829801977,
+          "z": 0.999995589256287
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000742511881981045,
+        "y": -3.11596584320068,
+        "z": -272.116424560547
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02526,
+      "exec_time": 421.0,
+      "frame": 25,
+      "time": 0.416666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00346886063925922,
+        "y": 24.715145111084,
+        "z": 9550.0888671875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641567331817611,
+      "flight_time": 0.433333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.793394394588192,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000098319367680233,
+        "y": -0.628060698509216,
+        "z": -134.399276733398
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.549017310142517,
+          "y": -0.835807263851166,
+          "z": 0.00230734562501311
+        },
+        "y": {
+          "x": 0.835810720920563,
+          "y": -0.54901522397995,
+          "z": 0.00150910089723766
+        },
+        "z": {
+          "x": 0.00000545079819858074,
+          "y": 0.00275702495127916,
+          "z": 0.999994814395905
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000837135245092213,
+        "y": -3.25763583183289,
+        "z": -270.241119384766
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0255,
+      "exec_time": 425.0,
+      "frame": 26,
+      "time": 0.433333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00390086183324456,
+        "y": 26.3066921234131,
+        "z": 9550.0634765625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641611517943205,
+      "flight_time": 0.45,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.787932192966472,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000113984133349732,
+        "y": -0.684702098369598,
+        "z": -138.872467041016
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.997996985912323,
+          "y": -0.0632551088929176,
+          "z": 0.0001789724919945
+        },
+        "y": {
+          "x": 0.0632551982998848,
+          "y": 0.997993350028992,
+          "z": -0.00275176507420838
+        },
+        "z": {
+          "x": -0.00000455044209957123,
+          "y": 0.00275757303461432,
+          "z": 0.999994933605194
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.000939885620027781,
+        "y": -3.39848256111145,
+        "z": -268.391418457031
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02922,
+      "exec_time": 487.0,
+      "frame": 27,
+      "time": 0.45
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00436887703835964,
+        "y": 27.8982200622559,
+        "z": 9550.037109375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641689263190766,
+      "flight_time": 0.466666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.782544995188366,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000131500404677354,
+        "y": -0.74367743730545,
+        "z": -143.315246582031
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.438781231641769,
+          "y": 0.898589551448822,
+          "z": -0.00263014901429415
+        },
+        "y": {
+          "x": -0.898593485355377,
+          "y": -0.43877911567688,
+          "z": 0.00144543289206922
+        },
+        "z": {
+          "x": 0.000144796213135123,
+          "y": 0.0029976605437696,
+          "z": 0.999994158744812
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.001050976337865,
+        "y": -3.53852152824402,
+        "z": -266.566741943359
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02664,
+      "exec_time": 444.0,
+      "frame": 28,
+      "time": 0.466666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00487454328685999,
+        "y": 29.4897308349609,
+        "z": 9550.009765625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064173702162823,
+      "flight_time": 0.483333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.777231021803253,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000151006475789472,
+        "y": -0.804973602294922,
+        "z": -147.72802734375
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.564143419265747,
+          "y": -0.825671792030334,
+          "z": 0.00269387848675251
+        },
+        "y": {
+          "x": 0.825676381587982,
+          "y": -0.564140498638153,
+          "z": 0.00183186901267618
+        },
+        "z": {
+          "x": 0.00000720424577593803,
+          "y": 0.00325770722702146,
+          "z": 0.999993205070496
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00117036455776542,
+        "y": -3.67776989936829,
+        "z": -264.766632080078
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04908,
+      "exec_time": 818.0,
+      "frame": 29,
+      "time": 0.483333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00541930412873626,
+        "y": 31.0812244415283,
+        "z": 9549.9814453125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641782489689324,
+      "flight_time": 0.5,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.771988849250638,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000172658663359471,
+        "y": -0.868577659130096,
+        "z": -152.111206054688
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.996588468551636,
+          "y": -0.0825245529413223,
+          "z": 0.000274786027148366
+        },
+        "y": {
+          "x": 0.0825249552726746,
+          "y": 0.99658340215683,
+          "z": -0.00324692483991385
+        },
+        "z": {
+          "x": -0.00000589760020375252,
+          "y": 0.00325852306559682,
+          "z": 0.999993145465851
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00129913084674627,
+        "y": -3.81624388694763,
+        "z": -262.990600585938
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02826,
+      "exec_time": 471.0,
+      "frame": 30,
+      "time": 0.5
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00600501243025064,
+        "y": 32.6726989746094,
+        "z": 9549.9521484375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641861821728102,
+      "flight_time": 0.516666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.766817142942557,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000196610126295127,
+        "y": -0.934476971626282,
+        "z": -156.465179443359
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.420272469520569,
+          "y": 0.907392084598541,
+          "z": -0.00311102136038244
+        },
+        "y": {
+          "x": -0.907397568225861,
+          "y": -0.420269578695297,
+          "z": 0.00160053558647633
+        },
+        "z": {
+          "x": 0.000144845340400934,
+          "y": 0.0034955907613039,
+          "z": 0.999992370605469
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00143708742689341,
+        "y": -3.95395731925964,
+        "z": -261.238098144531
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02646,
+      "exec_time": 441.0,
+      "frame": 31,
+      "time": 0.516666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00663324911147356,
+        "y": 34.2641525268555,
+        "z": 9549.921875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641911533749678,
+      "flight_time": 0.533333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.761714301373451,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000223025359446183,
+        "y": -1.00265908241272,
+        "z": -160.790328979492
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.581915497779846,
+          "y": -0.81324291229248,
+          "z": 0.00306200515478849
+        },
+        "y": {
+          "x": 0.813248872756958,
+          "y": -0.581911444664001,
+          "z": 0.00217955000698566
+        },
+        "z": {
+          "x": 0.00000931299291551113,
+          "y": 0.00375848356634378,
+          "z": 0.999991416931152
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00158491393085569,
+        "y": -4.09092617034912,
+        "z": -259.508728027344
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02238,
+      "exec_time": 373.0,
+      "frame": 32,
+      "time": 0.533333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00730577297508717,
+        "y": 35.8555870056152,
+        "z": 9549.890625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000641958253073965,
+      "flight_time": 0.55,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.75667925687295,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000252073776209727,
+        "y": -1.07311189174652,
+        "z": -165.087036132813
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.99443519115448,
+          "y": -0.105344921350479,
+          "z": 0.000403488520532846
+        },
+        "y": {
+          "x": 0.105345636606216,
+          "y": 0.994428336620331,
+          "z": -0.00373798236250877
+        },
+        "z": {
+          "x": -0.00000746361911296844,
+          "y": 0.00375968590378761,
+          "z": 0.999991476535797
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00174290523864329,
+        "y": -4.22716522216797,
+        "z": -257.802032470703
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03072,
+      "exec_time": 512.0,
+      "frame": 33,
+      "time": 0.55
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00802432280033827,
+        "y": 37.4469985961914,
+        "z": 9549.8583984375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642039141142207,
+      "flight_time": 0.566666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.751710496908027,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000283925503026694,
+        "y": -1.14582335948944,
+        "z": -169.355667114258
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.398202627897263,
+          "y": 0.917289912700653,
+          "z": -0.00360523303970695
+        },
+        "y": {
+          "x": -0.917297124862671,
+          "y": -0.398199051618576,
+          "z": 0.00172296329401433
+        },
+        "z": {
+          "x": 0.000144855817779899,
+          "y": 0.00399315496906638,
+          "z": 0.999990582466125
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00191110430750996,
+        "y": -4.36268758773804,
+        "z": -256.117492675781
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02244,
+      "exec_time": 374.0,
+      "frame": 34,
+      "time": 0.566666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0087905041873455,
+        "y": 39.0383834838867,
+        "z": 9549.8251953125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642090867641466,
+      "flight_time": 0.583333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.746806508945654,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000318759470246732,
+        "y": -1.2207818031311,
+        "z": -173.596572875977
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.602475166320801,
+          "y": -0.798129856586456,
+          "z": 0.00340666808187962
+        },
+        "y": {
+          "x": 0.798137307167053,
+          "y": -0.602469801902771,
+          "z": 0.00255671516060829
+        },
+        "z": {
+          "x": 0.0000118245370686054,
+          "y": 0.00425934325903654,
+          "z": 0.999989688396454
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00209003733471036,
+        "y": -4.49750804901123,
+        "z": -254.454727172852
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01548,
+      "exec_time": 258.0,
+      "frame": 35,
+      "time": 0.583333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.00960601959377527,
+        "y": 40.6297454833984,
+        "z": 9549.791015625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064213877700745,
+      "flight_time": 0.6,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.741966358774257,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000356769072823226,
+        "y": -1.29797577857971,
+        "z": -177.810134887695
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.991247415542603,
+          "y": -0.132013067603111,
+          "z": 0.000571703538298607
+        },
+        "y": {
+          "x": 0.13201430439949,
+          "y": 0.991238534450531,
+          "z": -0.00422258861362934
+        },
+        "z": {
+          "x": -0.00000925851054489613,
+          "y": 0.00426109973341227,
+          "z": 0.999989449977875
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00228057615458965,
+        "y": -4.63163995742798,
+        "z": -252.813339233398
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01542,
+      "exec_time": 257.0,
+      "frame": 36,
+      "time": 0.6
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0104728080332279,
+        "y": 42.2210845947266,
+        "z": 9549.755859375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642221190321879,
+      "flight_time": 0.616666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.737188845264668,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000398140051402152,
+        "y": -1.37739408016205,
+        "z": -181.996688842773
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.372149705886841,
+          "y": 0.928163111209869,
+          "z": -0.00411390652880073
+        },
+        "y": {
+          "x": -0.92817234992981,
+          "y": -0.372145444154739,
+          "z": 0.0018054717220366
+        },
+        "z": {
+          "x": 0.00014480110257864,
+          "y": 0.00449031498283148,
+          "z": 0.999988257884979
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00248225871473551,
+        "y": -4.76509523391724,
+        "z": -251.192840576172
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04428,
+      "exec_time": 738.0,
+      "frame": 37,
+      "time": 0.616666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0113924592733383,
+        "y": 43.8124008178711,
+        "z": 9549.7197265625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642275053235947,
+      "flight_time": 0.633333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.732472411397595,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000443074328359216,
+        "y": -1.4590255022049,
+        "z": -186.15657043457
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.625861048698425,
+          "y": -0.779925107955933,
+          "z": 0.0037219449877739
+        },
+        "y": {
+          "x": 0.779934167861938,
+          "y": -0.625854074954987,
+          "z": 0.00296774576418102
+        },
+        "z": {
+          "x": 0.0000147749669849873,
+          "y": 0.0047602653503418,
+          "z": 0.999986946582794
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00269605708308518,
+        "y": -4.89788818359375,
+        "z": -249.592895507813
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01494,
+      "exec_time": 249.0,
+      "frame": 38,
+      "time": 0.633333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0123668368905783,
+        "y": 45.4036903381348,
+        "z": 9549.6826171875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642324091409,
+      "flight_time": 0.65,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.727816167447727,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000491773942485452,
+        "y": -1.54285931587219,
+        "z": -190.290115356445
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.986665308475494,
+          "y": -0.162757605314255,
+          "z": 0.000786316581070423
+        },
+        "y": {
+          "x": 0.162759512662888,
+          "y": 0.986654341220856,
+          "z": -0.00469746626913548
+        },
+        "z": {
+          "x": -0.0000112750567495823,
+          "y": 0.00476280180737376,
+          "z": 0.999986886978149
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00292197684757411,
+        "y": -5.03003120422363,
+        "z": -248.013122558594
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02256,
+      "exec_time": 376.0,
+      "frame": 39,
+      "time": 0.65
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0133976675570011,
+        "y": 46.9949493408203,
+        "z": 9549.64453125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642407968629524,
+      "flight_time": 0.666666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.723219001258428,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000544450711458921,
+        "y": -1.62888491153717,
+        "z": -194.397659301758
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.341716438531876,
+          "y": 0.939791262149811,
+          "z": -0.00463742669671774
+        },
+        "y": {
+          "x": -0.939802825450897,
+          "y": -0.341711580753326,
+          "z": 0.00184010015800595
+        },
+        "z": {
+          "x": 0.000144648365676403,
+          "y": 0.00498705403879285,
+          "z": 0.999985992908478
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00316060660406947,
+        "y": -5.16153478622437,
+        "z": -246.453063964844
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02904,
+      "exec_time": 484.0,
+      "frame": 40,
+      "time": 0.666666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0144867794588208,
+        "y": 48.586181640625,
+        "z": 9549.60546875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642464059329809,
+      "flight_time": 0.683333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.718679622727997,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000601318315602839,
+        "y": -1.71709179878235,
+        "z": -198.479537963867
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.652081668376923,
+          "y": -0.758137583732605,
+          "z": 0.00400067307054996
+        },
+        "y": {
+          "x": 0.75814825296402,
+          "y": -0.652072787284851,
+          "z": 0.00341694941744208
+        },
+        "z": {
+          "x": 0.000018212478607893,
+          "y": 0.0052612298168242,
+          "z": 0.999984443187714
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00341205764561892,
+        "y": -5.29241228103638,
+        "z": -244.912414550781
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0216,
+      "exec_time": 360.0,
+      "frame": 41,
+      "time": 0.683333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0156359151005745,
+        "y": 50.1773834228516,
+        "z": 9549.5654296875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642514134528897,
+      "flight_time": 0.700000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.714197053158596,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000662605743855238,
+        "y": -1.80746972560883,
+        "z": -202.536056518555
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.980237603187561,
+          "y": -0.197818800806999,
+          "z": 0.00105474516749382
+        },
+        "y": {
+          "x": 0.197821646928787,
+          "y": 0.980224132537842,
+          "z": -0.00515813287347555
+        },
+        "z": {
+          "x": -0.0000135130248963833,
+          "y": 0.00526484102010727,
+          "z": 0.999984383583069
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00367724639363587,
+        "y": -5.42267513275146,
+        "z": -243.390823364258
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01656,
+      "exec_time": 276.0,
+      "frame": 42,
+      "time": 0.700000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0168470330536366,
+        "y": 51.7685546875,
+        "z": 9549.5244140625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642599475361283,
+      "flight_time": 0.716666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.709770358338648,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000728539598640054,
+        "y": -1.90000867843628,
+        "z": -206.567520141602
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.306508362293243,
+          "y": 0.951853454113007,
+          "z": -0.00517518259584904
+        },
+        "y": {
+          "x": -0.951867699623108,
+          "y": -0.306503057479858,
+          "z": 0.00181810092180967
+        },
+        "z": {
+          "x": 0.000144356861710548,
+          "y": 0.00548334419727325,
+          "z": 0.999983131885529
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00395603151991963,
+        "y": -5.55233335494995,
+        "z": -241.88786315918
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02556,
+      "exec_time": 426.0,
+      "frame": 43,
+      "time": 0.716666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0181219130754471,
+        "y": 53.3596954345703,
+        "z": 9549.4814453125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642657885185962,
+      "flight_time": 0.733333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.705398203680189,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000799355679191649,
+        "y": -1.99469864368439,
+        "z": -210.574234008789
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.68106073141098,
+          "y": -0.732214152812958,
+          "z": 0.00423434702679515
+        },
+        "y": {
+          "x": 0.732226610183716,
+          "y": -0.681049585342407,
+          "z": 0.00390816712751985
+        },
+        "z": {
+          "x": 0.0000221873633563519,
+          "y": 0.00576219521462917,
+          "z": 0.999981760978699
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00424896273761988,
+        "y": -5.68139839172363,
+        "z": -240.403244018555
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02526,
+      "exec_time": 421.0,
+      "frame": 44,
+      "time": 0.733333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0194624066352844,
+        "y": 54.9508018493652,
+        "z": 9549.4375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642708966685046,
+      "flight_time": 0.750000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.701079788430439,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00087529479060322,
+        "y": -2.09153008460999,
+        "z": -214.556518554688
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.971405923366547,
+          "y": -0.23741902410984,
+          "z": 0.00138477818109095
+        },
+        "y": {
+          "x": 0.23742301762104,
+          "y": 0.971390008926392,
+          "z": -0.00559859024360776
+        },
+        "z": {
+          "x": -0.0000159484334290028,
+          "y": 0.00576727744191885,
+          "z": 0.999981701374054
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00455634808167815,
+        "y": -5.80988216400146,
+        "z": -238.936660766602
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01782,
+      "exec_time": 297.0,
+      "frame": 45,
+      "time": 0.750000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0208703577518463,
+        "y": 56.541877746582,
+        "z": 9549.392578125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064279570974321,
+      "flight_time": 0.766666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.69681422286409,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.000956608564592898,
+        "y": -2.19049334526062,
+        "z": -218.5146484375
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.26595151424408,
+          "y": 0.963969051837921,
+          "z": -0.00572557747364044
+        },
+        "y": {
+          "x": -0.963986217975616,
+          "y": -0.265946090221405,
+          "z": 0.00172886019572616
+        },
+        "z": {
+          "x": 0.000143871642649174,
+          "y": 0.00597916450351477,
+          "z": 0.999980628490448
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0048788245767355,
+        "y": -5.93779277801514,
+        "z": -237.487701416016
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0261,
+      "exec_time": 435.0,
+      "frame": 46,
+      "time": 0.766666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0223477128893137,
+        "y": 58.1329193115234,
+        "z": 9549.3466796875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642856560526065,
+      "flight_time": 0.783333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.692600350338238,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00104355136863887,
+        "y": -2.29157900810242,
+        "z": -222.448913574219
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.712680578231812,
+          "y": -0.70147430896759,
+          "z": 0.0044125784188509
+        },
+        "y": {
+          "x": 0.701488375663757,
+          "y": -0.712666690349579,
+          "z": 0.00444484921172261
+        },
+        "z": {
+          "x": 0.0000267508439719677,
+          "y": 0.00626312382519245,
+          "z": 0.999978840351105
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00521656917408109,
+        "y": -6.0651421546936,
+        "z": -236.056091308594
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01596,
+      "exec_time": 266.0,
+      "frame": 47,
+      "time": 0.783333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0238963533192873,
+        "y": 59.7239227294922,
+        "z": 9549.2998046875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642908587051818,
+      "flight_time": 0.800000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.688437281127574,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.001136384322308,
+        "y": -2.39477801322937,
+        "z": -226.359603881836
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.959484040737152,
+          "y": -0.281756073236465,
+          "z": 0.00178451323881745
+        },
+        "y": {
+          "x": 0.281761676073074,
+          "y": 0.959465324878693,
+          "z": -0.00601090211421251
+        },
+        "z": {
+          "x": -0.0000185701064765453,
+          "y": 0.00627016648650169,
+          "z": 0.999978840351105
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00556997582316399,
+        "y": -6.19194078445435,
+        "z": -234.641555786133
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0162,
+      "exec_time": 270.0,
+      "frame": 48,
+      "time": 0.800000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0255181808024645,
+        "y": 61.3148918151855,
+        "z": 9549.251953125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000642996670927355,
+      "flight_time": 0.816666666666668,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.684324303451849,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00123537657782435,
+        "y": -2.50008130073547,
+        "z": -230.246994018555
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.219622060656548,
+          "y": 0.975564420223236,
+          "z": -0.00628499314188957
+        },
+        "y": {
+          "x": -0.975584745407104,
+          "y": -0.219616666436195,
+          "z": 0.00156158115714788
+        },
+        "z": {
+          "x": 0.000143133103847504,
+          "y": 0.00647449493408203,
+          "z": 0.999977350234985
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00593953765928745,
+        "y": -6.31819629669189,
+        "z": -233.243698120117
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0183,
+      "exec_time": 305.0,
+      "frame": 49,
+      "time": 0.816666666666668
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0272151399403811,
+        "y": 62.905818939209,
+        "z": 9549.203125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643060053928125,
+      "flight_time": 0.833333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.680260216181897,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00134080369025469,
+        "y": -2.6074800491333,
+        "z": -234.111358642578
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.746620893478394,
+          "y": -0.665233969688416,
+          "z": 0.004523572511971
+        },
+        "y": {
+          "x": 0.665249466896057,
+          "y": -0.746603906154633,
+          "z": 0.00502885924652219
+        },
+        "z": {
+          "x": 0.0000319499522447586,
+          "y": 0.0067639471963048,
+          "z": 0.999975442886353
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00632562953978777,
+        "y": -6.44391918182373,
+        "z": -231.862289428711
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02022,
+      "exec_time": 337.0,
+      "frame": 50,
+      "time": 0.833333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0289891846477985,
+        "y": 64.496711730957,
+        "z": 9549.1533203125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643112964194852,
+      "flight_time": 0.850000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.676244352023734,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00145294726826251,
+        "y": -2.71696543693542,
+        "z": -237.952972412109
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.943681657314301,
+          "y": -0.330846190452576,
+          "z": 0.00226119719445705
+        },
+        "y": {
+          "x": 0.330853760242462,
+          "y": 0.943660140037537,
+          "z": -0.00638505117967725
+        },
+        "z": {
+          "x": -0.0000213319435715675,
+          "y": 0.00677357567474246,
+          "z": 0.999975323677063
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00672861654311419,
+        "y": -6.56911993026733,
+        "z": -230.497055053711
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02472,
+      "exec_time": 412.0,
+      "frame": 51,
+      "time": 0.850000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0308422707021236,
+        "y": 66.0875625610352,
+        "z": 9549.1015625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643202296926868,
+      "flight_time": 0.866666666666668,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.672275910224581,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00157209660392255,
+        "y": -2.828528881073,
+        "z": -241.772094726563
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.167077571153641,
+          "y": 0.985919773578644,
+          "z": -0.00684764608740807
+        },
+        "y": {
+          "x": -0.985943496227264,
+          "y": -0.167072713375092,
+          "z": 0.00130448490381241
+        },
+        "z": {
+          "x": 0.000142060685902834,
+          "y": 0.0069693336263299,
+          "z": 0.999974131584167
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.007148961070925,
+        "y": -6.69380474090576,
+        "z": -229.147644042969
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01794,
+      "exec_time": 299.0,
+      "frame": 52,
+      "time": 0.866666666666668
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0327763855457306,
+        "y": 67.6783752441406,
+        "z": 9549.048828125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643268364422168,
+      "flight_time": 0.883333333333334,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.668353912086598,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00169854681007564,
+        "y": -2.94216203689575,
+        "z": -245.568984985352
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.782421350479126,
+          "y": -0.62273246049881,
+          "z": 0.00455362861976027
+        },
+        "y": {
+          "x": 0.622749269008636,
+          "y": -0.782400786876678,
+          "z": 0.00566042214632034
+        },
+        "z": {
+          "x": 0.0000378354452550411,
+          "y": 0.00726459361612797,
+          "z": 0.999971926212311
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00758701004087925,
+        "y": -6.81798458099365,
+        "z": -227.813812255859
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01776,
+      "exec_time": 296.0,
+      "frame": 53,
+      "time": 0.883333333333334
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0347935147583485,
+        "y": 69.2691421508789,
+        "z": 9548.9951171875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643322127661722,
+      "flight_time": 0.900000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.664477601343272,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0018326003337279,
+        "y": -3.05785655975342,
+        "z": -249.343902587891
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.923044443130493,
+          "y": -0.384682685136795,
+          "z": 0.0028219586238265
+        },
+        "y": {
+          "x": 0.384692877531052,
+          "y": 0.923020124435425,
+          "z": -0.00670824013650417
+        },
+        "z": {
+          "x": -0.0000241817906498909,
+          "y": 0.0072775837033987,
+          "z": 0.999971926212311
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00804321002215147,
+        "y": -6.94166851043701,
+        "z": -226.495330810547
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.04146,
+      "exec_time": 691.0,
+      "frame": 54,
+      "time": 0.900000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0368956662714481,
+        "y": 70.8598709106445,
+        "z": 9548.9404296875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643412647799043,
+      "flight_time": 0.916666666666668,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.66064631070062,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00197456520982087,
+        "y": -3.17560434341431,
+        "z": -253.097106933594
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.107866786420345,
+          "y": 0.994137704372406,
+          "z": -0.00740499049425125
+        },
+        "y": {
+          "x": -0.994165182113647,
+          "y": -0.107862867414951,
+          "z": 0.000944831408560276
+        },
+        "z": {
+          "x": 0.000140566844493151,
+          "y": 0.00746368896216154,
+          "z": 0.999970555305481
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00851788651198149,
+        "y": -7.06486225128174,
+        "z": -225.191848754883
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01626,
+      "exec_time": 271.0,
+      "frame": 55,
+      "time": 0.916666666666668
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0390848368406296,
+        "y": 72.450553894043,
+        "z": 9548.884765625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643481490952156,
+      "flight_time": 0.933333333333335,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.656859016974535,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00212475983425975,
+        "y": -3.29539728164673,
+        "z": -256.828826904297
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.819477796554565,
+          "y": -0.573093235492706,
+          "z": 0.00448661483824253
+        },
+        "y": {
+          "x": 0.573110938072205,
+          "y": -0.819453239440918,
+          "z": 0.00633775210008025
+        },
+        "z": {
+          "x": 0.0000444492325186729,
+          "y": 0.00776496483013034,
+          "z": 0.999968469142914
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00901168026030064,
+        "y": -7.187575340271,
+        "z": -223.903167724609
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0183,
+      "exec_time": 305.0,
+      "frame": 56,
+      "time": 0.933333333333335
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0413631126284599,
+        "y": 74.0411834716797,
+        "z": 9548.828125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643536106909541,
+      "flight_time": 0.950000000000001,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.653115186329833,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00228350632824004,
+        "y": -3.41722750663757,
+        "z": -260.539306640625
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.896490633487701,
+          "y": -0.443048804998398,
+          "z": 0.00347227836027741
+        },
+        "y": {
+          "x": 0.443062305450439,
+          "y": 0.896463751792908,
+          "z": -0.00696475384756923
+        },
+        "z": {
+          "x": -0.0000270460732281208,
+          "y": 0.00778226368129253,
+          "z": 0.999968409538269
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.00952479429543018,
+        "y": -7.30981731414795,
+        "z": -222.629058837891
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02412,
+      "exec_time": 402.0,
+      "frame": 57,
+      "time": 0.950000000000001
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0437325201928616,
+        "y": 75.6317672729492,
+        "z": 9548.76953125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643627630865894,
+      "flight_time": 0.966666666666668,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.649414106986265,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00245113344863057,
+        "y": -3.54108738899231,
+        "z": -264.228790283203
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.0417006127536297,
+          "y": 0.999098360538483,
+          "z": -0.00794489309191704
+        },
+        "y": {
+          "x": -0.999130070209503,
+          "y": -0.0416983813047409,
+          "z": 0.000470260623842478
+        },
+        "z": {
+          "x": 0.000138546340167522,
+          "y": 0.00795758236199617,
+          "z": 0.99996691942215
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0100576337426901,
+        "y": -7.43159341812134,
+        "z": -221.369201660156
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03594,
+      "exec_time": 599.0,
+      "frame": 58,
+      "time": 0.966666666666668
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.046195100992918,
+        "y": 77.2223052978516,
+        "z": 9548.7099609375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643699432371557,
+      "flight_time": 0.983333333333335,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.645754844732257,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00262798205949366,
+        "y": -3.66696929931641,
+        "z": -267.897521972656
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.856854319572449,
+          "y": -0.515540242195129,
+          "z": 0.0043054660782218
+        },
+        "y": {
+          "x": 0.515558421611786,
+          "y": -0.856825351715088,
+          "z": 0.00705514475703239
+        },
+        "z": {
+          "x": 0.0000518215820193291,
+          "y": 0.00826493930071592,
+          "z": 0.999964416027069
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0106109129264951,
+        "y": -7.55291271209717,
+        "z": -220.123382568359
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02046,
+      "exec_time": 341.0,
+      "frame": 59,
+      "time": 0.983333333333335
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0487529970705509,
+        "y": 78.8127899169922,
+        "z": 9548.6494140625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643754870244896,
+      "flight_time": 1.0,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.642136821246356,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.0028143955860287,
+        "y": -3.79486560821533,
+        "z": -271.545715332031
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.862814843654633,
+          "y": -0.505502104759216,
+          "z": 0.00421532802283764
+        },
+        "y": {
+          "x": 0.505519688129425,
+          "y": 0.862785637378693,
+          "z": -0.00713568041101098
+        },
+        "z": {
+          "x": -0.0000298209488391876,
+          "y": 0.0082876943051815,
+          "z": 0.99996429681778
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0111848087981343,
+        "y": -7.67378377914429,
+        "z": -218.891418457031
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01704,
+      "exec_time": 284.0,
+      "frame": 60,
+      "time": 1.0
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0514082871377468,
+        "y": 80.4032287597656,
+        "z": 9548.587890625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643847275481961,
+      "flight_time": 1.01666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.638559458207111,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00301072397269309,
+        "y": -3.92476916313171,
+        "z": -275.173583984375
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.0316500850021839,
+          "y": 0.999463081359863,
+          "z": -0.00845113303512335
+        },
+        "y": {
+          "x": -0.999499142169952,
+          "y": 0.0316499322652817,
+          "z": -0.000131661538034678
+        },
+        "z": {
+          "x": 0.000135883688926697,
+          "y": 0.0084510575979948,
+          "z": 0.999963045120239
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.011779697611928,
+        "y": -7.79421138763428,
+        "z": -217.672988891602
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06036,
+      "exec_time": 1006.0,
+      "frame": 61,
+      "time": 1.01666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0541630573570728,
+        "y": 81.9936141967773,
+        "z": 9548.5244140625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064392218743882,
+      "flight_time": 1.03333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.635021821402947,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00321732996962965,
+        "y": -4.0566725730896,
+        "z": -278.781372070313
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.893440127372742,
+          "y": -0.449164241552353,
+          "z": 0.00399039871990681
+        },
+        "y": {
+          "x": 0.449182271957397,
+          "y": -0.893406271934509,
+          "z": 0.00780352763831615
+        },
+        "z": {
+          "x": 0.0000599818304181099,
+          "y": 0.00876438803970814,
+          "z": 0.999960482120514
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0123963635414839,
+        "y": -7.91420412063599,
+        "z": -216.467926025391
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.06804,
+      "exec_time": 1134.0,
+      "frame": 62,
+      "time": 1.03333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0570194944739342,
+        "y": 83.5839462280273,
+        "z": 9548.4599609375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000643978446935923,
+      "flight_time": 1.05,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.631523510457475,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00343457749113441,
+        "y": -4.1905689239502,
+        "z": -282.369293212891
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.820640206336975,
+          "y": -0.571422636508942,
+          "z": 0.00505184987559915
+        },
+        "y": {
+          "x": 0.571445107460022,
+          "y": 0.820608973503113,
+          "z": -0.0071981749497354
+        },
+        "z": {
+          "x": -0.0000323904678225517,
+          "y": 0.00879395939409733,
+          "z": 0.99996018409729
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0130348578095436,
+        "y": -8.03377056121826,
+        "z": -215.276031494141
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02406,
+      "exec_time": 401.0,
+      "frame": 63,
+      "time": 1.05
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0599797070026398,
+        "y": 85.1742248535156,
+        "z": 9548.39453125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644071549852597,
+      "flight_time": 1.06666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.628063813590447,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00366283627226949,
+        "y": -4.32645082473755,
+        "z": -285.937591552734
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.112217575311661,
+          "y": 0.993643641471863,
+          "z": -0.00890256091952324
+        },
+        "y": {
+          "x": -0.993683874607086,
+          "y": 0.11221420019865,
+          "z": -0.000872081145644188
+        },
+        "z": {
+          "x": 0.000132451299577951,
+          "y": 0.00894418358802795,
+          "z": 0.999958872795105
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0136955296620727,
+        "y": -8.15291404724121,
+        "z": -214.097015380859
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0276,
+      "exec_time": 460.0,
+      "frame": 64,
+      "time": 1.06666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0630457922816277,
+        "y": 86.7644424438477,
+        "z": 9548.328125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644149724288045,
+      "flight_time": 1.08333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.624641930049084,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00390249025076628,
+        "y": -4.46431159973145,
+        "z": -289.486450195313
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.927739083766937,
+          "y": -0.373212248086929,
+          "z": 0.00352121330797672
+        },
+        "y": {
+          "x": 0.373229146003723,
+          "y": -0.92769980430603,
+          "z": 0.00856806803494692
+        },
+        "z": {
+          "x": 0.0000689234584569931,
+          "y": 0.00926313549280167,
+          "z": 0.999955892562866
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0143792312592268,
+        "y": -8.27164268493652,
+        "z": -212.930709838867
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03468,
+      "exec_time": 578.0,
+      "frame": 65,
+      "time": 1.08333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0662199705839157,
+        "y": 88.354606628418,
+        "z": 9548.259765625
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644206835620425,
+      "flight_time": 1.1,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.621257503943263,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00415392499417067,
+        "y": -4.60414457321167,
+        "z": -293.016052246094
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.768531799316406,
+          "y": -0.639783263206482,
+          "z": 0.00597754679620266
+        },
+        "y": {
+          "x": 0.639811277389526,
+          "y": 0.768499195575714,
+          "z": -0.00712608639150858
+        },
+        "z": {
+          "x": -0.0000345855951309204,
+          "y": 0.00930111855268478,
+          "z": 0.999955356121063
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0150860939174891,
+        "y": -8.38996505737305,
+        "z": -211.776931762695
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02544,
+      "exec_time": 424.0,
+      "frame": 66,
+      "time": 1.1
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0695043876767159,
+        "y": 89.9447021484375,
+        "z": 9548.1904296875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644300483138942,
+      "flight_time": 1.11666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.617909779006469,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00441753584891558,
+        "y": -4.74594259262085,
+        "z": -296.526641845703
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.199758797883987,
+          "y": 0.979800939559937,
+          "z": -0.00927246548235416
+        },
+        "y": {
+          "x": -0.979845285415649,
+          "y": 0.199750974774361,
+          "z": -0.00175960874184966
+        },
+        "z": {
+          "x": 0.000128110870718956,
+          "y": 0.00943706464022398,
+          "z": 0.999953925609589
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0158166401088238,
+        "y": -8.50788402557373,
+        "z": -210.63542175293
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03708,
+      "exec_time": 618.0,
+      "frame": 67,
+      "time": 1.11666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0729012414813042,
+        "y": 91.5347442626953,
+        "z": 9548.1201171875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644382041478634,
+      "flight_time": 1.13333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.614598176917251,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00469372887164354,
+        "y": -4.88969945907593,
+        "z": -300.018402099609
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.957929015159607,
+          "y": -0.28699004650116,
+          "z": 0.00287676230072975
+        },
+        "y": {
+          "x": 0.287004768848419,
+          "y": -0.957883954048157,
+          "z": 0.00932779908180237
+        },
+        "z": {
+          "x": 0.0000786231830716133,
+          "y": 0.00976099446415901,
+          "z": 0.99995094537735
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0165715832263231,
+        "y": -8.62540721893311,
+        "z": -209.506011962891
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03732,
+      "exec_time": 622.0,
+      "frame": 68,
+      "time": 1.13333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0764127895236015,
+        "y": 93.1247253417969,
+        "z": 9548.048828125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644440095876125,
+      "flight_time": 1.15,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.611322163840425,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00498291430994868,
+        "y": -5.03540849685669,
+        "z": -303.491546630859
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.704967617988586,
+          "y": -0.709204792976379,
+          "z": 0.0069826333783567
+        },
+        "y": {
+          "x": 0.70923924446106,
+          "y": 0.704934358596802,
+          "z": -0.00688951835036278
+        },
+        "z": {
+          "x": -0.0000362163409590721,
+          "y": 0.00980923697352409,
+          "z": 0.999950408935547
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0173511318862438,
+        "y": -8.74254322052002,
+        "z": -208.388549804688
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02886,
+      "exec_time": 481.0,
+      "frame": 69,
+      "time": 1.15
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0800412520766258,
+        "y": 94.7146377563477,
+        "z": 9547.9755859375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644534012827956,
+      "flight_time": 1.16666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.608081250427068,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00528551079332829,
+        "y": -5.18306350708008,
+        "z": -306.946258544922
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.293690383434296,
+          "y": 0.955852806568146,
+          "z": -0.00952800735831261
+        },
+        "y": {
+          "x": -0.955900728702545,
+          "y": 0.293676912784576,
+          "z": -0.00279899500310421
+        },
+        "z": {
+          "x": 0.000122723169624805,
+          "y": 0.00992985628545284,
+          "z": 0.999949276447296
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.018155774101615,
+        "y": -8.85929489135742,
+        "z": -207.282775878906
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0288,
+      "exec_time": 480.0,
+      "frame": 70,
+      "time": 1.16666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0837888866662979,
+        "y": 96.3044891357422,
+        "z": 9547.9013671875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644619106940364,
+      "flight_time": 1.18333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.604874680410669,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00560194067656994,
+        "y": -5.33265781402588,
+        "z": -310.382720947266
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.981763064861298,
+          "y": -0.190096363425255,
+          "z": 0.00203745905309916
+        },
+        "y": {
+          "x": 0.190107628703117,
+          "y": -0.981711864471436,
+          "z": 0.0100537929683924
+        },
+        "z": {
+          "x": 0.0000890111550688744,
+          "y": 0.0102577619254589,
+          "z": 0.999945998191834
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.018985802307725,
+        "y": -8.97566890716553,
+        "z": -206.188522338867
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01572,
+      "exec_time": 262.0,
+      "frame": 71,
+      "time": 1.18333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0876578986644745,
+        "y": 97.8942718505859,
+        "z": 9547.826171875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644678226114409,
+      "flight_time": 1.2,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.601702008928571,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00593264028429985,
+        "y": -5.48418569564819,
+        "z": -313.801147460938
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.628521978855133,
+          "y": -0.77774977684021,
+          "z": 0.00804880727082491
+        },
+        "y": {
+          "x": 0.777791559696198,
+          "y": 0.628489255905151,
+          "z": -0.00645649340003729
+        },
+        "z": {
+          "x": -0.0000370480120182037,
+          "y": 0.0103183351457119,
+          "z": 0.999945282936096
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0198419876396656,
+        "y": -9.09167289733887,
+        "z": -205.105651855469
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0162,
+      "exec_time": 270.0,
+      "frame": 72,
+      "time": 1.2
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0916505977511406,
+        "y": 99.4839935302734,
+        "z": 9547.75
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.000064477213735475,
+      "flight_time": 1.21666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.598562835604387,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00627805339172482,
+        "y": -5.63764095306396,
+        "z": -317.201721191406
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.39288917183876,
+          "y": 0.919535040855408,
+          "z": -0.00963025819510221
+        },
+        "y": {
+          "x": -0.919585883617401,
+          "y": 0.392868906259537,
+          "z": -0.0039881682023406
+        },
+        "z": {
+          "x": 0.000116159208118916,
+          "y": 0.0104227466508746,
+          "z": 0.999944150447845
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0207247864454985,
+        "y": -9.20730876922607,
+        "z": -204.033935546875
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02496,
+      "exec_time": 416.0,
+      "frame": 73,
+      "time": 1.21666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.0957693085074425,
+        "y": 101.07364654541,
+        "z": 9547.671875
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644860888497537,
+      "flight_time": 1.23333333333333,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.595456493144133,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00663862796500325,
+        "y": -5.79301738739014,
+        "z": -320.584594726563
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": -0.996591925621033,
+          "y": -0.0824796482920647,
+          "z": 0.000986605882644653
+        },
+        "y": {
+          "x": 0.0824857354164124,
+          "y": -0.996534764766693,
+          "z": 0.0107083404436708
+        },
+        "z": {
+          "x": 0.0000999690964818001,
+          "y": 0.0107532050460577,
+          "z": 0.999940633773804
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0216344632208347,
+        "y": -9.32258319854736,
+        "z": -202.973205566406
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02076,
+      "exec_time": 346.0,
+      "frame": 74,
+      "time": 1.23333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.100016310811043,
+        "y": 102.663223266602,
+        "z": 9547.5927734375
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000644921255148605,
+      "flight_time": 1.25,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.592382447712623,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00701482081785798,
+        "y": -5.95030927658081,
+        "z": -323.949981689453
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.53785640001297,
+          "y": -0.842986404895782,
+          "z": 0.0091485409066081
+        },
+        "y": {
+          "x": 0.843036234378815,
+          "y": 0.537825584411621,
+          "z": -0.00579310581088066
+        },
+        "z": {
+          "x": -0.0000368049368262291,
+          "y": 0.0108284037560225,
+          "z": 0.999939799308777
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.022571561858058,
+        "y": -9.43750381469727,
+        "z": -201.92333984375
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01626,
+      "exec_time": 271.0,
+      "frame": 75,
+      "time": 1.25
+    }
+  },
+  {
+    "medium": {
+      "base_density": 1.225,
+      "drag_coef": 0.47,
+      "drag_model": "quadratic",
+      "molar_mass": 0.029,
+      "rha_coef": 0.00001,
+      "speed_of_sound": 343.0,
+      "type": "gas",
+      "viscosity": 0.0000181
+    },
+    "naming": {
+      "ammo_name": "9x19_HST_PlusP",
+      "projectile_uid": "proj_77Wuc8Cc",
+      "weapon_name": "Glock17_HST"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371995431828104>",
+      "angular_velocity": {
+        "x": 0.104393929243088,
+        "y": 104.252731323242,
+        "z": 9547.5126953125
+      },
+      "caliber": 9.03,
+      "core_caliber": 9.03,
+      "core_hardness": 0.3,
+      "core_mass": 1.2,
+      "cross_section": 0.000064042073101775,
+      "current_drag_coef": 0.29,
+      "drag_coef": 0.29,
+      "effective_cross_section": 0.0000645014855044634,
+      "flight_time": 1.26666666666667,
+      "fragmentation_chance": 0.5,
+      "fragmentation_count": 0,
+      "fragments_max": 0,
+      "fragments_min": 0,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 15.7,
+      "length_diameter_ratio": 0.0,
+      "mach_number": 0.589340432392265,
+      "magnus_effect_factor": 0.0,
+      "mass": 7.5,
+      "penetration_count": 0,
+      "position": {
+        "x": -0.00740709761157632,
+        "y": -6.10951042175293,
+        "z": -327.298065185547
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 65.0,
+      "ricochet_min_angle": 10.0,
+      "rotation": {
+        "x": {
+          "x": 0.495689034461975,
+          "y": 0.868447363376617,
+          "z": -0.00953423418104649
+        },
+        "y": {
+          "x": -0.868500053882599,
+          "y": 0.495660483837128,
+          "z": -0.00531688146293163
+        },
+        "z": {
+          "x": 0.000108304433524609,
+          "y": 0.0109159918501973,
+          "z": 0.99993884563446
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 3.413,
+      "tumble_time": 0.0,
+      "uid": "proj_77Wuc8Cc",
+      "velocity": {
+        "x": -0.0235366094857454,
+        "y": -9.55207347869873,
+        "z": -200.884124755859
+      },
+      "weapon": "<Resource#-9223371995347942042>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01962,
+      "exec_time": 327.0,
+      "frame": 76,
+      "time": 1.26666666666667
+    }
+  }
+]

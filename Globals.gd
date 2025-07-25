@@ -71,3 +71,7 @@ func _convert_value(value) -> Variant:
       
     _:
       return value
+
+func normalize(value: float, min: float, max: float) -> float:
+  var normalized = clamp((value - min) / (max - min), 0.0, 1.0)
+  return normalized
