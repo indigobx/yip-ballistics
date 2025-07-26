@@ -37,219 +37,256 @@ func _ready():
 func _initialize_medium_profiles():
   """Инициализация физических параметров сред"""
   _medium_profiles = {
-      #------------------------------
-      # Газы
-      #------------------------------
-      Medium.AIR_CLEAN: {
-          "type": "gas",
-          "base_density": 1.225,
-          "molar_mass": 0.029,
-          "drag_model": "quadratic",
-          "drag_coef": 0.47,
-          "viscosity": 1.81e-5,
-          "speed_of_sound": 343.0,
-          "rha_coef": 0.00001  # Практически не защищает
-      },
-      
-      Medium.AIR_URBAN: {
-          "type": "gas",
-          "base_density": 1.290,  # Загрязнения + пыль
-          "molar_mass": 0.030,
-          "drag_model": "quadratic",
-          "drag_coef": 0.52,
-          "viscosity": 1.85e-5,
-          "rha_coef": 0.00002
-      },
-      
-      Medium.AIR_HUMID: {
-          "type": "gas",
-          "base_density": 1.194,  # 90% влажности
-          "molar_mass": 0.028,
-          "drag_model": "quadratic",
-          "drag_coef": 0.55,  # Капли воды увеличивают сопротивление
-          "viscosity": 1.88e-5,
-          "rha_coef": 0.00003
-      },
-      
-      Medium.AIR_HOT: {  # Около пламени/плазмы
-          "type": "gas",
-          "base_density": 0.5,   # При ~500°C
-          "molar_mass": 0.029,
-          "drag_model": "quadratic",
-          "drag_coef": 0.45,
-          "viscosity": 3.5e-5,
-          "rha_coef": 0.00001
-      },
-      
-      #------------------------------
-      # Жидкости
-      #------------------------------
-      Medium.WATER_FRESH: {
-          "type": "liquid",
-          "base_density": 998.0,
-          "drag_model": "stokes",
-          "drag_coef": 0.47,
-          "viscosity": 1.002e-3,
-          "bulk_modulus": 2.2e9,
-          "speed_of_sound": 1482,
-          "rha_coef": 0.05  # 1 м воды ~ 50 мм RHA против кинетики
-      },
-      
-      Medium.WATER_DIRTY: {  # Грязь/ил
-          "type": "liquid",
-          "base_density": 1100.0,
-          "drag_model": "viscous",
-          "viscosity": 5.0e-3,
-          "rha_coef": 0.07
-      },
-      
-      Medium.WATER_SALT: {
-          "type": "liquid",
-          "base_density": 1025.0,
-          "drag_model": "stokes",
-          "drag_coef": 0.5,
-          "viscosity": 1.07e-3,
-          "rha_coef": 0.055
-      },
-      
-      Medium.OIL_MACHINE: {  # SAE 30
-          "type": "liquid",
-          "base_density": 900.0,
-          "drag_model": "viscous",
-          "viscosity": 0.1,
-          "rha_coef": 0.08  # Вязкость даёт доп. сопротивление
-      },
-      
-      #------------------------------
-      # Металлы
-      #------------------------------
-      Medium.STEEL_STRUCTURAL: {  # AISI 1020
-          "type": "solid",
-          "base_density": 7850.0,
-          "young_modulus": 2.0e11,
-          "poisson_ratio": 0.29,
-          "hardness": 120,  # HB
-          "speed_of_sound": 5000,
-          "rha_coef": 0.7  # Относительно RHA
-      },
-      
-      Medium.STEEL_ARMOR: {  # RHA (Rolled Homogeneous Armor)
-          "type": "solid",
-          "base_density": 7850.0,
-          "young_modulus": 2.1e11,
-          "hardness": 250,  # HB
-          "rha_coef": 1.0  # Эталон
-      },
-      
-      Medium.ALUMINUM_7000: {  # Алюминий 7075-T6
-          "type": "solid",
-          "base_density": 2810.0,
-          "young_modulus": 7.2e10,
-          "hardness": 150,
-          "rha_coef": 0.3
-      },
-      
-      Medium.CAST_IRON: {
-          "type": "solid",
-          "base_density": 7300.0,
-          "young_modulus": 1.2e11,
-          "hardness": 200,
-          "brittleness": 0.8,
-          "rha_coef": 0.6
-      },
-      
-      #------------------------------
-      # Строительные материалы
-      #------------------------------
-      Medium.CONCRETE: {  # M300
-          "type": "solid",
-          "base_density": 2400.0,
-          "young_modulus": 3.0e10,
-          "compressive_strength": 30e6,
-          "rha_coef": 0.2
-      },
-      
-      Medium.ASPHALT: {
-          "type": "solid",
-          "base_density": 2300.0,
-          "young_modulus": 2.0e9,
-          "rha_coef": 0.15
-      },
-      
-      Medium.BRICK: {
-          "type": "solid",
-          "base_density": 1800.0,
-          "young_modulus": 2.4e10,
-          "rha_coef": 0.18
-      },
-      
-      #------------------------------
-      # Органика/полимеры
-      #------------------------------
-      Medium.BONE: {  # Кортикальная кость
-          "type": "solid",
-          "base_density": 1850.0,
-          "young_modulus": 1.5e10,
-          "rha_coef": 0.25
-      },
-      
-      Medium.WOOD: {  # Дуб вдоль волокон
-          "type": "solid",
-          "base_density": 700.0,
-          "young_modulus": 1.2e10,
-          "rha_coef": 0.1
-      },
-      
-      Medium.PLASTIC_SOFT: {  # Полиэтилен
-          "type": "solid",
-          "base_density": 950.0,
-          "young_modulus": 0.8e9,
-          "rha_coef": 0.03
-      },
-      
-      Medium.PLASTIC_HARD: {  # Поликарбонат
-          "type": "solid",
-          "base_density": 1200.0,
-          "young_modulus": 2.3e9,
-          "rha_coef": 0.07
-      },
-      
-      #------------------------------
-      # Специальные среды
-      #------------------------------
-      Medium.VACUUM: {
-          "type": "vacuum",
-          "base_density": 1e-12,
-          "drag_model": "none",
-          "rha_coef": 0.0
-      },
-      
-      Medium.FLESH_MUSCLE: {
-          "type": "solid",
-          "base_density": 1050.0,
-          "young_modulus": 1e5,
-          "poisson_ratio": 0.49,
-          "damping": 0.5,
-          "rha_coef": 0.04
-      },
-      
-      Medium.FLESH_ORGANS: {  # Среднее по легким/печени
-          "type": "solid",
-          "base_density": 950.0,
-          "young_modulus": 5e4,
-          "rha_coef": 0.02
-      }
+    #------------------------------
+    # Газы
+    #------------------------------
+    Medium.AIR_CLEAN: {
+      "type": "gas",
+      "base_density": 1.225,
+      "molar_mass": 0.029,
+      "drag_model": "quadratic",
+      "drag_coef": 0.47,
+      "viscosity": 1.81e-5,
+      "speed_of_sound": 343.0,
+      "rha_coef": 0.00001
+    },
+    
+    Medium.AIR_URBAN: {
+      "type": "gas",
+      "base_density": 1.290,
+      "molar_mass": 0.030,
+      "drag_model": "quadratic",
+      "drag_coef": 0.52,
+      "viscosity": 1.85e-5,
+      "speed_of_sound": 340.0,  # немного ниже из-за загрязнения
+      "rha_coef": 0.00002
+    },
+    
+    Medium.AIR_HUMID: {
+      "type": "gas",
+      "base_density": 1.194,
+      "molar_mass": 0.028,
+      "drag_model": "quadratic",
+      "drag_coef": 0.55,
+      "viscosity": 1.88e-5,
+      "speed_of_sound": 346.0,
+      "rha_coef": 0.00003
+    },
+    
+    Medium.AIR_HOT: {
+      "type": "gas",
+      "base_density": 0.5,
+      "molar_mass": 0.029,
+      "drag_model": "quadratic",
+      "drag_coef": 0.45,
+      "viscosity": 3.5e-5,
+      "speed_of_sound": 500.0,  # при высоких температурах
+      "rha_coef": 0.00001
+    },
+    
+    #------------------------------
+    # Жидкости
+    #------------------------------
+    Medium.WATER_FRESH: {
+      "type": "liquid",
+      "base_density": 998.0,
+      "drag_model": "stokes",
+      "drag_coef": 0.47,
+      "viscosity": 1.002e-3,
+      "bulk_modulus": 2.2e9,
+      "speed_of_sound": 1482.0,
+      "rha_coef": 0.05
+    },
+    
+    Medium.WATER_DIRTY: {
+      "type": "liquid",
+      "base_density": 1100.0,
+      "drag_model": "viscous",
+      "drag_coef": 0.6,  # больше сопротивление
+      "viscosity": 5.0e-3,
+      "bulk_modulus": 2.5e9,  # грязь слабее сжимается
+      "speed_of_sound": 1450.0,
+      "rha_coef": 0.07
+    },
+    
+    Medium.WATER_SALT: {
+      "type": "liquid",
+      "base_density": 1025.0,
+      "drag_model": "stokes",
+      "drag_coef": 0.5,
+      "viscosity": 1.07e-3,
+      "bulk_modulus": 2.4e9,
+      "speed_of_sound": 1531.0,
+      "rha_coef": 0.055
+    },
+    
+    Medium.OIL_MACHINE: {
+      "type": "liquid",
+      "base_density": 900.0,
+      "drag_model": "viscous",
+      "drag_coef": 0.65,
+      "viscosity": 0.1,
+      "bulk_modulus": 1.5e9,
+      "speed_of_sound": 1300.0,
+      "rha_coef": 0.08
+    },
+    
+    #------------------------------
+    # Металлы
+    #------------------------------
+    Medium.STEEL_STRUCTURAL: {
+      "type": "solid",
+      "base_density": 7850.0,
+      "young_modulus": 2.0e11,
+      "poisson_ratio": 0.29,
+      "hardness": 120,
+      "speed_of_sound": 5000.0,
+      "rha_coef": 0.7
+    },
+    
+    Medium.STEEL_ARMOR: {
+      "type": "solid",
+      "base_density": 7850.0,
+      "young_modulus": 2.1e11,
+      "poisson_ratio": 0.30,
+      "hardness": 250,
+      "speed_of_sound": 5900.0,
+      "rha_coef": 1.0
+    },
+    
+    Medium.ALUMINUM_7000: {
+      "type": "solid",
+      "base_density": 2810.0,
+      "young_modulus": 7.2e10,
+      "poisson_ratio": 0.33,
+      "hardness": 150,
+      "speed_of_sound": 6320.0,
+      "rha_coef": 0.3
+    },
+    
+    Medium.CAST_IRON: {
+      "type": "solid",
+      "base_density": 7300.0,
+      "young_modulus": 1.2e11,
+      "poisson_ratio": 0.26,
+      "hardness": 200,
+      "brittleness": 0.8,
+      "speed_of_sound": 4600.0,
+      "rha_coef": 0.6
+    },
+    
+    #------------------------------
+    # Строительные материалы
+    #------------------------------
+    Medium.CONCRETE: {
+      "type": "solid",
+      "base_density": 2400.0,
+      "young_modulus": 3.0e10,
+      "poisson_ratio": 0.2,
+      "compressive_strength": 30e6,
+      "speed_of_sound": 3500.0,
+      "rha_coef": 0.2
+    },
+    
+    Medium.ASPHALT: {
+      "type": "solid",
+      "base_density": 2300.0,
+      "young_modulus": 2.0e9,
+      "poisson_ratio": 0.3,
+      "speed_of_sound": 2500.0,
+      "rha_coef": 0.15
+    },
+    
+    Medium.BRICK: {
+      "type": "solid",
+      "base_density": 1800.0,
+      "young_modulus": 2.4e10,
+      "poisson_ratio": 0.2,
+      "speed_of_sound": 3200.0,
+      "rha_coef": 0.18
+    },
+    
+    #------------------------------
+    # Органика / Полимеры
+    #------------------------------
+    Medium.BONE: {
+      "type": "solid",
+      "base_density": 1850.0,
+      "young_modulus": 1.5e10,
+      "poisson_ratio": 0.3,
+      "speed_of_sound": 3000.0,
+      "rha_coef": 0.25
+    },
+    
+    Medium.WOOD: {
+      "type": "solid",
+      "base_density": 700.0,
+      "young_modulus": 1.2e10,
+      "poisson_ratio": 0.35,
+      "speed_of_sound": 3300.0,
+      "rha_coef": 0.1
+    },
+    
+    Medium.PLASTIC_SOFT: {
+      "type": "solid",
+      "base_density": 950.0,
+      "young_modulus": 0.8e9,
+      "poisson_ratio": 0.45,
+      "speed_of_sound": 900.0,
+      "rha_coef": 0.03
+    },
+    
+    Medium.PLASTIC_HARD: {
+      "type": "solid",
+      "base_density": 1200.0,
+      "young_modulus": 2.3e9,
+      "poisson_ratio": 0.37,
+      "speed_of_sound": 1500.0,
+      "rha_coef": 0.07
+    },
+    
+    #------------------------------
+    # Специальные среды
+    #------------------------------
+    Medium.VACUUM: {
+      "type": "vacuum",
+      "base_density": 1e-12,
+      "drag_model": "none",
+      "drag_coef": 0.0,
+      "viscosity": 0.0,
+      "speed_of_sound": 0.0,
+      "rha_coef": 0.0
+    },
+    
+    Medium.FLESH_MUSCLE: {
+      "type": "solid",
+      "base_density": 1050.0,
+      "young_modulus": 1e5,
+      "poisson_ratio": 0.49,
+      "damping": 0.5,
+      "speed_of_sound": 1600.0,
+      "rha_coef": 0.04
+    },
+    
+    Medium.FLESH_ORGANS: {
+      "type": "solid",
+      "base_density": 950.0,
+      "young_modulus": 5e4,
+      "poisson_ratio": 0.48,
+      "speed_of_sound": 1450.0,
+      "rha_coef": 0.02
+    }
   }
 
 func get_rha(medium: Medium, thickness: float) -> float:
-    """
-    Конвертирует толщину материала в эквивалент броневой стали (RHA)
-    thickness - толщина в метрах
-    Возвращает эквивалент в метрах RHA
-    """
-    var props = get_medium_properties(medium)
-    if props.is_empty(): return 0.0
-    return thickness * props.get("rha_coef", 0.0)
+  """
+  Конвертирует толщину материала в эквивалент броневой стали (RHA)
+  thickness - толщина в метрах
+  Возвращает эквивалент в метрах RHA
+  """
+  var props = get_medium_properties(medium)
+  if props.is_empty(): return 0.0
+  return thickness * props.get("rha_coef", 0.0)
 
 #==== Основные публичные методы ====#
 func get_medium_properties(medium: Medium) -> Dictionary:

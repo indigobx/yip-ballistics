@@ -117,16 +117,15 @@ func _update_stability_factor(proj: Dictionary, delta: float) -> void:
     proj["stability_factor"] = 0.0
     return
   
-  # Расчет гироскопической стабильности (Sg)
+  var v = proj["velocity"].length()
   var twist_rate = proj["weapon"].twist_rate * 0.001
-  var sg = (30.0 * proj["mass"] * pow(proj["ammo"].speed, 2)) / \
-       (PI * pow(twist_rate, 2) * pow(proj["caliber"] * 0.001, 3) * proj["length_diameter_ratio"])
+  var d = proj["caliber"] * 0.001
   
-  # Расчет аэродинамической стабильности
-  var stability = sg / (1.0 + 0.5 * (1.0 - proj["stability_factor"]))
-  proj["stability_factor"] = clamp(stability / STABILITY_THRESHOLD, 0.0, 1.0)
+  var sg = (30.0 * proj["mass"] * v) / \
+           (pow(d, 3) * proj["length_diameter_ratio"] * pow(twist_rate, 2))
   
-  # Обновление времени кувыркания для нестабильных снарядов
+  proj["stability_factor"] = clamp(sg / STABILITY_THRESHOLD, 0.0, 1.0)
+  
   if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
     proj["tumble_time"] += delta * (1.0 - proj["stability_factor"])
 
@@ -249,7 +248,8 @@ func _apply_lift_force(proj: Dictionary, medium_props: Dictionary, delta: float)
   var lift_dir = velocity_dir.cross(right).normalized()
   var lift_coef = LIFT_COEFFICIENT * angle_of_attack * proj["length_diameter_ratio"]
   var lift_force = 0.5 * density * speed * speed * lift_coef * proj["effective_cross_section"]
-  
+  var torque = lift_dir.cross(forward) * (lift_force * 0.01)  # new
+  proj["angular_velocity"] += torque * delta  # new
   proj["velocity"] += lift_force * delta / (proj["mass"] * 0.001) * lift_dir
 
 func _apply_gyroscopic_precession(proj: Dictionary, delta: float) -> void:
@@ -258,8 +258,10 @@ func _apply_gyroscopic_precession(proj: Dictionary, delta: float) -> void:
   var forward = Basis(proj["rotation"]).z.normalized()
   var velocity_dir = proj["velocity"].normalized() if proj["velocity"].length_squared() > 0 else forward
   
+  #var torque = forward.cross(velocity_dir) * GYROSCOPIC_PRECESSION_FACTOR * \
+    #(1.0 - proj["stability_factor"])  # Усиление при потере стабильности
   var torque = forward.cross(velocity_dir) * GYROSCOPIC_PRECESSION_FACTOR * \
-        (1.0 - proj["stability_factor"])  # Усиление при потере стабильности
+    (1.0 - proj["stability_factor"]) * proj["angular_velocity"].length()  # v2  
   proj["angular_velocity"] += torque * delta
 
 func _apply_magnus_effect(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
@@ -269,6 +271,11 @@ func _apply_magnus_effect(proj: Dictionary, medium_props: Dictionary, delta: flo
   if magnus_dir.length_squared() > 0:
     var magnus_force = magnus_dir * proj["magnus_effect_factor"] * \
               proj["stability_factor"]  # Ослабление при кувыркании
+    var density = Physics.get_density(
+      GameState.env_conditions["medium"],
+      GameState.env_conditions["temperature"],
+      GameState.env_conditions.get("pressure", 101325.0)
+    )
     proj["velocity"] += magnus_force * delta
 
 #=== Физика в вакууме ===#
@@ -306,7 +313,8 @@ func _apply_angular_drag(proj: Dictionary, medium_props: Dictionary, delta: floa
   )
   
   # Момент сопротивления зависит от вязкости и плотности среды
-  var drag_torque = 0.1 * density * viscosity * factor * delta
+  #var drag_torque = 0.1 * density * viscosity * factor * delta
+  var drag_torque = density * viscosity * factor * delta
   proj["angular_velocity"] *= 1.0 - drag_torque
 
 func _apply_wind(proj: Dictionary, delta: float) -> void:

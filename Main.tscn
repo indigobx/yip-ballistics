@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bp8ohrghu7y6b"]
+[gd_scene load_steps=18 format=3 uid="uid://bp8ohrghu7y6b"]
 
 [ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://djm2xn3q1dpls" path="res://bullet_rear.tscn" id="5_fos0i"]
 [ext_resource type="PackedScene" uid="uid://ctr13dyvyshpj" path="res://bar.tscn" id="5_lgr22"]
 [ext_resource type="PackedScene" uid="uid://brkyfxo7vih3l" path="res://graph.tscn" id="6_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://n5v6xrpsey0e" path="res://bullet_3d.tscn" id="8_trn2v"]
 
 [sub_resource type="FontVariation" id="FontVariation_uu6xs"]
 base_font = ExtResource("2_uu6xs")
@@ -15,6 +16,48 @@ variation_transform = Transform2D(1, 0.33, 0, 1, 0, 0)
 [sub_resource type="FontVariation" id="FontVariation_r0du0"]
 base_font = ExtResource("2_uu6xs")
 variation_embolden = 1.0
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_03owx"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trn2v"]
+shading_mode = 0
+albedo_color = Color(0.2, 0.662745, 0.960784, 1)
+disable_receive_shadows = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wkp8b"]
+material = SubResource("StandardMaterial3D_trn2v")
+top_radius = 0.03
+bottom_radius = 0.03
+height = 50.0
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_20pc6"]
+shading_mode = 0
+albedo_color = Color(0.960784, 0.239216, 0.388235, 1)
+disable_receive_shadows = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_03owx"]
+material = SubResource("StandardMaterial3D_20pc6")
+top_radius = 0.03
+bottom_radius = 0.03
+height = 50.0
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vvyt"]
+shading_mode = 0
+albedo_color = Color(0.65098, 0.905882, 0.0470588, 1)
+disable_receive_shadows = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_c6i3y"]
+material = SubResource("StandardMaterial3D_5vvyt")
+top_radius = 0.03
+bottom_radius = 0.03
+height = 50.0
+radial_segments = 8
+rings = 1
 
 [node name="Main" type="Node"]
 script = ExtResource("1_glv2v")
@@ -386,18 +429,48 @@ text = "aaaaa"
 tab_size = 2
 selection_enabled = true
 
-[node name="Graph" parent="UI" instance=ExtResource("6_3dxm6")]
-layout_mode = 1
-offset_left = 306.0
-offset_top = 682.0
-offset_right = 406.0
-offset_bottom = 722.0
+[node name="TextureRect" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 650.0
+offset_right = 530.0
+offset_bottom = 770.0
+texture = SubResource("ViewportTexture_03owx")
+expand_mode = 3
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 use_threads = true
 timeout = 1.0
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(240, 120)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+transform = Transform3D(0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 5, 4, 5)
+projection = 1
+fov = 45.0
+size = 5.0
+near = 0.1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport"]
+transform = Transform3D(-0.781783, 0.61848, 0.0793608, 0.555157, 0.632421, 0.540225, 0.283929, 0.466397, -0.83777, 2.11464, 1.31964, 0)
+shadow_enabled = true
+
+[node name="Bullet3D" parent="SubViewport" instance=ExtResource("8_trn2v")]
+unique_name_in_owner = true
+
+[node name="ZAxis" type="MeshInstance3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_wkp8b")
+
+[node name="XAxis" type="MeshInstance3D" parent="SubViewport"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 0, 0)
+mesh = SubResource("CylinderMesh_03owx")
+
+[node name="YAxis" type="MeshInstance3D" parent="SubViewport"]
+mesh = SubResource("CylinderMesh_c6i3y")
 
 [connection signal="button_up" from="UI/Step" to="." method="_on_step_button_up"]
 [connection signal="button_up" from="UI/Copy" to="." method="_on_copy_button_up"]

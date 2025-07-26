@@ -7,7 +7,7 @@ var muzzle_pos := Vector3.ZERO
 var muzzle_rot := Basis.IDENTITY
 var projectile: Dictionary = {}
 var dt: float = (1.0/60.0)
-var timeout: float = 0.025
+var timeout: float = 0.1
 #var dt: float = 0.1
 var t: float = 0.0
 var ax_scale = 0.5
@@ -18,7 +18,7 @@ var metrics: Dictionary = {}
 func _ready() -> void:
   muzzle_pos = Vector3(0, 0, 0)
   var yaw = deg_to_rad(0.0)
-  var pitch = -deg_to_rad(45.0)  # (0.1° up really) is good
+  var pitch = -deg_to_rad(0.1)  # (0.1° up really) is good
   muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
   weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
   ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
@@ -29,6 +29,7 @@ func _ready() -> void:
   )
   _print_text()
   _draw_axes()
+  _rotate_bullet_3d()
 
 
 func _print_text() -> void:
@@ -92,6 +93,9 @@ func _get_type_info(value) -> Variant:
     # Базовые типы
     return str(type)
 
+func _rotate_bullet_3d() -> void:
+  %Bullet3D.basis = projectile.rotation
+
 func _draw_axes() -> void:
   var vel = projectile.velocity * -1
   var rot = projectile.rotation.get_euler()
@@ -142,6 +146,7 @@ func _do_ballistics() -> void:
   #Metrics.send_metrics_prometheus(metrics)
   _print_text()
   _draw_axes()
+  _rotate_bullet_3d()
 
 func _on_step_button_up() -> void:
   _do_ballistics()

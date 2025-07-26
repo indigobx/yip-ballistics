@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://n5v6xrpsey0e"]
+
+[ext_resource type="Script" uid="uid://uw5ms80t1cc6" path="res://bullet_3d.gd" id="1_y2jmw"]
+[ext_resource type="PackedScene" uid="uid://dbt7vhuk3xihq" path="res://bullet3d.blend" id="2_1ljip"]
+
+[node name="Bullet3D" type="Node3D"]
+script = ExtResource("1_y2jmw")
+
+[node name="bullet3d" parent="." instance=ExtResource("2_1ljip")]
