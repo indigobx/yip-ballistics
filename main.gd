@@ -6,7 +6,8 @@ var ammo: AmmoData
 var muzzle_pos := Vector3.ZERO
 var muzzle_rot := Basis.IDENTITY
 var projectile: Dictionary = {}
-var dt: float = (1.0/60.0)
+#var dt: float = (1.0/60.0)  # 60 PhyFPS
+var dt: float = (1.0/6000.0)
 var timeout: float = 0.1
 #var dt: float = 0.1
 var t: float = 0.0
@@ -20,19 +21,19 @@ func _ready() -> void:
   var yaw = deg_to_rad(0.0)
   var pitch = -deg_to_rad(0.1)  # (0.1° up really) is good
   muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
-  weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
-  ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
-  #weapon = WeaponRegistry.get_weapon_by_name("SCAR_L_CQC")
-  #ammo = AmmoRegistry.get_ammo_by_name("5.56x45_M855")
+  #weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
+  #ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
+  weapon = WeaponRegistry.get_weapon_by_name("SCAR_L_CQC")
+  ammo = AmmoRegistry.get_ammo_by_name("5.56x45_M855")
   projectile = Ballistics.create_projectile(
     weapon, ammo, muzzle_pos, muzzle_rot
   )
-  _print_text()
+  _output_metrics()
   _draw_axes()
   _rotate_bullet_3d()
 
 
-func _print_text() -> void:
+func _output_metrics() -> void:
   %Output.clear()
   %Output.append_text("%s %s\n" % [weapon.name, ammo.name])
   %Output.append_text("[b]%s[/b] frames  T [b]%.4f[/b] s  Δt [b]%.4f[/b] s\n" % [
@@ -128,12 +129,23 @@ func _draw_axes() -> void:
   %GraphKE.add_value(kinetic_energy)
   var dist = projectile.position.length()
   %GraphDist.add_value(dist)
+  var medium = GameState.env_conditions["medium"]
+  var rho = Physics.get_medium_properties(medium)["base_density"]
+  print(rho)
+  %GraphRho.add_value(rho)
   
   %BarZ.value = Globals.normalize(abs(projectile.position.z), 0.0, 2000.0)
   %BarY.value = Globals.normalize(projectile.position.y, 5.0, -45.0)
   %BarX.value = Globals.normalize(projectile.position.x, 5.0, -5.0)
+  
+  %MediumVis.medium = medium
+
+func _update_medium() -> void:
+  var m = GameState.get_medium_at_distance(abs(projectile.position.z))
+  GameState.env_conditions["medium"] = m
 
 func _do_ballistics() -> void:
+  _update_medium()
   var t0 = Time.get_ticks_usec()
   var new_proj = Ballistics.update_projectile(projectile, dt)
   exec_time = Time.get_ticks_usec() - t0
@@ -144,7 +156,7 @@ func _do_ballistics() -> void:
     Globals.prettify_dict(metrics)
   )
   #Metrics.send_metrics_prometheus(metrics)
-  _print_text()
+  _output_metrics()
   _draw_axes()
   _rotate_bullet_3d()
 
@@ -169,6 +181,6 @@ func _on_copy_button_up() -> void:
 
 
 func _on_dump_button_up() -> void:
-  _print_text()
+  _output_metrics()
   _draw_axes()
   Metrics.dump_metrics_json()

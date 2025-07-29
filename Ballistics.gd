@@ -154,7 +154,7 @@ func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: flo
   debug_vel["7_wind"] = proj.velocity
   _apply_turbulence(proj, medium_props, delta)
   debug_vel["8_turb"] = proj.velocity
-  print("%s flight time %s" % [proj["flight_time"], debug_vel])
+  #print("%s flight time %s" % [proj["flight_time"], debug_vel])
 
 func _update_hydrodynamics(proj: Dictionary, medium_props: Dictionary, delta: float) -> void:
   """Гидродинамика в жидких средах"""
@@ -202,9 +202,9 @@ func _apply_aerodynamic_drag(proj: Dictionary, medium_props: Dictionary, delta: 
   proj["velocity"] -= delta_v * proj["velocity"].normalized()
   
   # Отладочный вывод
-  print("Drag force: %.2f N, Accel: %.2f m/s², Delta v: %.2f m/s" % [
-    drag_force, acceleration, delta_v
-  ])
+  #print("Drag force: %.2f N, Accel: %.2f m/s², Delta v: %.2f m/s" % [
+    #drag_force, acceleration, delta_v
+  #])
 
 func _calculate_dynamic_drag_coef(proj: Dictionary) -> float:
   var mach = proj["mach_number"]

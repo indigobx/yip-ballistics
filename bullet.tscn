@@ -11,11 +11,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_v7oki")
 
-[node name="BulletShape" type="Line2D" parent="."]
-closed = true
+[node name="BulletShape" type="Polygon2D" parent="."]
+color = Color(1, 1, 1, 0.501961)
+
+[node name="BulletOutline" type="Line2D" parent="."]
 width = 1.0
 
-[node name="BulletShape2" type="Line2D" parent="."]
+[node name="ZeroPoint" type="Line2D" parent="."]
 points = PackedVector2Array(0, 0, 0, 1)
 closed = true
 width = 4.0

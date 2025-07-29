@@ -12,7 +12,9 @@ var half_profile = [
 var cog = 0.6  # center of gravity from the tip [0, 1]
 var offset = Vector2.ZERO
 var full_profile = []
-@onready var bullet = $BulletShape
+var scaled_profile = []
+@onready var bullet: Polygon2D = $BulletShape
+@onready var bullet_outline: Line2D = $BulletOutline
 @export var caliber: float = 12.7
 
 func _ready() -> void:
@@ -22,10 +24,7 @@ func _ready() -> void:
   for i in range(half_profile.size() - 1, 0, -1):
     var p = half_profile[i]
     full_profile.append(Vector2(p.x, -p.y))
-
-  _draw_bullet()
-
-func _draw_bullet() -> void:
-  bullet.clear_points()
   for p in full_profile:
-    bullet.add_point((p + offset) * caliber)
+    scaled_profile.append((p + offset) * caliber)
+  bullet.polygon = scaled_profile
+  bullet_outline.points = scaled_profile

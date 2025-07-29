@@ -20,9 +20,14 @@ enum Medium {
   WOOD,  # Дуб вдоль волокон
   PLASTIC_SOFT,  # Полиэтилен
   PLASTIC_HARD,  # Поликарбонат
+  POLYSTYRENE,  # Пенопласт
   VACUUM,
   FLESH_MUSCLE,
-  FLESH_ORGANS,  # Среднее по легким/печени
+  FLESH_ORGAN_DENSE,  # Среднее по легким/печени
+  FLESH_ORGAN_HOLLOW,
+  FLESH_SKIN,
+  FLESH_GENERIC,
+  BALLISTIC_GEL
 }
 
 # Базовые физические константы
@@ -244,6 +249,15 @@ func _initialize_medium_profiles():
       "speed_of_sound": 1500.0,
       "rha_coef": 0.07
     },
+    Medium.POLYSTYRENE: {
+      "type": "solid",
+      "base_density": 30.0,
+      "young_modulus": 3.0e6,
+      "poisson_ratio": 0.35,
+      "compressive_strength": 5e4,
+      "speed_of_sound": 100.0,
+      "rha_coef": 0.002
+    },
     
     #------------------------------
     # Специальные среды
@@ -260,22 +274,65 @@ func _initialize_medium_profiles():
     
     Medium.FLESH_MUSCLE: {
       "type": "solid",
-      "base_density": 1050.0,
-      "young_modulus": 1e5,
+      "base_density": 1060.0,
+      "young_modulus": 6.0e4,
       "poisson_ratio": 0.49,
-      "damping": 0.5,
-      "speed_of_sound": 1600.0,
+      "compressive_strength": 0.2e6,
+      "speed_of_sound": 1580.0,
+      "rha_coef": 0.075
+    },
+
+    Medium.FLESH_ORGAN_DENSE: {
+      "type": "solid",
+      "base_density": 1050.0,
+      "young_modulus": 2.5e4,
+      "poisson_ratio": 0.49,
+      "compressive_strength": 0.1e6,
+      "speed_of_sound": 1550.0,
+      "rha_coef": 0.06
+    },
+
+    Medium.FLESH_ORGAN_HOLLOW: {
+      "type": "solid",
+      "base_density": 1040.0,
+      "young_modulus": 1.2e4,
+      "poisson_ratio": 0.48,
+      "compressive_strength": 0.05e6,
+      "speed_of_sound": 1500.0,
       "rha_coef": 0.04
     },
-    
-    Medium.FLESH_ORGANS: {
+
+    Medium.FLESH_SKIN: {
       "type": "solid",
-      "base_density": 950.0,
-      "young_modulus": 5e4,
+      "base_density": 1100.0,
+      "young_modulus": 1.2e5,
       "poisson_ratio": 0.48,
-      "speed_of_sound": 1450.0,
-      "rha_coef": 0.02
-    }
+      "compressive_strength": 0.3e6,
+      "speed_of_sound": 1600.0,
+      "rha_coef": 0.09
+    },
+
+    Medium.FLESH_GENERIC: {
+      "type": "solid",
+      "base_density": 1050.0,
+      "young_modulus": 3.5e4,
+      "poisson_ratio": 0.49,
+      "compressive_strength": 0.15e6,
+      "speed_of_sound": 1550.0,
+      "rha_coef": 0.065
+    },
+    Medium.BALLISTIC_GEL: {
+      "type": "solid",
+      "base_density": 1060.0,
+      "drag_model": "quadratic",
+      "drag_coef": 0.6,
+      "viscosity": 0.01,
+      "young_modulus": 1.0e4,
+      "poisson_ratio": 0.495,
+      "compressive_strength": 0.05e6,
+      "speed_of_sound": 1520.0,
+      "rha_coef": 0.06
+    },
   }
 
 func get_rha(medium: Medium, thickness: float) -> float:
@@ -291,7 +348,9 @@ func get_rha(medium: Medium, thickness: float) -> float:
 #==== Основные публичные методы ====#
 func get_medium_properties(medium: Medium) -> Dictionary:
   """Получить все свойства среды"""
-  return _medium_profiles.get(medium, {})
+  var props = _medium_profiles.get(medium, {})
+  props["name"] = get_medium_name(medium)
+  return props
 
 func get_density(medium: Medium, temp: float = 293.0, pressure: float = 101325.0) -> float:
   """
@@ -389,3 +448,9 @@ func get_viscosity(medium: Medium) -> float:
   """Динамическая вязкость [Па·с]"""
   var props = get_medium_properties(medium)
   return props.get("viscosity", 0.0)
+
+func get_medium_name(value: int) -> String:
+  for name in Medium.keys():
+    if Medium[name] == value:
+      return name
+  return "UNKNOWN"
