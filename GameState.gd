@@ -7,6 +7,11 @@ var vision_point := Vector3.ZERO
 var focus_point := Vector3.ZERO
 @onready var game = get_tree().root.get_node_or_null("Main/Game")
 
+var muzzle_pos = Vector3(0, 0, 0)
+var yaw = deg_to_rad(0.0)
+var pitch = -deg_to_rad(45.0)  # (0.1° up really) is good
+var muzzle_rot
+
 var debug_text := ""
 
 var env_conditions: Dictionary = {
@@ -19,8 +24,8 @@ var env_conditions: Dictionary = {
 
 var layered_medium = {
   0.0: Physics.Medium.AIR_CLEAN,
-  100.0: Physics.Medium.STEEL_ARMOR,
-  101.5: Physics.Medium.AIR_CLEAN,
+  30.0: Physics.Medium.FLESH_MUSCLE,
+  30.4: Physics.Medium.AIR_CLEAN,
   #2.5: Physics.Medium.FLESH_SKIN,
   #3.0: Physics.Medium.AIR_CLEAN,
 }
@@ -29,6 +34,7 @@ var projectiles = {}
 
 func _ready() -> void:
   env_conditions["medium"] = get_medium_at_distance(0.0)
+  muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
 
 func get_medium_at_distance(dist: float) -> Physics.Medium:
   var keys = layered_medium.keys()

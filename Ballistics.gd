@@ -146,6 +146,7 @@ func _update_gas_dynamics(proj: Dictionary, medium_props: Dictionary, delta: flo
   debug_vel["1_aero_drag"] = proj.velocity
   _apply_gravity(proj, delta)
   debug_vel["2_gravity"] = proj.velocity
+  return
   _apply_lift_force(proj, medium_props, delta)
   debug_vel["3_lift"] = proj.velocity
   _apply_angular_drag(proj, medium_props, delta)

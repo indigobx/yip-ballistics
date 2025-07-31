@@ -3,11 +3,9 @@ extends Node
 var c: int = 0
 var weapon: WeaponData
 var ammo: AmmoData
-var muzzle_pos := Vector3.ZERO
-var muzzle_rot := Basis.IDENTITY
 var projectile: Dictionary = {}
-#var dt: float = (1.0/60.0)  # 60 PhyFPS
-var dt: float = (1.0/600.0)
+var dt: float = (1.0/60.0)  # 60 PhyFPS
+#var dt: float = (1.0/600.0)
 var timeout: float = 0.1
 #var dt: float = 0.1
 var t: float = 0.0
@@ -17,26 +15,17 @@ var metrics: Dictionary = {}
 
 
 func _ready() -> void:
-  muzzle_pos = Vector3(0, 0, 0)
-  var yaw = deg_to_rad(0.0)
-  var pitch = -deg_to_rad(0.0)  # (0.1° up really) is good
-  muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
-  weapon = WeaponRegistry.get_weapon_by_name("Glock17_HST")
-  ammo = AmmoRegistry.get_ammo_by_name("9x19_HST_PlusP")
-  #weapon = WeaponRegistry.get_weapon_by_name("FN_EVOLYS")
-  #ammo = AmmoRegistry.get_ammo_by_name("7.62x51_SLAP_T")
-  #weapon = WeaponRegistry.get_weapon_by_name("SCAR_L_CQC")
-  #ammo = AmmoRegistry.get_ammo_by_name("5.56x45_M855")
-  #weapon = WeaponRegistry.get_weapon_by_name("XPR_Railgun_MK1")
-  #ammo = AmmoRegistry.get_ammo_by_name("5mm_Rail_Slug")
-  #weapon = WeaponRegistry.get_weapon_by_name("KwK_40_L48")
-  #ammo = AmmoRegistry.get_ammo_by_name("75mm_PzGr39_APCBC")
-  projectile = Ballistics.create_projectile(
-    weapon, ammo, muzzle_pos, muzzle_rot
-  )
+  if GameState.projectiles.values():
+    projectile = GameState.projectiles.values()[-1]
+  else:
+    $Firearm.shoot()
+    projectile = GameState.projectiles.values()[-1]
+  weapon = projectile["weapon"]
+  ammo = projectile["ammo"]
   _output_metrics()
   _draw_axes()
   _rotate_bullet_3d()
+  #$Firearm.shoot()
 
 
 func _output_metrics() -> void:

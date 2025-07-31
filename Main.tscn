@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bp8ohrghu7y6b"]
+[gd_scene load_steps=21 format=3 uid="uid://bp8ohrghu7y6b"]
 
 [ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://ci0gi4g7gu0fo" path="res://medium_vis.tscn" id="6_03owx"]
 [ext_resource type="PackedScene" uid="uid://khminlhbn63c" path="res://shockwave.tscn" id="7_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://n5v6xrpsey0e" path="res://bullet_3d.tscn" id="8_trn2v"]
+[ext_resource type="PackedScene" uid="uid://6vsbxqm8h5oh" path="res://firearm.tscn" id="11_20pc6"]
 
 [sub_resource type="FontVariation" id="FontVariation_uu6xs"]
 base_font = ExtResource("2_uu6xs")
@@ -509,6 +510,8 @@ mesh = SubResource("CylinderMesh_03owx")
 
 [node name="YAxis" type="MeshInstance3D" parent="SubViewport"]
 mesh = SubResource("CylinderMesh_c6i3y")
+
+[node name="Firearm" parent="." instance=ExtResource("11_20pc6")]
 
 [connection signal="button_up" from="UI/Step" to="." method="_on_step_button_up"]
 [connection signal="button_up" from="UI/Copy" to="." method="_on_copy_button_up"]
