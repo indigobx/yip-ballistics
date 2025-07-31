@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bp8ohrghu7y6b"]
+[gd_scene load_steps=20 format=3 uid="uid://bp8ohrghu7y6b"]
 
 [ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ctr13dyvyshpj" path="res://bar.tscn" id="5_lgr22"]
 [ext_resource type="PackedScene" uid="uid://brkyfxo7vih3l" path="res://graph.tscn" id="6_3dxm6"]
 [ext_resource type="PackedScene" uid="uid://ci0gi4g7gu0fo" path="res://medium_vis.tscn" id="6_03owx"]
+[ext_resource type="PackedScene" uid="uid://khminlhbn63c" path="res://shockwave.tscn" id="7_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://n5v6xrpsey0e" path="res://bullet_3d.tscn" id="8_trn2v"]
 
 [sub_resource type="FontVariation" id="FontVariation_uu6xs"]
@@ -383,6 +384,10 @@ offset_left = -309.0
 offset_top = -231.0
 offset_right = 271.0
 offset_bottom = 169.0
+
+[node name="Shockwave" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("7_wkp8b")]
+unique_name_in_owner = true
+mach = 1.0
 
 [node name="PanelContainer2" type="PanelContainer" parent="UI"]
 layout_mode = 0

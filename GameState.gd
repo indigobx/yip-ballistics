@@ -19,8 +19,10 @@ var env_conditions: Dictionary = {
 
 var layered_medium = {
   0.0: Physics.Medium.AIR_CLEAN,
-  10.0: Physics.Medium.WATER_FRESH,
-  10.5: Physics.Medium.AIR_CLEAN
+  100.0: Physics.Medium.STEEL_ARMOR,
+  101.5: Physics.Medium.AIR_CLEAN,
+  #2.5: Physics.Medium.FLESH_SKIN,
+  #3.0: Physics.Medium.AIR_CLEAN,
 }
 
 var projectiles = {}

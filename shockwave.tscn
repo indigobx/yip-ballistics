@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://khminlhbn63c"]
+
+[ext_resource type="Script" uid="uid://dsg4bw8mgwbke" path="res://shockwave.gd" id="1_pkgyo"]
+
+[node name="Shockwave" type="Node2D"]
+script = ExtResource("1_pkgyo")
+length = 200.0
+
+[node name="Line2D" type="Line2D" parent="."]
+width = 1.0

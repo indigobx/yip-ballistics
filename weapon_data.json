@@ -48,6 +48,36 @@
         "burst": 650
       },
       "burst": 3
+    },
+    {
+      "name": "XPR_Railgun_MK1",
+      "mass": 15.0,
+      "barrel_length": 2.0,
+      "twist_rate": 0.0,
+      "rifling_depth_mm": 0.0,
+      "rifling_clockwise": false,
+      "progressive_rifling": false,
+      "rifling_shape": 0,
+      "spread_moa": 0.1,
+      "ammo_type": "5mm_Rail_Slug",
+      "fire_rate": {
+        "single": 20
+       }
+    },
+    {
+      "name": "KwK_40_L48",
+      "mass": 750.0,
+      "barrel_length": 3.6,
+      "twist_rate": 800.0,
+      "rifling_depth_mm": 5.0,
+      "rifling_clockwise": true,
+      "progressive_rifling": false,
+      "rifling_shape": 2,
+      "spread_moa": 0.3,
+      "ammo_type": "75mm_PzGr39_APCBC",
+      "fire_rate": {
+        "single": 10
+      }
     }
   ]
 }

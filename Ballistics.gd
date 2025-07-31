@@ -4,12 +4,12 @@ class_name AdvancedBallistics
 # Константы
 const MIN_VELOCITY := 0.01  # Минимальная значимая скорость [м/с]
 const G7_DRAG_BASE := 0.471  # Базовый коэффициент сопротивления модели G7
-const STABILITY_THRESHOLD := 1.5  # Порог устойчивости снаряда
-const LIFT_COEFFICIENT := 0.0045  # Коэффициент подъемной силы 0.0025
+const STABILITY_THRESHOLD := 0.5  # Порог устойчивости снаряда 1.5
+const LIFT_COEFFICIENT := 0.0025  # Коэффициент подъемной силы 0.0025
 const GYROSCOPIC_PRECESSION_FACTOR := 0.00025  # Фактор гироскопической прецессии 0.0001
 const SPIN_DECAY_AIR := 0.998  # Коэффициент затухания вращения в воздухе
 const SPIN_DECAY_WATER := 0.8  # Коэффициент затухания вращения в воде
-const BULLET_TUMBLE_THRESHOLD := 1.0  # Порог начала кувыркания
+const BULLET_TUMBLE_THRESHOLD := 0.5  # Порог начала кувыркания 1.0
 
 #=== Основной метод обновления ===#
 func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
@@ -42,10 +42,15 @@ func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
   
   return new_proj
 
-#=== Создание снаряда с улучшенными параметрами ===#
 func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis) -> Dictionary:
+  var projectile = _create_projectile(weapon, ammo, muzzle_pos, muzzle_rot)
+  _update_pre_physics(projectile, 0.0)
+  return projectile
+
+#=== Создание снаряда с улучшенными параметрами ===#
+func _create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis) -> Dictionary:
   var direction = -muzzle_rot.z.normalized()
-  var length_diameter_ratio = ammo.get_property("length_diameter_ratio", ammo.length / ammo.caliber if ammo.caliber > 0 else 3.0)
+  var length_diameter_ratio = ammo.length / ammo.caliber
   # Расчет начального вращения в зависимости от типа стабилизации
   var angular_velocity = Vector3.ZERO
   if ammo.stab_type == AmmoData.StabilizationType.SPIN:
@@ -54,7 +59,7 @@ func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, 
     angular_velocity = (muzzle_rot * Vector3.FORWARD) * spin_magnitude * (-1.0 if weapon.rifling_clockwise else 1.0)
   # Расчет коэффициента эффекта Магнуса с учетом глубины нарезов
   var magnus_factor = 0.00025 * weapon.rifling_depth_mm * length_diameter_ratio
-  
+
   # Формирование снаряда
   return {
     "weapon": weapon,
@@ -113,6 +118,8 @@ func _update_pre_physics(proj: Dictionary, delta: float) -> void:
 
 func _update_stability_factor(proj: Dictionary, delta: float) -> void:
   """Расчет фактора стабильности снаряда"""
+  if not proj.has("stability_damage"):
+    proj["stability_damage"] = 0.0
   if proj["ammo"].stab_type != AmmoData.StabilizationType.SPIN:
     proj["stability_factor"] = 0.0
     return
@@ -122,9 +129,10 @@ func _update_stability_factor(proj: Dictionary, delta: float) -> void:
   var d = proj["caliber"] * 0.001
   
   var sg = (30.0 * proj["mass"] * v) / \
-           (pow(d, 3) * proj["length_diameter_ratio"] * pow(twist_rate, 2))
+           (d*d*d * proj["length_diameter_ratio"] * twist_rate*twist_rate)
   
-  proj["stability_factor"] = clamp(sg / STABILITY_THRESHOLD, 0.0, 1.0)
+  var raw_stability = clamp(sg / STABILITY_THRESHOLD, 0.0, 1.0)
+  proj["stability_factor"] = clamp(raw_stability - proj["stability_damage"], 0.0, 1.0)
   
   if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
     proj["tumble_time"] += delta * (1.0 - proj["stability_factor"])
@@ -244,9 +252,12 @@ func _apply_lift_force(proj: Dictionary, medium_props: Dictionary, delta: float)
   var forward = Basis(proj["rotation"]).z.normalized()
   var right = Basis(proj["rotation"]).x.normalized()
   var angle_of_attack = forward.angle_to(velocity_dir)
-  
+  var aoa_factor = sin(angle_of_attack * 2.0)
   var lift_dir = velocity_dir.cross(right).normalized()
-  var lift_coef = LIFT_COEFFICIENT * angle_of_attack * proj["length_diameter_ratio"]
+  var lift_coef = LIFT_COEFFICIENT * angle_of_attack \
+    * aoa_factor \
+    * proj["length_diameter_ratio"]
+  
   var lift_force = 0.5 * density * speed * speed * lift_coef * proj["effective_cross_section"]
   var torque = lift_dir.cross(forward) * (lift_force * 0.01)  # new
   proj["angular_velocity"] += torque * delta  # new
@@ -423,7 +434,8 @@ func _apply_derivation(proj: Dictionary, delta: float) -> void:
   
   # 1. Рассчитываем угловую скорость деривации (рад/с)
   var spin_rate = proj["angular_velocity"].length()
-  var derivation_rate = spin_rate * (1.0 - abs(spin_axis.dot(vel_dir))) * 0.0005
+  var derivation_rate = spin_rate * (1.0 - abs(spin_axis.dot(vel_dir))) \
+    * 0.0001  # 0.0005
   
   # 2. Создаем вектор отклонения (перпендикулярно скорости и оси вращения)
   var derivation_dir = vel_dir.cross(spin_axis).normalized()
@@ -439,7 +451,7 @@ func _apply_derivation(proj: Dictionary, delta: float) -> void:
   proj["angular_velocity"] += correction_torque * delta
   
   # 6. Визуальный эффект - небольшой доворот пули
-  if derivation_dir.length_squared() > 0.1:
+  if derivation_dir.length_squared() > 0.01:
     var visual_rotation = Basis(derivation_dir, derivation_rate * delta * 0.1)
     proj["rotation"] = visual_rotation * proj["rotation"]
 
@@ -486,3 +498,60 @@ func _update_post_physics(proj: Dictionary, delta: float) -> void:
 func smoothstep(edge0: float, edge1: float, x: float) -> float:
   var t = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0)
   return t * t * (3.0 - 2.0 * t)
+func on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Physics.Medium, medium_thickness: float) -> void:
+  var velocity = proj["velocity"]
+  var speed = velocity.length()
+  if speed < MIN_VELOCITY:
+    return
+
+  var velocity_dir = velocity.normalized()
+  var angle_to_normal = velocity_dir.angle_to(normal)
+
+  #=== 1. Энергетические потери через RHA ===#
+  var rha_equiv = Physics.get_rha(medium, medium_thickness)  # [м RHA]
+  var penetration_capacity = proj["core_mass"] * 0.001  # кг (примерно в масштабе)
+  var penetration_ratio = penetration_capacity / max(rha_equiv, 0.001)
+
+  var energy_loss = clamp(1.0 - penetration_ratio, 0.0, 1.0)  # до 100%
+  proj["velocity"] *= 1.0 - energy_loss
+
+  #=== 2. Снижение стабильности ===#
+  var stability_penalty = sin(angle_to_normal) * 0.5 + energy_loss * 0.5
+  proj["stability_damage"] += stability_penalty
+
+  #=== 3. Начало кувыркания ===#
+  if proj["stability_factor"] < BULLET_TUMBLE_THRESHOLD:
+    proj["tumble_time"] += 0.05 + energy_loss * 0.1
+
+  #=== 4. Разворот (дефлекция) и базовое кручение ===#
+  var deflect_dir = velocity_dir.bounce(normal).normalized()
+  var deflect_angle = velocity_dir.angle_to(deflect_dir)
+
+  if deflect_angle > deg_to_rad(10.0):
+    proj["velocity"] = velocity.lerp(deflect_dir * speed * (1.0 - energy_loss), 0.3)
+
+    # Добавим скручивание по оси, перпендикулярной удару
+    var torque_dir = normal.cross(velocity_dir).normalized()
+    var torque_amount = speed * (0.01 + randf_range(0.005, 0.02)) * (1.0 - proj["stability_factor"])
+    proj["angular_velocity"] += torque_dir * torque_amount
+
+  #=== 5. Сильная дестабилизация — кувырок и рассинхрон вращения ===#
+  if proj["stability_factor"] < 0.4:
+    # Дополнительное хаотичное вращение
+    var chaotic_torque = Vector3(
+      randf_range(-1.0, 1.0),
+      randf_range(-1.0, 1.0),
+      randf_range(-1.0, 1.0)
+    ).normalized() * speed * 0.01 * (1.0 - proj["stability_factor"])
+    proj["angular_velocity"] += chaotic_torque
+
+    # Изменение ориентации — «рывок» кувырка
+    var forward = Basis(proj["rotation"]).z.normalized()
+    var offset_axis = forward.cross(proj["velocity"].normalized()).normalized()
+    if offset_axis.length_squared() > 0.001:
+      var offset_angle = angle_to_normal * 0.3 * (1.0 - proj["stability_factor"])
+      var offset_basis = Basis(offset_axis, offset_angle)
+      proj["rotation"] = offset_basis * proj["rotation"]
+
+  #=== 6. Обновление аэродинамических параметров ===#
+  _update_pre_physics(proj, 0.0)

@@ -1,0 +1,1458 @@
+[
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 32545.48828125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255175870993928,
+      "flight_time": 0.0,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.622132253711201,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "y": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "z": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.998,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -922.0
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0,
+      "exec_time": 0.0,
+      "frame": 0,
+      "time": 0.0
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -4.52021026611328,
+        "z": 27121.263671875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255175870993928,
+      "flight_time": 0.0166666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.622132253711201,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0000000000787608936403394,
+        "z": -7.83085346221924
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.932946145534515,
+          "y": -0.360015958547592,
+          "z": -0.0000600026542088017
+        },
+        "y": {
+          "x": 0.360015958547592,
+          "y": 0.932946145534515,
+          "z": -0.0000111756417027209
+        },
+        "z": {
+          "x": 0.0000600026542088017,
+          "y": -0.0000111756417027209,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000472565320208673,
+        "z": -469.851196289062
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.033,
+      "exec_time": 550.0,
+      "frame": 1,
+      "time": 0.0166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000476837158203125,
+        "z": 22601.072265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517897376593,
+      "flight_time": 0.0333333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.317038593987222,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000157521787280679,
+        "z": -11.8214569091797
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.78079217672348,
+          "y": -0.624790847301483,
+          "z": -0.0000600026469328441
+        },
+        "y": {
+          "x": 0.624790847301483,
+          "y": 0.78079217672348,
+          "z": -0.0000111756380647421
+        },
+        "z": {
+          "x": 0.0000538320346095134,
+          "y": -0.0000287632556137396,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000472565320208673,
+        "z": -239.436187744141
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0279,
+      "exec_time": 465.0,
+      "frame": 2,
+      "time": 0.0333333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -3.13903999328613,
+        "z": 18834.2421875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517897376593,
+      "flight_time": 0.05,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.161562879719393,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000236282687859912,
+        "z": -13.7520294189453
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.597748398780823,
+          "y": -0.801683783531189,
+          "z": -0.0000894848053576425
+        },
+        "y": {
+          "x": 0.801683783531189,
+          "y": 0.597748398780823,
+          "z": -0.0000416829279856756
+        },
+        "z": {
+          "x": 0.0000869059294927865,
+          "y": -0.0000468226025986951,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000472565320208673,
+        "z": -115.834342956543
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.03072,
+      "exec_time": 512.0,
+      "frame": 3,
+      "time": 0.05
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000476837158203125,
+        "z": 15695.21484375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180896267793,
+      "flight_time": 0.0666666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.0781608252068441,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000316650927700834,
+        "z": -14.5283851623535
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.995454549789429,
+          "y": 0.0952384173870087,
+          "z": -0.0000894848344614729
+        },
+        "y": {
+          "x": -0.0952384173870087,
+          "y": -0.995454549789429,
+          "z": -0.0000416828806919511
+        },
+        "z": {
+          "x": -0.0000930478781810962,
+          "y": -0.0000329710310325027,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -46.5813293457031
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02628,
+      "exec_time": 438.0,
+      "frame": 4,
+      "time": 0.0666666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -2.17989230155945,
+        "z": 13079.3564453125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255180896267793,
+      "flight_time": 0.0833333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.0314313963196377,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000397019195297332,
+        "z": -14.8389272689819
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.432081282138824,
+          "y": 0.901834726333618,
+          "z": 0.0000449478538939729
+        },
+        "y": {
+          "x": -0.901834726333618,
+          "y": 0.432081252336502,
+          "z": 0.000196239707292989
+        },
+        "z": {
+          "x": 0.000157554633915424,
+          "y": -0.000125327031128109,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -18.6325302124023
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0204,
+      "exec_time": 340.0,
+      "frame": 5,
+      "time": 0.0833333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000357627868652344,
+        "z": 10899.47265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255186140560805,
+      "flight_time": 0.1,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.0125725574982472,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.00000000047738746289383,
+        "z": -14.9631443023682
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.842167615890503,
+          "y": 0.539215922355652,
+          "z": 0.0000449478648079094
+        },
+        "y": {
+          "x": -0.539215922355652,
+          "y": 0.842167556285858,
+          "z": 0.000196239692741074
+        },
+        "z": {
+          "x": 0.0000679619261063635,
+          "y": -0.000189503305591643,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -7.45301246643066
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01608,
+      "exec_time": 268.0,
+      "frame": 6,
+      "time": 0.1
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -1.51381659507751,
+        "z": 9082.9013671875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255186140560805,
+      "flight_time": 0.116666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00502902325670085,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000557755730490328,
+        "z": -15.0480651855469
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.404154807329178,
+          "y": 0.914690673351288,
+          "z": 0.000107526982901618
+        },
+        "y": {
+          "x": -0.914690613746643,
+          "y": 0.404154747724533,
+          "z": 0.000123237565276213
+        },
+        "z": {
+          "x": 0.0000692667163093574,
+          "y": -0.000148160965181887,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -5.09525012969971
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02532,
+      "exec_time": 422.0,
+      "frame": 7,
+      "time": 0.116666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000238418579101562,
+        "z": 7569.0908203125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255184205891235,
+      "flight_time": 0.133333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00343809050587025,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000638123998086826,
+        "z": -15.1146202087402
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.0716898739337921,
+          "y": 0.997427105903625,
+          "z": 0.000107526982901618
+        },
+        "y": {
+          "x": -0.997426986694336,
+          "y": -0.0716899037361145,
+          "z": 0.000123237579828128
+        },
+        "z": {
+          "x": 0.00013062909420114,
+          "y": -0.0000984154030447826,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -3.99329471588135
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.0219,
+      "exec_time": 365.0,
+      "frame": 8,
+      "time": 0.133333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -1.05126333236694,
+        "z": 6307.5810546875
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255184205891235,
+      "flight_time": 0.15,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00269453084742331,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000718492265683324,
+        "z": -15.1698942184448
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.998976409435272,
+          "y": -0.0452366359531879,
+          "z": -0.0000662502861814573
+        },
+        "y": {
+          "x": 0.0452366210520267,
+          "y": 0.998976290225983,
+          "z": 0.00030168192461133
+        },
+        "z": {
+          "x": 0.0000525353825651109,
+          "y": -0.000304370041703805,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -3.31643962860107
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02346,
+      "exec_time": 391.0,
+      "frame": 9,
+      "time": 0.15
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000178813934326172,
+        "z": 5256.32177734375
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255191628208364,
+      "flight_time": 0.166666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00223781351457562,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000798860533279822,
+        "z": -15.2173871994019
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.919305503368378,
+          "y": -0.393544882535934,
+          "z": -0.0000662502716295421
+        },
+        "y": {
+          "x": 0.393544852733612,
+          "y": 0.919305384159088,
+          "z": 0.00030168192461133
+        },
+        "z": {
+          "x": -0.0000578211474930868,
+          "y": -0.000303410284686834,
+          "z": 1.0
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "normal",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -2.84957599639893
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02928,
+      "exec_time": 488.0,
+      "frame": 10,
+      "time": 0.166666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -0.730045199394226,
+        "z": 4380.27197265625
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255191628208364,
+      "flight_time": 0.183333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.001922790820782,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000879228800876319,
+        "z": -15.2591352462769
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.941609859466553,
+          "y": -0.336705982685089,
+          "z": -0.0000567771348869428
+        },
+        "y": {
+          "x": 0.336706012487411,
+          "y": -0.941609859466553,
+          "z": -0.00000847055343911052
+        },
+        "z": {
+          "x": -0.0000506098076584749,
+          "y": -0.0000270931341219693,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -2.50490379333496
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.02358,
+      "exec_time": 393.0,
+      "frame": 11,
+      "time": 0.183333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000119209289550781,
+        "z": 3650.22973632812
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517879124993,
+      "flight_time": 0.2,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00169021848403169,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.000000000959597068472817,
+        "z": -15.2964448928833
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.0803914964199066,
+          "y": 0.996763408184052,
+          "z": -0.0000567771785426885
+        },
+        "y": {
+          "x": -0.996763408184052,
+          "y": 0.0803914666175842,
+          "z": -0.00000847058709041448
+        },
+        "z": {
+          "x": -0.00000387875343221822,
+          "y": 0.0000572743520024233,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -2.23858261108398
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01608,
+      "exec_time": 268.0,
+      "frame": 12,
+      "time": 0.2
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -0.506976664066315,
+        "z": 3041.86059570312
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.000025517879124993,
+      "flight_time": 0.216666666666667,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00151051458237786,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.00000000103996533606932,
+        "z": -15.3302097320557
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.344510018825531,
+          "y": 0.938782632350922,
+          "z": -0.000066440632508602
+        },
+        "y": {
+          "x": -0.938782632350922,
+          "y": -0.344510078430176,
+          "z": -0.0000792874998296611
+        },
+        "z": {
+          "x": -0.0000973231726675294,
+          "y": 0.0000350579575751908,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -2.02588129043579
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.024,
+      "exec_time": 400.0,
+      "frame": 13,
+      "time": 0.216666666666667
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": 0.000000119209289550781,
+        "z": 2534.88598632812
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181139622458,
+      "flight_time": 0.233333333333333,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00136699142404574,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.00000000112033360366581,
+        "z": -15.3610706329346
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": 0.982320845127106,
+          "y": 0.187205195426941,
+          "z": -0.0000664405961288139
+        },
+        "y": {
+          "x": -0.187205255031586,
+          "y": 0.982320845127106,
+          "z": -0.0000792875653132796
+        },
+        "z": {
+          "x": 0.0000504229210491758,
+          "y": 0.000090323832409922,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -1.85167813301086
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01956,
+      "exec_time": 326.0,
+      "frame": 14,
+      "time": 0.233333333333333
+    }
+  },
+  {
+    "medium": {
+      "base_density": 998.0,
+      "bulk_modulus": 2200000000.0,
+      "drag_coef": 0.47,
+      "drag_model": "stokes",
+      "name": "WATER_FRESH",
+      "rha_coef": 0.05,
+      "speed_of_sound": 1482.0,
+      "type": "liquid",
+      "viscosity": 0.001002
+    },
+    "naming": {
+      "ammo_name": "5.56x45_M855",
+      "projectile_uid": "proj_SL633sL3",
+      "weapon_name": "SCAR_L_CQC"
+    },
+    "projectile": {
+      "ammo": "<Resource#-9223371989979232885>",
+      "angular_velocity": {
+        "x": 0.0,
+        "y": -0.352067708969116,
+        "z": 2112.40673828125
+      },
+      "caliber": 5.7,
+      "core_caliber": 5.4,
+      "core_hardness": 0.6,
+      "core_mass": 2.0,
+      "cross_section": 0.0000255175863287831,
+      "current_drag_coef": 0.28,
+      "drag_coef": 0.28,
+      "effective_cross_section": 0.0000255181139622458,
+      "flight_time": 0.25,
+      "fragmentation_chance": 0.1,
+      "fragmentation_count": 0,
+      "fragments_max": 4,
+      "fragments_min": 2,
+      "impact_count": 0,
+      "kind": "normal",
+      "length": 23.0,
+      "length_diameter_ratio": 4.03508771929825,
+      "mach_number": 0.00124944543388048,
+      "magnus_effect_factor": 0.000181578947368421,
+      "mass": 4.0,
+      "penetration_count": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.00000000120070187126231,
+        "z": -15.3895063400269
+      },
+      "ricochet_count": 0,
+      "ricochet_max_angle": 68.0,
+      "ricochet_min_angle": 12.0,
+      "rotation": {
+        "x": {
+          "x": -0.669265449047089,
+          "y": -0.74302339553833,
+          "z": -0.000221478650928475
+        },
+        "y": {
+          "x": 0.743023455142975,
+          "y": -0.669265449047089,
+          "z": -0.000354551855707541
+        },
+        "z": {
+          "x": 0.000115212344098836,
+          "y": -0.000401853118091822,
+          "z": 1.00000011920929
+        }
+      },
+      "spin_decay_rate": 0.8,
+      "stability_factor": 1.0,
+      "state": "expired",
+      "ttl": 2.346,
+      "tumble_time": 0.0,
+      "uid": "proj_SL633sL3",
+      "velocity": {
+        "x": 0.0,
+        "y": 0.00000000482209516761145,
+        "z": -1.7061460018158
+      },
+      "weapon": "<Resource#-9223371989861792395>"
+    },
+    "timing": {
+      "delta": 0.0166666666666667,
+      "exec_ratio": 0.01506,
+      "exec_time": 251.0,
+      "frame": 15,
+      "time": 0.25
+    }
+  }
+]

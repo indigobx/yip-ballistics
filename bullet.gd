@@ -16,6 +16,7 @@ var scaled_profile = []
 @onready var bullet: Polygon2D = $BulletShape
 @onready var bullet_outline: Line2D = $BulletOutline
 @export var caliber: float = 12.7
+var nose_point: Vector2
 
 func _ready() -> void:
   offset.x = 4.230 * cog
@@ -28,3 +29,11 @@ func _ready() -> void:
     scaled_profile.append((p + offset) * caliber)
   bullet.polygon = scaled_profile
   bullet_outline.points = scaled_profile
+  nose_point = Vector2(_get_nose(), 0.0)
+
+func _get_nose() -> float:
+  var max_x = offset.x
+  for p in scaled_profile:
+    if p[0] > max_x:
+      max_x = p[0]
+  return max_x
