@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bp8ohrghu7y6b"]
+[gd_scene load_steps=22 format=3 uid="uid://bp8ohrghu7y6b"]
 
 [ext_resource type="Script" uid="uid://clxi5tbq0jncm" path="res://main.gd" id="1_glv2v"]
 [ext_resource type="FontFile" uid="uid://b3qcks2t035sj" path="res://Px437_Cordata_PPC-21.ttf" id="2_uu6xs"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://ci0gi4g7gu0fo" path="res://medium_vis.tscn" id="6_03owx"]
 [ext_resource type="PackedScene" uid="uid://khminlhbn63c" path="res://shockwave.tscn" id="7_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://n5v6xrpsey0e" path="res://bullet_3d.tscn" id="8_trn2v"]
+[ext_resource type="PackedScene" uid="uid://dr6d3fr4cbgq1" path="res://debug_2d.tscn" id="10_5vvyt"]
 [ext_resource type="PackedScene" uid="uid://6vsbxqm8h5oh" path="res://firearm.tscn" id="11_20pc6"]
 
 [sub_resource type="FontVariation" id="FontVariation_uu6xs"]
@@ -62,7 +63,7 @@ height = 50.0
 radial_segments = 8
 rings = 1
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node3D"]
 script = ExtResource("1_glv2v")
 
 [node name="UI" type="Control" parent="."]
@@ -454,7 +455,7 @@ layout_mode = 0
 offset_left = 16.0
 offset_top = 31.0
 offset_right = 556.0
-offset_bottom = 629.0
+offset_bottom = 635.0
 
 [node name="Output" type="RichTextLabel" parent="UI/PanelContainer3"]
 unique_name_in_owner = true
@@ -467,6 +468,31 @@ bbcode_enabled = true
 text = "aaaaa"
 tab_size = 2
 selection_enabled = true
+
+[node name="PanelContainer4" type="PanelContainer" parent="UI"]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 294.0
+offset_right = 556.0
+offset_bottom = 623.0
+
+[node name="CenterContainer" type="CenterContainer" parent="UI/PanelContainer4"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="UI/PanelContainer4/CenterContainer"]
+layout_mode = 2
+
+[node name="Debug2D" parent="UI/PanelContainer4/CenterContainer/Control" instance=ExtResource("10_5vvyt")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="TextureRect" type="TextureRect" parent="UI"]
 layout_mode = 0
@@ -489,6 +515,7 @@ size = Vector2i(240, 120)
 [node name="Camera3D" type="Camera3D" parent="SubViewport"]
 transform = Transform3D(0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 5, 4, 5)
 projection = 1
+current = true
 fov = 45.0
 size = 5.0
 near = 0.1
@@ -512,6 +539,10 @@ mesh = SubResource("CylinderMesh_03owx")
 mesh = SubResource("CylinderMesh_c6i3y")
 
 [node name="Firearm" parent="." instance=ExtResource("11_20pc6")]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+
+[node name="Targets" type="Node3D" parent="."]
 
 [connection signal="button_up" from="UI/Step" to="." method="_on_step_button_up"]
 [connection signal="button_up" from="UI/Copy" to="." method="_on_copy_button_up"]

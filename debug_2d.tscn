@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr6d3fr4cbgq1"]
+
+[ext_resource type="Script" uid="uid://os2es87evhso" path="res://debug_2d.gd" id="1_n7a1a"]
+
+[node name="Debug2D" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n7a1a")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(50, 0, 0, 50, -50, 0, 0, -50)
+closed = true
+width = 1.0
+
+[node name="BasePoly" type="Polygon2D" parent="."]

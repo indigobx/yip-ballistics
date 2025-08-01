@@ -1,4 +1,4 @@
-extends Node
+extends Node3D
 
 var c: int = 0
 var weapon: WeaponData
@@ -12,6 +12,7 @@ var t: float = 0.0
 var ax_scale = 0.5
 var exec_time: float = 0.0
 var metrics: Dictionary = {}
+@onready var raycast: RayCast3D = $RayCast3D
 
 
 func _ready() -> void:
@@ -26,6 +27,7 @@ func _ready() -> void:
   _draw_axes()
   _rotate_bullet_3d()
   #$Firearm.shoot()
+  
 
 
 func _output_metrics() -> void:
@@ -154,20 +156,43 @@ func _update_medium() -> void:
 
 
 func _do_ballistics() -> void:
-  _update_medium()
+  var d_from = Vector2(
+    projectile["position"].z,
+    projectile["position"].y
+  )
+  var d_to = Vector2(10, 10)
+  #%Debug2D.set_vector("test", d_from, d_to, Color.RED)
+  
+  
+  #_update_medium()
   var t0 = Time.get_ticks_usec()
   var new_proj = Ballistics.update_projectile(projectile, dt)
-  exec_time = Time.get_ticks_usec() - t0
+  # handle collsion after getting next step of projectile
+  var from = projectile["position"]
+  var to = new_proj["position"]
+  var space = get_world_3d().direct_space_state
+  var params = PhysicsRayQueryParameters3D.new()
+  params.from = from
+  params.to = to
+  var result = space.intersect_ray(params)
+  if result:
+    var target = result.collider
+    var target_medium = Physics.get_medium_properties(target.medium)
+    #new_proj = Ballistics.impact_projectile(projectile, result)
+    new_proj["effective_cross_section"] *= 2.0
   projectile = new_proj
+  exec_time = Time.get_ticks_usec() - t0
   c += 1
   t += dt
   Metrics.record_metrics(
     Globals.prettify_dict(metrics)
   )
-  #Metrics.send_metrics_prometheus(metrics)
+  
   _output_metrics()
   _draw_axes()
   _rotate_bullet_3d()
+
+
 
 func _on_step_button_up() -> void:
   _do_ballistics()

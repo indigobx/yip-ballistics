@@ -11,6 +11,12 @@ const SPIN_DECAY_AIR := 0.998  # Коэффициент затухания вр�
 const SPIN_DECAY_WATER := 0.8  # Коэффициент затухания вращения в воде
 const BULLET_TUMBLE_THRESHOLD := 0.5  # Порог начала кувыркания 1.0
 
+var debug_2d: Node
+
+func _ready() -> void:
+  debug_2d = get_tree().root.find_child("Debug2D", true, false)
+
+
 #=== Основной метод обновления ===#
 func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
   var new_proj = proj.duplicate(true)
@@ -19,7 +25,7 @@ func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
   if medium_props.is_empty():
     push_warning("Unknown medium type")
     return new_proj
-  
+
   # 1. Предварительные расчеты
   _update_pre_physics(new_proj, delta)
   
@@ -496,10 +502,13 @@ func _update_post_physics(proj: Dictionary, delta: float) -> void:
   if not proj["position"].is_finite():
     proj["position"] = Vector3.ZERO
 
+
 func smoothstep(edge0: float, edge1: float, x: float) -> float:
   var t = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0)
   return t * t * (3.0 - 2.0 * t)
-func on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Physics.Medium, medium_thickness: float) -> void:
+
+
+func _on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Physics.Medium, medium_thickness: float) -> void:
   var velocity = proj["velocity"]
   var speed = velocity.length()
   if speed < MIN_VELOCITY:
@@ -556,3 +565,75 @@ func on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Physi
 
   #=== 6. Обновление аэродинамических параметров ===#
   _update_pre_physics(proj, 0.0)
+
+
+
+func impact_projectile(proj: Dictionary, collision: Dictionary) -> Dictionary:
+  debug_2d.set_point(
+    "impact_point",
+    collision.position,
+    Color.RED
+  )
+  debug_2d.set_vector(
+    "impact_normal",
+    collision.position,
+    collision.position + collision.normal*15,
+    Color.RED
+  )
+
+  proj["effective_cross_section"] *= 1.1
+  return proj
+
+# NOT WORKING
+func get_collider_thickness(
+  space_state: PhysicsDirectSpaceState3D,
+  hit_position: Vector3,
+  normal: Vector3,
+  collider: Object,
+  max_thickness: float = 10.0
+) -> float:
+  # Нормализуем нормаль и немного смещаем точку старта от поверхности
+  var direction := -normal.normalized()
+  var start_point := hit_position + direction * 0.01
+  
+  
+  
+  # Для точного определения толщины делаем два raycast'а:
+  # 1. Внутрь объекта (должен попасть в противоположную сторону)
+  # 2. Наружу (для проверки, что мы не снаружи объекта)
+  
+  # Raycast внутрь
+  var inner_query := PhysicsRayQueryParameters3D.create(
+    start_point,
+    start_point - direction * max_thickness
+  )
+  inner_query.collide_with_areas = true
+  inner_query.collide_with_bodies = true
+  inner_query.hit_from_inside = true  # Важно для попадания изнутри
+  #inner_query.exclude = [collider]
+  
+  var inner_hit := space_state.intersect_ray(inner_query)
+  print("inner %s" % inner_hit)
+  if inner_hit.is_empty():
+    # Если не попали внутрь, возможно, мы снаружи объекта
+    # Проверяем raycast наружу
+    var outer_query := PhysicsRayQueryParameters3D.create(
+      start_point,
+      start_point + direction * max_thickness
+    )
+    outer_query.collide_with_areas = true
+    outer_query.collide_with_bodies = true
+    outer_query.hit_from_inside = false
+    #outer_query.exclude = [collider]
+    
+    var outer_hit := space_state.intersect_ray(outer_query)
+    print("outer %s" % outer_hit)
+    if not outer_hit.is_empty() and outer_hit.collider == collider:
+      # Мы снаружи, возвращаем расстояние до входа
+      return hit_position.distance_to(outer_hit.position)
+    else:
+      # Не смогли определить толщину
+      return max_thickness
+  else:
+    # Мы внутри объекта, возвращаем расстояние до выхода
+    return hit_position.distance_to(inner_hit.position)
