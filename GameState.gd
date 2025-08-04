@@ -40,14 +40,16 @@ func _ready() -> void:
   add_target(
     Physics.Medium.BALLISTIC_GEL,
     Vector3(0.0, 0.0, -100.0),
-    Vector3(10.0, 10.0, 1.0)
+    Vector3(10.0, 10.0, 1.0),
+    100.0
   )
 
-func add_target(medium, position, size) -> void:
+func add_target(medium, position, size, thickness) -> void:
   var instance = target_scene.instantiate()
   instance.position = position
   instance.size = size
   instance.medium = medium
+  instance.thickness = thickness
   get_tree().root.get_node("Main/Targets").add_child(instance)
 
 func get_medium_at_distance(dist: float) -> Physics.Medium:

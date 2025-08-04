@@ -18,16 +18,15 @@ func _ready() -> void:
 
 
 #=== Основной метод обновления ===#
-func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
+func update_projectile(proj: Dictionary, delta: float, medium) -> Dictionary:
   var new_proj = proj.duplicate(true)
-  var medium = GameState.env_conditions["medium"]
   var medium_props = Physics.get_medium_properties(medium)
   if medium_props.is_empty():
     push_warning("Unknown medium type")
     return new_proj
 
   # 1. Предварительные расчеты
-  _update_pre_physics(new_proj, delta)
+  _update_pre_physics(new_proj, delta, medium)
   
   # 2. Физика в зависимости от типа среды
   match medium_props["type"]:
@@ -48,9 +47,9 @@ func update_projectile(proj: Dictionary, delta: float) -> Dictionary:
   
   return new_proj
 
-func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis) -> Dictionary:
+func create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3, muzzle_rot: Basis, medium) -> Dictionary:
   var projectile = _create_projectile(weapon, ammo, muzzle_pos, muzzle_rot)
-  _update_pre_physics(projectile, 0.0)
+  _update_pre_physics(projectile, 0.0, medium)
   return projectile
 
 #=== Создание снаряда с улучшенными параметрами ===#
@@ -107,7 +106,7 @@ func _create_projectile(weapon: WeaponData, ammo: AmmoData, muzzle_pos: Vector3,
   }
 
 #=== Детализированные физические модели ===#
-func _update_pre_physics(proj: Dictionary, delta: float) -> void:
+func _update_pre_physics(proj: Dictionary, delta: float, medium) -> void:
   """Расчет динамических параметров перед физикой"""
   # Обновление динамического сечения (G7 модель)
   proj["effective_cross_section"] = _calculate_effective_cross_section(proj)
@@ -116,7 +115,7 @@ func _update_pre_physics(proj: Dictionary, delta: float) -> void:
   proj["current_drag_coef"] = _calculate_dynamic_drag_coef(proj)
   
   # Расчет числа Маха
-  var speed_of_sound = Physics.get_speed_of_sound(GameState.env_conditions["medium"])
+  var speed_of_sound = Physics.get_speed_of_sound(medium)
   proj["mach_number"] = proj["velocity"].length() / speed_of_sound if speed_of_sound > 0 else 0
   
   # Обновление фактора стабильности
@@ -493,8 +492,10 @@ func _update_position_orientation(proj: Dictionary, delta: float) -> void:
 
 func _update_post_physics(proj: Dictionary, delta: float) -> void:
   proj["flight_time"] += delta
-  if Time.get_ticks_msec() / 1000.0 > proj["ttl"]:
+  if proj["flight_time"] > 1.0:
     proj["state"] = "expired"
+  #if Time.get_ticks_msec() / 3000.0 > proj["ttl"]:
+    #proj["state"] = "expired"
   
   # Проверка на NaN/Infinity
   if not proj["velocity"].is_finite():
@@ -564,76 +565,43 @@ func _on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Phys
       proj["rotation"] = offset_basis * proj["rotation"]
 
   #=== 6. Обновление аэродинамических параметров ===#
-  _update_pre_physics(proj, 0.0)
+  _update_pre_physics(proj, 0.0, medium)
 
 
+func impact_projectile(proj:Dictionary, collision:Dictionary, delta) -> Dictionary:
+  var target = collision["collider"]
+  var medium = target.medium
+  var medium_props = Physics.get_medium_properties(target.medium)
 
-func impact_projectile(proj: Dictionary, collision: Dictionary) -> Dictionary:
-  debug_2d.set_point(
-    "impact_point",
-    collision.position,
-    Color.RED
-  )
-  debug_2d.set_vector(
-    "impact_normal",
-    collision.position,
-    collision.position + collision.normal*15,
-    Color.RED
-  )
+  # --- Толщина (мм) и эквивалент RHA ---
+  var thickness = 1000.0
+  if "thickness" in target:
+    thickness = target.thickness
+  var rha_thickness = thickness * medium_props.rha_coef
 
-  proj["effective_cross_section"] *= 1.1
-  return proj
+  # --- Пробивная способность ---
+  var mass_kg = proj.mass * 0.001
+  var head_area = PI * (proj.core_caliber * 0.0005) * (proj.core_caliber * 0.0005)
+  var penetration_m = (mass_kg * proj.core_hardness) / proj.effective_cross_section
 
-# NOT WORKING
-func get_collider_thickness(
-  space_state: PhysicsDirectSpaceState3D,
-  hit_position: Vector3,
-  normal: Vector3,
-  collider: Object,
-  max_thickness: float = 10.0
-) -> float:
-  # Нормализуем нормаль и немного смещаем точку старта от поверхности
-  var direction := -normal.normalized()
-  var start_point := hit_position + direction * 0.01
+  # --- Потеря энергии ---
+  var penetration_ratio = rha_thickness / max(penetration_m, 0.0001)
+  var energy_loss = clamp(penetration_ratio, 0.0, 1.0)
+
+  # --- Применение потерь скорости ---
+  proj.velocity *= 1.0 - energy_loss
+  # --- Снижение стабильности снаряда ---
+  var stability_penalty = energy_loss * 0.8  # до 80% нестабильности при полной потере
+  proj.stability_factor -= max(0.0, stability_penalty)
+  #proj.stability_factor = clamp(proj.stability_factor, 0.0, 1.0)
   
+  # Деформация
+  proj.core_mass *= 0.8
+  proj.mass *= 0.8
+  proj.caliber *= 1.2
+  proj.core_caliber *= 1.15
+  proj.cross_section *= 1.5
+  var new_proj = update_projectile(proj, delta, medium)
   
-  
-  # Для точного определения толщины делаем два raycast'а:
-  # 1. Внутрь объекта (должен попасть в противоположную сторону)
-  # 2. Наружу (для проверки, что мы не снаружи объекта)
-  
-  # Raycast внутрь
-  var inner_query := PhysicsRayQueryParameters3D.create(
-    start_point,
-    start_point - direction * max_thickness
-  )
-  inner_query.collide_with_areas = true
-  inner_query.collide_with_bodies = true
-  inner_query.hit_from_inside = true  # Важно для попадания изнутри
-  #inner_query.exclude = [collider]
-  
-  var inner_hit := space_state.intersect_ray(inner_query)
-  print("inner %s" % inner_hit)
-  if inner_hit.is_empty():
-    # Если не попали внутрь, возможно, мы снаружи объекта
-    # Проверяем raycast наружу
-    var outer_query := PhysicsRayQueryParameters3D.create(
-      start_point,
-      start_point + direction * max_thickness
-    )
-    outer_query.collide_with_areas = true
-    outer_query.collide_with_bodies = true
-    outer_query.hit_from_inside = false
-    #outer_query.exclude = [collider]
-    
-    var outer_hit := space_state.intersect_ray(outer_query)
-    print("outer %s" % outer_hit)
-    if not outer_hit.is_empty() and outer_hit.collider == collider:
-      # Мы снаружи, возвращаем расстояние до входа
-      return hit_position.distance_to(outer_hit.position)
-    else:
-      # Не смогли определить толщину
-      return max_thickness
-  else:
-    # Мы внутри объекта, возвращаем расстояние до выхода
-    return hit_position.distance_to(inner_hit.position)
+  new_proj["state"] = "hit"
+  return new_proj

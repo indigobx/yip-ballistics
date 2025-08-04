@@ -21,6 +21,7 @@ func shoot() -> void:
     weapon,
     ammo,
     GameState.muzzle_pos,
-    GameState.muzzle_rot
+    GameState.muzzle_rot,
+    GameState.env_conditions["medium"]
   )
   GameState.projectiles["test_proj_01"] = proj

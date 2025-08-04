@@ -11,6 +11,7 @@ var timeout: float = 0.1
 var t: float = 0.0
 var ax_scale = 0.5
 var exec_time: float = 0.0
+var sum_exec_time: float = 0.0
 var metrics: Dictionary = {}
 @onready var raycast: RayCast3D = $RayCast3D
 
@@ -41,12 +42,14 @@ func _output_metrics() -> void:
   %Output.append_text("Exec time [b]%.0f[/b] µs ([b]%.2f[/b]%% of frame)\n\n" % [
     exec_time, exec_ratio*100
   ])
+  sum_exec_time += exec_time 
   metrics = {
     "timing": {
       "frame": c,
       "time": t,
       "delta": dt,
       "exec_time": exec_time,
+      "avg_exec_time": sum_exec_time/c,
       "exec_ratio": exec_ratio
     },
     "naming": {
@@ -166,7 +169,8 @@ func _do_ballistics() -> void:
   
   #_update_medium()
   var t0 = Time.get_ticks_usec()
-  var new_proj = Ballistics.update_projectile(projectile, dt)
+  var medium = GameState.env_conditions["medium"]
+  var new_proj = Ballistics.update_projectile(projectile, dt, medium)
   # handle collsion after getting next step of projectile
   var from = projectile["position"]
   var to = new_proj["position"]
@@ -176,9 +180,7 @@ func _do_ballistics() -> void:
   params.to = to
   var result = space.intersect_ray(params)
   if result:
-    var target = result.collider
-    var target_medium = Physics.get_medium_properties(target.medium)
-    #new_proj = Ballistics.impact_projectile(projectile, result)
+    new_proj = Ballistics.impact_projectile(new_proj, result, dt)
     new_proj["effective_cross_section"] *= 2.0
   projectile = new_proj
   exec_time = Time.get_ticks_usec() - t0
