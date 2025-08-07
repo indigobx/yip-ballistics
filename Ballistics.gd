@@ -16,6 +16,11 @@ var debug_2d: Node
 func _ready() -> void:
   debug_2d = get_tree().root.find_child("Debug2D", true, false)
 
+func move_projectile(proj: Dictionary, distance: float, medium: Physics.Medium) -> Dictionary:
+  var dt = distance / proj["velocity"].length()
+  var new_proj = update_projectile(proj, dt, medium)
+  return new_proj
+
 
 #=== Основной метод обновления ===#
 func update_projectile(proj: Dictionary, delta: float, medium) -> Dictionary:

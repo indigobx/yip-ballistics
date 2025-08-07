@@ -317,7 +317,7 @@ max = 2000.0
 hard_limits = true
 label = "Dist"
 
-[node name="GraphCS" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
+[node name="GraphRho" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("6_3dxm6")]
 unique_name_in_owner = true
 layout_mode = 0
 anchors_preset = 0
@@ -332,8 +332,9 @@ grow_vertical = 1
 graph_width = 120
 color = Color(0.690196, 0.905882, 0.8, 1)
 thickness = 1.0
-max = 0.0
-label = "Cross Section"
+max = 8000.0
+hard_limits = true
+label = "Density"
 
 [node name="BarZ" parent="UI/PanelContainer/CenterContainer/Vis" instance=ExtResource("5_lgr22")]
 unique_name_in_owner = true

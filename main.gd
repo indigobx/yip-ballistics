@@ -5,6 +5,7 @@ var weapon: WeaponData
 var ammo: AmmoData
 var projectile: Dictionary = {}
 var dt: float = (1.0/60.0)  # 60 PhyFPS
+var step: float = 1.0  # meters
 #var dt: float = (1.0/600.0)
 var timeout: float = 0.1
 #var dt: float = 0.1
@@ -12,6 +13,9 @@ var t: float = 0.0
 var ax_scale = 0.5
 var exec_time: float = 0.0
 var sum_exec_time: float = 0.0
+var avg_exec_time: float = 0.0
+var dt_us: float = 0.0
+var exec_ratio: float = 0.0
 var metrics: Dictionary = {}
 @onready var raycast: RayCast3D = $RayCast3D
 
@@ -24,6 +28,9 @@ func _ready() -> void:
     projectile = GameState.projectiles.values()[-1]
   weapon = projectile["weapon"]
   ammo = projectile["ammo"]
+  _update_metrics({
+    "medium": GameState.env_conditions["medium"]
+  })
   _output_metrics()
   _draw_axes()
   _rotate_bullet_3d()
@@ -37,29 +44,10 @@ func _output_metrics() -> void:
   %Output.append_text("[b]%s[/b] frames  T [b]%.4f[/b] s  Δt [b]%.4f[/b] s\n" % [
     c, t, dt
   ])
-  var dt_us := float(1.0/60.0) * 1_000_000.0  # перевести секунды в микросекунды
-  var exec_ratio := float(exec_time) / dt_us
   %Output.append_text("Exec time [b]%.0f[/b] µs ([b]%.2f[/b]%% of frame)\n\n" % [
     exec_time, exec_ratio*100
   ])
-  sum_exec_time += exec_time 
-  metrics = {
-    "timing": {
-      "frame": c,
-      "time": t,
-      "delta": dt,
-      "exec_time": exec_time,
-      "avg_exec_time": sum_exec_time/c,
-      "exec_ratio": exec_ratio
-    },
-    "naming": {
-      "weapon_name": weapon.name,
-      "ammo_name": ammo.name,
-      "projectile_uid": projectile.uid
-    },
-    "projectile": projectile,
-    "medium": Physics.get_medium_properties(GameState.env_conditions["medium"])
-  }
+
   $UI/Dump.text = "Dump\n%.0f frames" % len(Metrics.metric_storage)
   %Output.add_text(JSON.stringify(metrics, "  "))
 
@@ -130,8 +118,8 @@ func _draw_axes() -> void:
   var dist = projectile.position.length()
   %GraphDist.add_value(dist)
   var medium = GameState.env_conditions["medium"]
-  var rho = Physics.get_medium_properties(medium)["base_density"]
-  %GraphRho.add_value(rho)
+  #var rho = Physics.get_medium_properties(medium)["base_density"]
+  %GraphCS.add_value(projectile.effective_cross_section)
   
   %BarZ.value = Globals.normalize(abs(projectile.position.z), 0.0, 2000.0)
   %BarY.value = Globals.normalize(projectile.position.y, 5.0, -45.0)
@@ -167,20 +155,36 @@ func _do_ballistics() -> void:
   #%Debug2D.set_vector("test", d_from, d_to, Color.RED)
   
   
+  
   #_update_medium()
   var t0 = Time.get_ticks_usec()
-  var medium = GameState.env_conditions["medium"]
-  var new_proj = Ballistics.update_projectile(projectile, dt, medium)
-  # handle collsion after getting next step of projectile
-  var from = projectile["position"]
-  var to = new_proj["position"]
+  var medium: Physics.Medium
+  var new_proj: Dictionary
+  
+  # handle medium change on hit
   var space = get_world_3d().direct_space_state
   var params = PhysicsRayQueryParameters3D.new()
-  params.from = from
-  params.to = to
+  params.from = projectile["position"]
+  params.to = projectile["position"] + projectile["velocity"].normalized() * step
   var result = space.intersect_ray(params)
+  print(c, params.from, params.to)
   if result:
-    new_proj = Ballistics.impact_projectile_v2(new_proj, result, dt)
+    var thickness = Ballistics.get_thickness(result, 5.0)
+    medium = result["collider"].medium
+    if thickness > step:
+      new_proj = Ballistics.move_projectile(projectile, step, medium)
+    else:
+      new_proj = Ballistics.move_projectile(projectile, thickness, medium)
+  else:
+    medium = GameState.env_conditions["medium"]
+    new_proj = Ballistics.move_projectile(projectile, step, medium)
+  
+  
+  # metrics
+  _update_metrics({
+    "medium": medium
+  })
+  
   projectile = new_proj
   exec_time = Time.get_ticks_usec() - t0
   c += 1
@@ -193,6 +197,33 @@ func _do_ballistics() -> void:
   _draw_axes()
   _rotate_bullet_3d()
 
+
+func _update_metrics(data: Dictionary) -> void:
+  var medium = data["medium"]
+  dt_us = float(1.0/60.0) * 1_000_000.0  # перевести секунды в микросекунды
+  exec_ratio = float(exec_time) / dt_us
+  avg_exec_time = float(sum_exec_time/c)
+  if is_nan(avg_exec_time):
+    avg_exec_time = 0.0
+
+  sum_exec_time += exec_time 
+  metrics = {
+    "timing": {
+      "frame": c,
+      "time": t,
+      "delta": dt,
+      "exec_time": exec_time,
+      "avg_exec_time": avg_exec_time,
+      "exec_ratio": exec_ratio
+    },
+    "naming": {
+      "weapon_name": weapon.name,
+      "ammo_name": ammo.name,
+      "projectile_uid": projectile.uid
+    },
+    "projectile": projectile,
+    "medium": Physics.get_medium_properties(medium)
+  }
 
 
 func _on_step_button_up() -> void:

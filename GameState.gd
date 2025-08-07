@@ -35,12 +35,12 @@ var target_scene = preload("res://target.tscn")
 var projectiles = {}
 
 func _ready() -> void:
-  env_conditions["medium"] = get_medium_at_distance(0.0)
+  #env_conditions["medium"] = get_medium_at_distance(0.0)
   muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
   add_target(
-    Physics.Medium.STEEL_ARMOR,
-    Vector3(0.0, 0.0, -50.0),
-    Vector3(10.0, 10.0, 1.2),
+    Physics.Medium.WATER_FRESH,
+    Vector3(0.0, 0.0, -20.0),
+    Vector3(10.0, 10.0, 1.0),
     100.0
   )
 
