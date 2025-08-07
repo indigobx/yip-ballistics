@@ -180,8 +180,7 @@ func _do_ballistics() -> void:
   params.to = to
   var result = space.intersect_ray(params)
   if result:
-    new_proj = Ballistics.impact_projectile(new_proj, result, dt)
-    new_proj["effective_cross_section"] *= 2.0
+    new_proj = Ballistics.impact_projectile_v2(new_proj, result, dt)
   projectile = new_proj
   exec_time = Time.get_ticks_usec() - t0
   c += 1

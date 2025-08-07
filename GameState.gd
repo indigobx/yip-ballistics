@@ -38,9 +38,9 @@ func _ready() -> void:
   env_conditions["medium"] = get_medium_at_distance(0.0)
   muzzle_rot = Basis(Vector3.UP, yaw) * Basis(Vector3.LEFT, pitch)
   add_target(
-    Physics.Medium.BALLISTIC_GEL,
-    Vector3(0.0, 0.0, -100.0),
-    Vector3(10.0, 10.0, 1.0),
+    Physics.Medium.STEEL_ARMOR,
+    Vector3(0.0, 0.0, -50.0),
+    Vector3(10.0, 10.0, 1.2),
     100.0
   )
 

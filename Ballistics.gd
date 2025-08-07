@@ -568,6 +568,61 @@ func _on_impact_or_medium_change(proj: Dictionary, normal: Vector3, medium: Phys
   _update_pre_physics(proj, 0.0, medium)
 
 
+func impact_projectile_v2(proj:Dictionary, collision:Dictionary, delta) -> Dictionary:
+  var target = collision["collider"]
+  var medium = target.medium
+  var medium_props = Physics.get_medium_properties(target.medium)
+  
+  var thickness = get_thickness(collision)
+  var rha_thickness = thickness * medium_props.rha_coef
+
+  # --- Пробивная способность ---
+  var mass_kg = proj.mass * 0.001
+  var head_area = PI * (proj.core_caliber * 0.0005) * (proj.core_caliber * 0.0005)
+  var penetration_m = (mass_kg * proj.core_hardness) / proj.effective_cross_section
+
+  # --- Потеря энергии ---
+  var penetration_ratio = rha_thickness / max(penetration_m, 0.0001)
+  var energy_loss = clamp(penetration_ratio, 0.0, 1.0)
+
+  # --- Применение потерь скорости ---
+  proj.velocity *= 1.0 - energy_loss
+  # --- Снижение стабильности снаряда ---
+  var stability_penalty = energy_loss * 0.8  # до 80% нестабильности при полной потере
+  proj.stability_factor -= max(0.0, stability_penalty)
+  #proj.stability_factor = clamp(proj.stability_factor, 0.0, 1.0)
+  
+  # Деформация
+  proj.core_mass *= 0.8
+  proj.mass *= 0.8
+  proj.caliber *= 1.2
+  proj.core_caliber *= 1.15
+  proj.cross_section *= 1.5
+  
+  print("%.4f  <%s>" % [delta, medium])
+  var new_proj = update_projectile(proj, delta, medium)
+  new_proj["state"] = "hit"
+  return new_proj
+
+func get_thickness(collision: Dictionary, ray_length: float = 100.0) -> float:
+  var pos1: Vector3 = collision["position"]
+  var normal: Vector3 = collision["normal"]
+  var pos2_start: Vector3 = pos1 - normal * ray_length
+
+  var space = get_world_3d().direct_space_state
+  var params = PhysicsRayQueryParameters3D.new()
+  params.from = pos2_start
+  params.to = pos1
+
+  var result = space.intersect_ray(params)
+
+  if result:
+    var pos2_end: Vector3 = result["position"]
+    return pos1.distance_to(pos2_end)
+  else:
+    return -1.0
+
+
 func impact_projectile(proj:Dictionary, collision:Dictionary, delta) -> Dictionary:
   var target = collision["collider"]
   var medium = target.medium
